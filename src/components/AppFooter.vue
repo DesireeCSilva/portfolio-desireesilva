@@ -27,6 +27,7 @@
     <div class="bg_heart">
       <!-- Aquí es donde los corazones animados serán añadidos dinámicamente -->
     </div>
+    
   </footer>
 </template>
 
@@ -69,7 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 <style>
-🔔/* footer */
 
 footer {
     position: relative;

@@ -26,6 +26,7 @@
       </ul>
     </nav>
   </header>
+  <hr class="hr_portfolio">
 </template>
 
 <script>
@@ -119,5 +120,11 @@
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
     }
   }
+}
+.hr_portfolio {
+    color: #CE93D8;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 </style>

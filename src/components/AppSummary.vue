@@ -40,6 +40,7 @@
       </div>
     </div>
   </section>
+  <hr class="hr_portfolio"> 
 </template>
 
 <script>
@@ -119,5 +120,11 @@ export default {};
       margin-bottom: 0.7rem;
     }
   }
+}
+.hr_portfolio {
+    color: #CE93D8;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 </style>
