@@ -23,5 +23,9 @@ export default {
 body {
   margin: 0;
   min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 2rem;
 }
 </style>
