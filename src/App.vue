@@ -2,6 +2,8 @@
   <main>
     <AppHeader/>
     <AppSummary />
+    <AppEducation />
+    <AppContact />
     <AppProjects/>
     <AppTechnologies/>
     <AppFooter />
@@ -12,8 +14,6 @@
 import AppHeader from './components/AppHeader.vue'
 import AppSummary from './components/AppSummary.vue'
 import AppFooter from './components/AppFooter.vue'
-import AppProjects from './components/AppProjects.vue'
-import AppTechnologies from './components/AppTechnologies.vue'
 
 
 export default {
@@ -21,8 +21,6 @@ export default {
   components: {
     AppHeader,
     AppSummary,
-    AppProjects, 
-    AppTechnologies,
     AppFooter
   }
 }
