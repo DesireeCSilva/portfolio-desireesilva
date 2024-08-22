@@ -2,6 +2,7 @@
   <main>
     <AppHeader/>
     <AppSummary />
+    <AppEducation />
     <AppFooter />
   </main>
 </template>
@@ -10,6 +11,7 @@
 import AppHeader from './components/AppHeader.vue'
 import AppSummary from './components/AppSummary.vue'
 import AppFooter from './components/AppFooter.vue'
+import AppEducation from './components/AppEducation.vue'
 
 
 export default {
@@ -17,6 +19,7 @@ export default {
   components: {
     AppHeader,
     AppSummary,
+    AppEducation,
     AppFooter
   }
 }
