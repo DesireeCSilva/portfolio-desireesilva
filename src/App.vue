@@ -27,5 +27,12 @@ body {
   font-weight: 400;
   font-style: normal;
   padding: 2rem;
+
+  .hr_portfolio {
+    color: #CE93D8;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 }
 </style>
