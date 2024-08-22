@@ -1,12 +1,14 @@
 <template>
   <main>
     <AppHeader/>
+    <AppSummary />
     <AppFooter />
   </main>
 </template>
 
 <script>
 import AppHeader from './components/AppHeader.vue'
+import AppSummary from './components/AppSummary.vue'
 import AppFooter from './components/AppFooter.vue'
 
 
@@ -14,6 +16,7 @@ export default {
   name: 'index_page',
   components: {
     AppHeader,
+    AppSummary,
     AppFooter
   }
 }
