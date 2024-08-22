@@ -4,7 +4,7 @@
       <ul id="main-menu" class="main-menu">
         <li class="main-menu_item">
           <img
-            src="../assets/logo_desiree.png"
+            src="@/assets/logo_desiree.png"
             alt="logotipo de Desirée Silva"
           />
         </li>
@@ -18,7 +18,7 @@
           <a href="/index.html#section-03" class="main-menu_link">Formación</a>
         </li>
         <button class="button_header">
-          <img class="icon_header" src="../assets/icons/call.png" alt="" /><a
+          <img class="icon_header" src="@/assets/icons/call.png" alt="" /><a
             href="tel:675937952"
             >¡Contáctame!</a
           >
