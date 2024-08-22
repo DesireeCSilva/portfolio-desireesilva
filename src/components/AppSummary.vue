@@ -47,6 +47,16 @@ export default {};
 </script>
 
 <style lang="scss">
+:root {
+  --white: #ffffff;
+  --blue: #e1bee7;
+  --purple: #7026f4;
+  --yellow: #fff9c4;
+  --pink: #ce93d8;
+  --green: #fa8662;
+  --green-light: #ffccbc;
+}
+
 .section-01 {
   display: grid;
   grid-template-columns: 26% 33% 33%;
@@ -65,16 +75,6 @@ export default {};
       background-image: linear-gradient(260deg, var(--purple), var(--green));
       background-clip: text;
       -webkit-text-fill-color: transparent;
-    }
-
-    :root {
-      --white: #ffffff;
-      --blue: #e1bee7;
-      --purple: #7026f4;
-      --yellow: #fff9c4;
-      --pink: #ce93d8;
-      --green: #fa8662;
-      --green-light: #ffccbc;
     }
 
     .text_sidebar {
