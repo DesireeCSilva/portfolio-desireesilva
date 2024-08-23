@@ -2,10 +2,10 @@
   <main>
     <AppHeader/>
     <AppSummary />
-    <AppEducation />
-    <AppContact />
     <AppProjects/>
+    <AppEducation />
     <AppTechnologies/>
+    <AppContact />
     <AppFooter />
   </main>
 </template>
@@ -13,6 +13,10 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
 import AppSummary from './components/AppSummary.vue'
+import AppEducation from './components/AppEducation.vue'
+import AppContact from './components/AppContact.vue'
+import AppProjects from './components/AppProjects.vue'
+import AppTechnologies from './components/AppTechnologies.vue'
 import AppFooter from './components/AppFooter.vue'
 
 
@@ -21,6 +25,10 @@ export default {
   components: {
     AppHeader,
     AppSummary,
+    AppEducation,
+    AppContact,
+    AppProjects,
+    AppTechnologies,
     AppFooter
   }
 }

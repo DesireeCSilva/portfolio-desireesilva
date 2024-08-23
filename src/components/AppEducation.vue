@@ -98,6 +98,7 @@
       />
     </div>
   </section>
+  <hr class="hr_portfolio">
 </template>
 
 <script></script>
@@ -182,5 +183,12 @@
   border-radius: 30px;
   padding: 1rem;
   width: 50rem;
+}
+
+.hr_portfolio {
+    color: #CE93D8;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 </style>
