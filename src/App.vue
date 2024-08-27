@@ -37,6 +37,7 @@ export default {
 <style lang="scss">
 body {
   margin: 0;
+  box-sizing: border-box;
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
   font-weight: 400;

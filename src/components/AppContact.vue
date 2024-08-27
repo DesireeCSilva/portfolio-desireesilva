@@ -3,8 +3,7 @@
     <div class="text_section-05">
       <h1 class="title_sidebar">¡Hablemos!</h1>
       <p class="text_sidebar">
-        ¿Qué te parece empezar a construir algo increíble juntos? Estoy abierta
-        a colaboraciones.
+        ¿Qué te parece si empezamos a construir algo increíble juntos? Estoy convencida de que una colaboración puede llevarnos a crear proyectos excepcionales y de gran impacto. Me encantaría discutir posibilidades y ver cómo podemos trabajar juntos para hacer realidad nuestras ideas y alcanzar nuevas metas. ¡Espero tu respuesta con mucho entusiasmo!"
       </p>
     </div>
     <form class="form_section-05" action="" method="get">

@@ -11,16 +11,14 @@
                         <div class="title_section-02">
                             <h1 class="title_sidebar">Nirname. Centro de Yoga</h1>
                             <img class="arrow" src="@/assets/icons/arrow_in.png" alt="icono de flecha">
-                        
-                    
                         <p class="text_descriptions">Creación de todas las screens de la web y realización de User Personas.</p>
                     </div>
-                    
                     <div class="mockup-cards_section-02">
                         <img src="@/assets/card-01-section-02.png" alt="foto del Proyecto Nirname, centro de yoga">
                     </div>
                     </a>
                 </div>
+
                 <div class="card-02_section-02">
                     <a href="https://www.figma.com/proto/FviGi5i5nFR2VY8XDGYwlF/Actividades-Desir%C3%A9e?page-id=72%3A2&node-id=87-95&viewport=582%2C85%2C0.08&t=yJM7C3qV5cAIacNL-1&scaling=scale-down&content-scaling=fixed" target="_blank">
                         <div class="title_section-02">
@@ -38,8 +36,8 @@
                 <div class="card-03_section-02">
                     <a href="https://www.figma.com/proto/LKQiFFZSCHntHlIkhviezT/Hackaton-Globant?page-id=0%3A1&node-id=1-2&viewport=313%2C141%2C0.09&t=p53fha0SbWl4NLxz-1&scaling=scale-down&content-scaling=fixed" target="_blank">
                         <div class="title_section-02">
-                        <h1 class="title_sidebar">Ecopop: proyecto Hackaton</h1>
-                        <img class="arrow" src="@/assets/icons/arrow_in.png" alt="icono de flecha">
+                            <h1 class="title_sidebar">Ecopop: proyecto Hackaton</h1>
+                            <img class="arrow" src="@/assets/icons/arrow_in.png" alt="icono de flecha">
                         </div>
                     <p class="text_descriptions">Diseño de un e-commerce en pocas horas, quedando en 2º puesto.</p>
                     <div class="mockup-cards_section-02">
@@ -102,8 +100,12 @@ export default {
 }
 
 .card-01_section-02 p, .card-02_section-02 p, .card-03_section-02 p, .card-04_section-02 p, .card-05_section-02 p {
-    padding: 0rem 1rem 0rem 1rem;
-    
+    padding: 0rem 1rem 0rem 1rem;    
+}
+
+.card-01_section-02 a, .card-02_section-02 a, .card-03_section-02 a, .card-04_section-02 a, .card-05_section-02 a {
+    text-decoration: none;
+    color: #000;
 }
 .card-01_section-02, .card-02_section-02, .card-03_section-02, .card-04_section-02, .card-05_section-02 {
     border-radius: 40px;
@@ -128,16 +130,21 @@ export default {
 .mockup-cards_section-02:hover img {
     -webkit-transform: scale(1.3); /* Escala la imagen al pasar el ratón */
     transform: scale(1.3); 
+    border-radius: 20px;
 }
 .arrow {
     width: fit-content;
     height: fit-content;
 }
-.title_section-02 a {
+.arrow:hover {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(180deg);
+    transition: transform 0.2s ease-in-out;
+}
+a .title_section-02 {
     display: flex;
-    flex-direction: row;
     align-items: center;  
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-decoration: none;
     color: #000;
 }

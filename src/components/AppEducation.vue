@@ -120,7 +120,7 @@
   font-weight: 700;
 }
 .date_sidebar {
-  font-family: "Merriweather", serif;
+  font-family: "Purple Purse", serif;
   font-weight: 400;
   font-size: 1.2rem;
   font-style: normal;
