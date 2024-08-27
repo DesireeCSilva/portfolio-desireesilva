@@ -3,14 +3,16 @@
     <div class="text_section-05">
       <h1 class="title_sidebar">¡Hablemos!</h1>
       <p class="text_sidebar">
-        ¿Qué te parece si empezamos a construir algo increíble juntos? Estoy convencida de que una colaboración puede llevarnos a crear proyectos excepcionales y de gran impacto. Me encantaría discutir posibilidades y ver cómo podemos trabajar juntos para hacer realidad nuestras ideas y alcanzar nuevas metas. ¡Espero tu respuesta con mucho entusiasmo!"
+        ¿Qué te parece si empezamos a construir algo increíble juntos? Estoy convencida de que una colaboración puede llevarnos a crear proyectos excepcionales y de gran impacto. ¡Espero tu respuesta con mucho entusiasmo!"
       </p>
     </div>
     <form class="form_section-05" action="" method="get">
-      <label for="nombre"></label>
-      <input id="nombre" type="text" class="input-form" placeholder="Nombre" />
-      <label for="email"></label>
-      <input id="email" type="text" class="input-form" placeholder="Email" />
+      <div>
+        <label for="nombre"></label>
+        <input id="nombre" type="text" class="input-form" placeholder="Nombre" />
+        <label for="email"></label>
+        <input id="email" type="text" class="input-form" placeholder="Email" />
+        </div>
       <label for="Comentarios"></label>
       <input
         id="nombre"
@@ -66,6 +68,7 @@
 .section-05 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .text_section-05{
     width: 25rem;
@@ -79,6 +82,10 @@
     border-radius: 30px;
     width: 48rem;
     padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
 .input-form{
     width: 20rem;
@@ -102,7 +109,10 @@
 }
 .content-button_section-05 {
     display: flex;
-    justify-content: space-evenly;
+    width: 45rem;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .icon_section-05 {
     width: fit-content;

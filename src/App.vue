@@ -50,5 +50,8 @@ body {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+.text_sidebar {
+      font-size: 1.2rem;
+}
 }
 </style>

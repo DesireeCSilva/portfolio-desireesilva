@@ -2,7 +2,7 @@
   <footer>
     <nav class="footer_portfolio">
       <ul id="main-menu" class="main-menu">
-        <img src="../assets/logo_desiree.png" alt="logotipo de Desirée Silva" />
+        <img class="logo_footer" src="../assets/icons/logo_gimp.webp" alt="logotipo de Desirée Silva" />
         <li class="main-menu_item">
           <a href="/index.html#section-01" class="main-menu_link">Sobre mí</a>
         </li>
@@ -11,6 +11,16 @@
         </li>
         <li class="main-menu_item">
           <a href="/index.html#section-03" class="main-menu_link">Formación</a>
+        </li>
+        <li class="main-menu_item">
+          <a href="https://www.linkedin.com/in/desiree-carrizosa/">
+            <img src="../assets/icons/fa_linkedin-square.png" alt="logotipo de Linkedin">
+            </a>
+        </li>
+        <li class="main-menu_item">
+          <a href="https://www.behance.net/desirecarrizo">
+            <img src="../assets/icons/mage_behance.png" alt="logotipo de Linkedin">
+            </a>
         </li>
       </ul>
       <button class="button_header">
@@ -125,6 +135,10 @@ footer {
     align-items: center;
     justify-content: space-around; 
     }
+.logo_footer{
+  width: 15rem;
+  height: fit-content;
+}
 
 .main-menu {
     list-style: none;
@@ -200,4 +214,5 @@ footer {
     text-decoration: none;
     color: #000000;
 }
+
 </style>

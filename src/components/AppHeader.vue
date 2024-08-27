@@ -3,8 +3,8 @@
     <nav class="header_portfolio">
       <ul id="main-menu" class="main-menu">
         <li class="main-menu_item">
-          <img
-            src="@/assets/logo_desiree.png"
+          <img class="logo_footer" 
+            src="../assets/icons/logo_gimp.webp"
             alt="logotipo de Desirée Silva"
           />
         </li>
@@ -16,6 +16,9 @@
         </li>
         <li class="main-menu_item">
           <a href="/index.html#section-03" class="main-menu_link">Formación</a>
+        </li>
+        <li class="main-menu_item">
+          <a href="/index.html#section-04" class="main-menu_link">Tecnologías</a>
         </li>
         <button class="button_header">
           <img class="icon_header" src="@/assets/icons/call.png" alt="" /><a
@@ -42,7 +45,6 @@
   .main-menu {
     list-style: none;
     display: flex;
-    text-align: center;
     align-items: center;
     align-content: center;
     justify-content: space-between;
@@ -50,7 +52,7 @@
     cursor: pointer;
 
     &_item {
-      padding: 3em;
+      padding: 2em;
       font-size: 1rem;
       font-weight: 500;
       cursor: pointer;

@@ -2,6 +2,7 @@
 * __header:__ repartir el espacio correctamente (flexbox?), toggle menú
 * __seccion 01:__ hacer que vayan cargando imagenes en after delay, palabras clave 
 * __seccion 02:__ caja del Github, reparto del contenido (flexbox?)
+* __seccion 04:__ al pasar por el icono que salga el nombre de la tecnología
 * __seccion 05:__ formulario
 * __footer:__ repartir el espacio correctamente
 * __hacer responsive__
