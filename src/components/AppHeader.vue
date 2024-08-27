@@ -38,6 +38,8 @@
 <style lang="scss">
 .header_portfolio {
   display: flex;
+  flex-direction: row;
+  width: 100vw;
   height: 10rem;
   align-items: center;
   justify-content: space-around;
@@ -46,7 +48,6 @@
     list-style: none;
     display: flex;
     align-items: center;
-    align-content: center;
     justify-content: space-between;
     text-decoration: none;
     cursor: pointer;
