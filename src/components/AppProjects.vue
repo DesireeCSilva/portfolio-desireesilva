@@ -11,8 +11,8 @@
                         <div class="title_section-02">
                             <h1 class="title_sidebar">Nirname. Centro de Yoga</h1>
                             <img class="arrow" src="@/assets/icons/arrow_in.png" alt="icono de flecha">
+                        </div>
                         <p class="text_descriptions">Creación de todas las screens de la web y realización de User Personas.</p>
-                    </div>
                     <div class="mockup-cards_section-02">
                         <img src="@/assets/card-01-section-02.png" alt="foto del Proyecto Nirname, centro de yoga">
                     </div>
@@ -143,6 +143,7 @@ export default {
 }
 a .title_section-02 {
     display: flex;
+    flex-direction: row ;
     align-items: center;  
     justify-content: space-around;
     text-decoration: none;
