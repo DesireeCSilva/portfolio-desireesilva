@@ -6,20 +6,23 @@
         ¿Qué te parece si empezamos a construir algo increíble juntos? Estoy convencida de que una colaboración puede llevarnos a crear proyectos excepcionales y de gran impacto. ¡Espero tu respuesta con mucho entusiasmo!"
       </p>
     </div>
-    <form class="form_section-05" action="" method="get">
+    <form class="form_section-05" action="https://formsubmit.co/desiree_cs@hotmail.com" method="POST">
       <div>
         <label for="nombre"></label>
-        <input id="nombre" type="text" class="input-form" placeholder="Nombre" />
+        <input id="nombre" name="nombre" type="text" class="input-form" placeholder="Nombre" />
         <label for="email"></label>
-        <input id="email" type="text" class="input-form" placeholder="Email" />
+        <input id="email" name="email" type="text" class="input-form" placeholder="Email" />
         </div>
       <label for="Comentarios"></label>
       <input
         id="nombre"
         type="text"
+        name="comentarios"
         class="input-placeholder"
         placeholder="Comentarios"
       />
+
+      <input type="hidden" name="_next" value="@/" />
 
       <div class="content-button_section-05">
         <button
@@ -35,7 +38,6 @@
           />Enviar
         </button>
         <button
-          type="submit"
           class="button-whatsapp_section-05"
           value="WhatsApp"
         >
@@ -47,7 +49,7 @@
             />¡WhatsApp!</a
           >
         </button>
-        <button type="submit" class="button-call_section-05">
+        <button class="button-call_section-05">
           <a href="mailto:desiree_cs@hotmail.com" target="_blank">
             <img
               class="icon_section-05"
@@ -59,7 +61,7 @@
       </div>
     </form>
   </section>
-  <hr class="hr_portfolio">
+  <hr class="hr_portfolio hr_last">
 </template>
 
 <script></script>
@@ -215,5 +217,9 @@
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+.hr_portfolio.hr_last {
+  margin-bottom: 0;
 }
 </style>
