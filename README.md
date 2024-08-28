@@ -1,10 +1,10 @@
 ## CHECKLIST
-* __header:__ repartir el espacio correctamente (flexbox?), toggle menú
+* __header:__ toggle menú
 * __seccion 01:__ hacer que vayan cargando imagenes en after delay, palabras clave 
 * __seccion 02:__ caja del Github, reparto del contenido (flexbox?)
 * __seccion 04:__ al pasar por el icono que salga el nombre de la tecnología
 * __seccion 05:__ formulario
-* __footer:__ repartir el espacio correctamente
+* __no aparece este repo en mis repos de GitHub, mirar juntas"__
 * __hacer responsive__
 
 
@@ -45,10 +45,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 <img width="40" src="https://user-images.githubusercontent.com/25181517/192108891-d86b6220-e232-423a-bf5f-90903e6887c3.png">&nbsp;
 <img width="40" src="https://user-images.githubusercontent.com/25181517/192109061-e138ca71-337c-4019-8d42-4792fdaa7128.png">&nbsp;
 <img width="40" src="https://user-images.githubusercontent.com/25181517/121401671-49102800-c959-11eb-9f6f-74d49a5e1774.png">&nbsp;
-<img width="40" src="https://user-images.githubusercontent.com/25181517/187955005-f4ca6f1a-e727-497b-b81b-93fb9726268e.png">&nbsp;
-<img width="40" src="https://user-images.githubusercontent.com/25181517/183859966-a3462d8d-1bc7-4880-b353-e2cbed900ed6.png">&nbsp;
-<img width="40" src="https://express-validator.github.io/img/logo.svg">&nbsp;
-<img width="40" src="https://static-00.iconduck.com/assets.00/sequelize-original-icon-885x1024-r8dswyvj.png">&nbsp;
+
 
 
 # Authors

@@ -1,13 +1,8 @@
 <template>
   <header>
     <nav class="header_portfolio">
+      <img class="logo_header" src="../assets/icons/logo_gimp.webp" alt="logotipo de Desirée Silva" />
       <ul id="main-menu" class="main-menu">
-        <li class="main-menu_item">
-          <img class="logo_footer" 
-            src="../assets/icons/logo_gimp.webp"
-            alt="logotipo de Desirée Silva"
-          />
-        </li>
         <li class="main-menu_item">
           <a href="/index.html#section-01" class="main-menu_link">Sobre mí</a>
         </li>
@@ -20,13 +15,13 @@
         <li class="main-menu_item">
           <a href="/index.html#section-04" class="main-menu_link">Tecnologías</a>
         </li>
+      </ul>
         <button class="button_header">
           <img class="icon_header" src="@/assets/icons/call.png" alt="" /><a
             href="tel:675937952"
             >¡Contáctame!</a
           >
         </button>
-      </ul>
     </nav>
   </header>
   <hr class="hr_portfolio">
@@ -36,13 +31,18 @@
 </script>
 
 <style lang="scss">
+.logo_header {
+  width: 15rem;
+  height: fit-content;
+}
 .header_portfolio {
   display: flex;
   flex-direction: row;
-  width: 100vw;
+  width: 100%;
   height: 10rem;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between; 
+
   
   .main-menu {
     list-style: none;
@@ -85,6 +85,7 @@
       transform: scaleX(1);
     }
 
+    
     .button_header {
       background-color: #CE93D8;
       width: 10em;

@@ -1,8 +1,8 @@
 <template>
   <footer>
     <nav class="footer_portfolio">
+      <img class="logo_footer" src="../assets/icons/logo_gimp.webp" alt="logotipo de Desirée Silva" />
       <ul id="main-menu" class="main-menu">
-        <img class="logo_footer" src="../assets/icons/logo_gimp.webp" alt="logotipo de Desirée Silva" />
         <li class="main-menu_item">
           <a href="/index.html#section-01" class="main-menu_link">Sobre mí</a>
         </li>
@@ -13,13 +13,13 @@
           <a href="/index.html#section-03" class="main-menu_link">Formación</a>
         </li>
         <li class="main-menu_item">
-          <a href="https://www.linkedin.com/in/desiree-carrizosa/">
+          <a href="https://www.linkedin.com/in/desiree-carrizosa/" target="blank">
             <img src="../assets/icons/fa_linkedin-square.png" alt="logotipo de Linkedin">
             </a>
         </li>
         <li class="main-menu_item">
-          <a href="https://www.behance.net/desirecarrizo">
-            <img src="../assets/icons/mage_behance.png" alt="logotipo de Linkedin">
+          <a href="https://www.behance.net/desirecarrizo" target="blank">
+            <img src="../assets/icons/mage_behance.png" alt="logotipo de Behance">
             </a>
         </li>
       </ul>
@@ -133,8 +133,9 @@ footer {
     display: flex;
     height: 10rem;
     align-items: center;
-    justify-content: space-around; 
-    }
+    justify-content: space-between; 
+}
+
 .logo_footer{
   width: 15rem;
   height: fit-content;
