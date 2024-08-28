@@ -91,21 +91,21 @@ footer {
 }
 
 .bg_heart {
-    position: absolute;
-    bottom: 0; 
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 0; 
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0; 
 }
 
 .bubble {
-    position: absolute;
-    border-radius: 50%;
-    background: rgba(206, 147, 216, 0.6);
-    opacity: 0.7;
-    pointer-events: none; 
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(206, 147, 216, 0.6);
+  opacity: 0.7;
+  pointer-events: none; 
 }
 
 @keyframes float {
@@ -126,15 +126,15 @@ footer {
 .main-menu,
 .main-menu_item,
 .main-menu_link {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 .footer_portfolio {
-    display: flex;
-    height: 10rem;
-    align-items: center;
-    justify-content: space-between; 
+  display: flex;
+  height: 10rem;
+  align-items: center;
+  justify-content: space-between; 
 }
 
 .logo_footer{
@@ -143,78 +143,78 @@ footer {
 }
 
 .main-menu {
-    list-style: none;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    justify-content: space-between;
-    text-decoration: none;
-    cursor: pointer;
+  list-style: none;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .main-menu_item {
-    padding: 3em;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    border: none;
+  padding: 3em;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
 }
 .main-menu_link {
-    text-decoration: none;
-    color: #000000;    
-    position: relative;
-    color: inherit;
+  text-decoration: none;
+  color: #000000;    
+  position: relative;
+  color: inherit;
 }
 .main-menu_link::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(to right, #CE93D8, #e878a2, #eb85ab);
-    z-index: 1;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.5s ease-in-out;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #CE93D8, #e878a2, #eb85ab);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
 }
 .main-menu_link:hover::before {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 .button_header {
-    background-color: #CE93D8;
-    width: 10em;
-    height: fit-content;
-    font-size: 1.3rem;
-    font-family: 'Poppins';
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    border-radius: 0.50rem;
-    border-style: none;
-    cursor: pointer; 
-    text-decoration: none;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    transition: all 0.3s ease; 
+  background-color: #CE93D8;
+  width: 10em;
+  height: fit-content;
+  font-size: 1.3rem;
+  font-family: 'Poppins';
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.50rem;
+  border-style: none;
+  cursor: pointer; 
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: all 0.3s ease; 
 }
 .button_header:hover {
-    background-color: #CE93D8;
-    transform: scale(0.95); 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  background-color: #CE93D8;
+  transform: scale(0.95); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 }
 .icon_header {
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    width: 1.2rem;
-    height: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  width: 1.2rem;
+  height: 1.2rem;
 }
 .button_header a {
-    text-decoration: none;
-    color: #000000;
+  text-decoration: none;
+  color: #000000;
 }
 
 </style>

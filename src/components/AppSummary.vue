@@ -59,16 +59,17 @@ export default {};
 }
 
 .section-01 {
-  display: grid;
-  grid-template-columns: 26% 33% 33%;
-  grid-template-rows: repeat(1, 1fr);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
+  gap: 1.5rem;
 
   &_left {
     border: solid 2px #e1bee7;
     border-radius: 30px;
     padding: 1rem;
-    height: fit-content;
+    width: 70rem;
 
     .gradient {
       font-size: 1.3rem;
@@ -84,10 +85,14 @@ export default {};
   }
 
   &_center {
+    width: fit-content;
     height: fit-content;
   }
 
   &_right {
+    display: flex;
+    flex-direction: column;  
+
     .above-right_section-01 {
       background-color: #fff9c4;
       border-radius: 30px;
@@ -98,7 +103,6 @@ export default {};
       font-size: 1.1rem;
     }
     .below-right_descriptions {
-      grid-column-start: 3;
       border: solid 2px #ffccbc;
       border-radius: 30px;
       padding: 1rem;
