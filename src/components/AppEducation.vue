@@ -45,13 +45,8 @@
         <div class="card-02_section-03">
           <a href="https://github.com/DesireeCSilva" target="_blank">
             <img src="@/assets/icons/GitHub.png" alt="logotipo de GitHub" />
-            <h1 class="title_sidebar-card-02">github.com/DesireeCSilva</h1>
+            <h2 class="title_sidebar-card-02">github.com/DesireeCSilva</h2>
           </a>
-          <img
-            class="avatar"
-            src="@/assets/avatar.png"
-            alt="avatar de Desirée Silva"
-          />
         </div>
 
         <div class="card-03_section-03">
@@ -135,21 +130,31 @@
   border: solid 2px #ffccbc;
   border-radius: 30px;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  text-align: center;
   margin-bottom: 1rem;
+  background-image: url('@/assets/avatar.png'); 
+  background-position: right; 
+  background-repeat: no-repeat; 
+  width: 100%; 
+  min-height: 130px;
+  padding: 0.2rem;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #000000;
+
+    img {
+      width: 4rem;
+    }
+
+    h2 {
+      padding-left: 8px;
+    }
+  }
 }
-.card-02_section-03 a {
-  text-decoration: none;
-  color: #000000;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
+
 .title_sidebar-card-02 {
   margin: 0;
 }
