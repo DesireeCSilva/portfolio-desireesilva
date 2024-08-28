@@ -1,4 +1,4 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#portofolio_desiree_silva')
+createApp(App).mount('#portfolio_desiree_silva')

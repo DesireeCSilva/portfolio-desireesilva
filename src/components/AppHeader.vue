@@ -17,7 +17,7 @@
         </li>
       </ul>
         <button class="button_header">
-          <img class="icon_header" src="@/assets/icons/call.png" alt="" /><a
+          <svg-icon type="mdi" :path="mdiPhone" class="icon_header"></svg-icon><a
             href="tel:675937952"
             >¡Contáctame!</a
           >
@@ -28,6 +28,8 @@
 </template>
 
 <script setup>
+import SvgIcon from '@jamescoyle/vue-icon';
+import { mdiPhone } from '@mdi/js';
 
 </script>
 
@@ -109,8 +111,8 @@
         display: flex;
         flex-direction: row;
         align-self: center;
-        width: 1.2rem;
-        height: 1.2rem;
+        width: auto;
+        height: auto;
       }
 
       a {

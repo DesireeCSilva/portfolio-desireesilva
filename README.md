@@ -4,7 +4,7 @@
 * __seccion 02:__ caja del Github, reparto del contenido (flexbox?)
 * __seccion 04:__ al pasar por el icono que salga el nombre de la tecnología
 * __seccion 05:__ formulario
-* __no aparece este repo en mis repos de GitHub, mirar juntas"__
+* __no aparece este repo en mis repos de GitHub, mirar juntas__
 * __hacer responsive__
 
 
