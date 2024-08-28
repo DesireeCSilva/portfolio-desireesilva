@@ -27,7 +27,8 @@
   <hr class="hr_portfolio">
 </template>
 
-<script>
+<script setup>
+
 </script>
 
 <style lang="scss">

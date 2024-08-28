@@ -1,6 +1,7 @@
 <template>
   <main>
-    <AppHeader/>
+    <AppHeader v-if="!isMobileDevice" />
+    <AppHeaderMobile v-else />
     <AppSummary />
     <AppProjects/>
     <AppEducation />
@@ -10,28 +11,26 @@
   </main>
 </template>
 
-<script>
+<script setup>
 import AppHeader from './components/AppHeader.vue'
+import AppHeaderMobile from './components/AppHeaderMobile.vue'
 import AppSummary from './components/AppSummary.vue'
 import AppEducation from './components/AppEducation.vue'
 import AppContact from './components/AppContact.vue'
 import AppProjects from './components/AppProjects.vue'
 import AppTechnologies from './components/AppTechnologies.vue'
 import AppFooter from './components/AppFooter.vue'
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 
+const isMobileDevice = ref(false)
 
-export default {
-  name: 'index_page',
-  components: {
-    AppHeader,
-    AppSummary,
-    AppEducation,
-    AppContact,
-    AppProjects,
-    AppTechnologies,
-    AppFooter
-  }
-}
+const setScreenSize = () => isMobileDevice.value = window.innerWidth < 768
+
+onMounted(() => {
+  setScreenSize()
+  window.addEventListener('resize', setScreenSize)
+})
+onBeforeUnmount(() => window.removeEventListener('resize', setScreenSize))
 </script>
 
 <style lang="scss">
@@ -49,9 +48,20 @@ body {
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+
+  .text_sidebar {
+        font-size: 1.2rem;
+  }
 }
-.text_sidebar {
-      font-size: 1.2rem;
-}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+
+    main > :not(header) {
+      padding: 2rem;
+    }
+  }
 }
 </style>

@@ -20,7 +20,7 @@
         <li class="main-menu_item">
           <a href="https://www.behance.net/desirecarrizo" target="blank">
             <img src="../assets/icons/mage_behance.png" alt="logotipo de Behance">
-            </a>
+          </a>
         </li>
       </ul>
       <button class="button_header">
@@ -82,6 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <style>
 
 footer {
+    padding-top: 2rem;
     position: relative;
     height: 18rem;
     background: #FFFFFF;
