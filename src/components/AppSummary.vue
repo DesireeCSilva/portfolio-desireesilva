@@ -61,15 +61,34 @@ export default {};
 .section-01 {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: center;  
   justify-content: space-between;
   gap: 1.5rem;
+  height: auto; 
+
+  &_left,
+  &_right {
+    flex: 1; 
+    min-width: 0;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    
+  }
+    &_center {
+    flex: 1.2; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
 
   &_left {
     border: solid 2px #e1bee7;
     border-radius: 30px;
+    width: auto;
+    height: 26.5rem;
     padding: 1rem;
-    width: 70rem;
 
     .gradient {
       font-size: 1.3rem;
@@ -91,13 +110,19 @@ export default {};
 
   &_right {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column; 
+    justify-content: center; 
+    width: auto;
+    height: auto;
 
     .above-right_section-01 {
       background-color: #fff9c4;
       border-radius: 30px;
-      padding: 1rem;
-      margin-bottom: 1rem;
+      padding: 0rem 0rem 1rem 1rem;
+      width: auto;
+      height: auto;
+      display: flex;
+      align-items: center;
     }
     .text_descriptions {
       font-size: 1.1rem;
@@ -106,22 +131,27 @@ export default {};
       border: solid 2px #ffccbc;
       border-radius: 30px;
       padding: 1rem;
+      width: fit-content;
       height: fit-content;
+      margin-top: 1rem;
     }
     .title_below-right_descriptions {
       font-size: 1.2rem;
       color: #000000;
-      opacity: 50%;
+      opacity: 0.5;
+      margin-bottom: 0.5rem;
     }
     .items_below-right_descriptions {
       display: flex;
       flex-wrap: wrap;
+      gap: 0.5rem; 
     }
     .item-text_descriptions {
       outline: solid 2px #ffccbc;
       border-radius: 20px;
-      padding: 0.6rem;
-      margin-bottom: 0.7rem;
+      padding: 0.5rem 1rem; 
+      margin: 0; 
+      font-size: 0.9rem; 
     }
   }
 }
@@ -131,4 +161,9 @@ export default {};
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+@media screen and (min-width: 768px) {
+.full-width-img {
+margin: auto;
+width: 90%;
+}}
 </style>
