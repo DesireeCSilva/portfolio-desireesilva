@@ -85,13 +85,16 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 1rem;
 }
 .description-above_section-02 {
-    width: 23rem;
-    height: 23rem;
+    width: 100%;
+    max-width: 23rem;
+    max-height: 20rem;
     background-color: #E1BEE7;
     border-radius: 30px;
     padding: 1rem;
+    margin-bottom: 1rem; 
 }
 .title_sidebar {
     font-size: 1.4rem;
@@ -109,22 +112,31 @@ export default {
 }
 .card-01_section-02, .card-02_section-02, .card-03_section-02, .card-04_section-02, .card-05_section-02 {
     border-radius: 40px;
-    width: 25rem;
-    height: fit-content;
+    width: 100%; 
+    max-width: 25rem; 
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 1.5rem;
     cursor: pointer;
     text-decoration: none;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
 }
 .mockup-cards_section-02 {
-    margin-bottom: 0rem;
-    height: 20rem;
-    width: fit-content;
+    width: 100%; 
+    height: auto; 
     overflow: hidden;
+    border-radius: 20px;
+    margin: 0; 
+    padding: 0; 
 }
 .mockup-cards_section-02 img {
+    width: 100%; 
+    height: auto;
+    display: block; 
     transition: transform 0.3s ease; /* Añade una transición suave al escalado */
 }
 .mockup-cards_section-02:hover img {
@@ -176,4 +188,34 @@ a .title_section-02 {
     margin-bottom: 2rem;
 }
 
+/* Media queries */
+
+@media screen and (max-width: 767px) {
+    .section-02 {
+    padding: 0.5rem; 
+    }
+    .description-above_section-02 {
+    text-align: center; 
+    }
+    .title_sidebar {
+    font-size: 1.1rem; 
+    }
+
+    .card-01_section-02,
+    .card-02_section-02,
+    .card-03_section-02,
+    .card-04_section-02,
+    .card-05_section-02 {
+    width: 100%; 
+    }
+
+    .text_sidebar,
+    .text_descriptions {
+    font-size: 0.95rem; 
+    }
+
+    .mockup-cards_section-02 {
+    margin: 0 auto; 
+    }
+}
 </style>

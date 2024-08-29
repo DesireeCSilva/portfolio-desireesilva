@@ -24,6 +24,7 @@ export default {};
 <style>
 .content_section-04 {
     display: flex;
+    flex-direction: row;
     background-color: #f8bbd0;
     border-radius: 30px;
     padding: 1rem;
@@ -38,7 +39,12 @@ export default {};
     align-items: center;
     gap: 3rem;
     cursor: pointer;
+    flex-wrap: wrap; 
 }
+.icons img {
+    transition: transform 0.2s ease-in-out;
+}
+
 .icons img:hover {
     -webkit-transform: rotateY(180deg);
     -webkit-transform-style: preserve-3d;
@@ -46,10 +52,22 @@ export default {};
     transform-style: preserve-3d;
     transition: transform 0.2s ease-in-out;
 }
-.hr_portfolio {
-    color: #ce93d8;
-    width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+/*Media Queries */
+
+@media screen and (max-width: 768px) {
+    .content_section-04 {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    .icons {
+        gap: 1.5rem; 
+    }
+
+    .icons img {
+        width: 3rem; 
+        height: auto; 
+    }
 }
 </style>

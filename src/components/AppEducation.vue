@@ -42,6 +42,7 @@
         </p>
       </div>
       <div>
+      <div>
         <div class="card-02_section-03">
           <a href="https://github.com/DesireeCSilva" target="_blank">
             <img src="@/assets/icons/GitHub.png" alt="logotipo de GitHub" />
@@ -66,8 +67,8 @@
           <p class="text_sidebar">IES Europa - IES Islas Filipinas</p>
         </div>
       </div>
+      </div>
     </div>
-
     <div class="below_section-03">
       <div class="description-below_section-03">
         <h1 class="title_sidebar">Experiencia</h1>
@@ -96,16 +97,34 @@
   <hr class="hr_portfolio">
 </template>
 
-<script></script>
+<script>
+</script>
 
 <style lang="scss">
+
+.section-03 {
+  padding: 1rem;
+}
 .above_section-03 {
-  display: grid;
-  grid-template-columns: 33% 33% 30%;
-  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
   gap: 1.5rem;
   justify-content: space-between;
+  margin-bottom: 1rem;
+} 
+
+.description-above_section-03,
+.card-01_section-03,
+.card-03_section-03 {
+  background-color: #e1bee7;
+  border-radius: 30px;
+  padding: 1rem;
+  width: 30%; 
+  min-width: 250px; 
+  flex: 1; 
 }
+
+
 .description-above_section-03 {
   background-color: #e1bee7;
   border-radius: 30px;
@@ -176,6 +195,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+.card-below_section-03 {
+  width: 48%; 
+  margin-bottom: 1rem;
 }
 .card-below_section-03:hover {
   -webkit-transform: rotate(360deg);
@@ -187,13 +211,48 @@
   background-color: #fff9c4;
   border-radius: 30px;
   padding: 1rem;
-  width: 50rem;
+  max-width: 50rem;
+  width: 100%;
 }
 
-.hr_portfolio {
-    color: #CE93D8;
-    width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .section-03 {
+    gap: 0.5rem;
+    padding: 0.5rem; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .title_sidebar {
+    font-size: 1.1rem; 
+  }
+
+  .text_sidebar,
+  .text_descriptions {
+    font-size: 0.95rem; /* Ajuste del tamaño del texto para móviles */
+  }
+
+  .card-below_section-03 {
+    width: 100%; /* Ajustar tamaño para móviles */
+  }
+
+  .below_section-03 {
+    flex-direction: column; /* Elementos uno debajo del otro */
+    gap: 1rem; /* Espaciado entre los elementos */
+    align-items: center; /* Alinear al centro */
+  }
+
+  .description-above_section-03,
+  .card-01_section-03,
+  .card-03_section-03 {
+    width: 100%; /* Ocupa todo el ancho disponible en móviles */
+  }
+
+  .description-below_section-03 {
+    width: 100%; /* Ocupa todo el ancho disponible en móviles */
+  }
 }
 </style>
