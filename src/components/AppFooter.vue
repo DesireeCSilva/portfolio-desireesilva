@@ -52,7 +52,7 @@
     </nav>
 
     <p style="display: flex; justify-content: center; margin-bottom: 2rem">
-      © 2024 Nuria Martínez y Desirée Carrizosa Silva. Todos los derechos
+      © 2024 Desirée Carrizosa Silva y Nuria Martínez. Todos los derechos
       reservados
     </p>
     <div class="bg_heart">
@@ -104,7 +104,7 @@ import { mdiPhone } from "@mdi/js";
 
 <style>
 footer {
-  padding-top: 2rem;
+  padding-top: 1rem;
   position: relative;
   height: auto;
   background: #ffffff;
@@ -186,7 +186,8 @@ footer {
 
 .main-menu_item {
   font-size: 1rem;
-  padding: 3em;
+  padding-left: 3em;
+  padding-right: 3em;
   font-weight: 500;
   cursor: pointer;
   border: none;
@@ -213,19 +214,19 @@ footer {
 }
 .button_header {
   background-color: #ce93d8;
-  width: 10em;
+  width: 18em;
   height: fit-content;
   font-size: 1.3rem;
   font-family: "Poppins";
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem;
   border-radius: 0.5rem;
   border-style: none;
   cursor: pointer;
   text-decoration: none;
+  display: flex;
   text-align: center;
   justify-content: center;
-  display: flex;
+  
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
@@ -238,8 +239,8 @@ footer {
   display: flex;
   flex-direction: row;
   align-self: center;
-  width: 1.2rem;
-  height: 1.2rem;
+  width: auto;
+  height: auto;
 }
 .button_header a {
   text-decoration: none;

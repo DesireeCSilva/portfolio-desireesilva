@@ -104,13 +104,19 @@
 
 .section-03 {
   padding: 1rem;
+  height: auto;
 }
 .above_section-03 {
+  width: auto;
+  height: auto;
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
   justify-content: space-between;
   margin-bottom: 1rem;
+  > div {
+    flex: 1; 
+  }
 } 
 
 .description-above_section-03,
@@ -119,8 +125,8 @@
   background-color: #e1bee7;
   border-radius: 30px;
   padding: 1rem;
+  width: auto;
   width: 30%; 
-  min-width: 250px; 
   flex: 1; 
 }
 
@@ -139,7 +145,7 @@
   font-style: normal;
 }
 .card-01_section-03 {
-  width: 25rem;
+  width: auto;
   background-color: #ffccbc;
   border-radius: 30px;
   padding: 1rem;
@@ -172,7 +178,6 @@
     }
   }
 }
-
 .title_sidebar-card-02 {
   margin: 0;
 }
@@ -185,7 +190,10 @@
   z-index: -1;
   margin-right: 0.5rem;
 }
+
 .card-03_section-03 {
+  width: auto;
+  height: auto;
   background-color: #f8bbd0;
   border-radius: 30px;
   padding: 1rem;
@@ -205,7 +213,6 @@
   transform: rotate(360deg);
   transition: transform 0.5s ease-in-out;
 }
-
 .description-below_section-03 {
   background-color: #fff9c4;
   border-radius: 30px;
@@ -215,10 +222,35 @@
 }
 
 .column-cards_section-03 {
+  width: auto;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
+
 /* Media Queries */
+
+@media only screen and (max-width: 768px) {
+  .above_section-03 {
+    flex-direction: column;
+    align-items: center;
+    
+    > div {
+      width: 100%; 
+      max-width: 100%; 
+      margin-bottom: 1rem; 
+    }
+  }
+
+  .below_section-03 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description-below_section-03 {
+    max-width: 100%; 
+  }
+}
 
 
 </style>

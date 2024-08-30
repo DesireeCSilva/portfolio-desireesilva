@@ -50,7 +50,7 @@ export default {};
     -webkit-transform-style: preserve-3d;
     transform: rotateY(180deg);
     transform-style: preserve-3d;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 }
 /*Media Queries */
 

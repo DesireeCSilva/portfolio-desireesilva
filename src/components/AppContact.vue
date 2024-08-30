@@ -6,7 +6,7 @@
         ¿Qué te parece si empezamos a construir algo increíble juntos? Estoy
         convencida de que una colaboración puede llevarnos a crear proyectos
         excepcionales y de gran impacto. ¡Espero tu respuesta con mucho
-        entusiasmo!"
+        entusiasmo! 😊
       </p>
     </div>
     <form
