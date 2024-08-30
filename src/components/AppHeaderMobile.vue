@@ -59,12 +59,12 @@ const showMenu = ref(false);
     align-items: center;
 
     img.logo_header__mobile {
-      width: 3rem;
+      width: 35%;
     }
 
     @media (min-width: 430px) {
       img.logo_header__mobile {
-        width: 4.5rem;
+        width: 40%;
       }
     }
 
@@ -79,7 +79,7 @@ const showMenu = ref(false);
     right: 0;
     widows: 100%;
     z-index: 100;
-    background-color: #FFF;
+    background-color: #FFF9C4;
 
     ul {
       list-style: none;

@@ -42,7 +42,7 @@
         </p>
       </div>
       <div>
-      <div>
+      <div class="column-cards_section-03">
         <div class="card-02_section-03">
           <a href="https://github.com/DesireeCSilva" target="_blank">
             <img src="@/assets/icons/GitHub.png" alt="logotipo de GitHub" />
@@ -124,7 +124,6 @@
   flex: 1; 
 }
 
-
 .description-above_section-03 {
   background-color: #e1bee7;
   border-radius: 30px;
@@ -198,7 +197,7 @@
   flex-wrap: wrap;
 }
 .card-below_section-03 {
-  width: 48%; 
+  width: auto; 
   margin-bottom: 1rem;
 }
 .card-below_section-03:hover {
@@ -215,44 +214,11 @@
   width: 100%;
 }
 
+.column-cards_section-03 {
+  display: flex;
+  flex-direction: column;
+}
 /* Media Queries */
 
-@media screen and (max-width: 768px) {
-  .section-03 {
-    gap: 0.5rem;
-    padding: 0.5rem; 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
 
-  .title_sidebar {
-    font-size: 1.1rem; 
-  }
-
-  .text_sidebar,
-  .text_descriptions {
-    font-size: 0.95rem; /* Ajuste del tamaño del texto para móviles */
-  }
-
-  .card-below_section-03 {
-    width: 100%; /* Ajustar tamaño para móviles */
-  }
-
-  .below_section-03 {
-    flex-direction: column; /* Elementos uno debajo del otro */
-    gap: 1rem; /* Espaciado entre los elementos */
-    align-items: center; /* Alinear al centro */
-  }
-
-  .description-above_section-03,
-  .card-01_section-03,
-  .card-03_section-03 {
-    width: 100%; /* Ocupa todo el ancho disponible en móviles */
-  }
-
-  .description-below_section-03 {
-    width: 100%; /* Ocupa todo el ancho disponible en móviles */
-  }
-}
 </style>
