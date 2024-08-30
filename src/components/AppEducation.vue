@@ -22,8 +22,7 @@
       <div class="card-01_section-03">
         <p class="date_sidebar">2024</p>
         <p class="text_sidebar">
-          <span class="bold"
-            >Diseño de Experiencia del Usuario UX de Google (7 cursos)</span
+          <span class="bold" > Diseño de Experiencia del Usuario UX de Google (7 cursos)</span
           >
         </p>
         <p class="text_sidebar">
@@ -82,16 +81,9 @@
           <p class="text_sidebar">Entrelíneas Editores</p>
         </div>
       </div>
-      <img
-        class="card-below_section-03"
-        src="@/assets/card-06.png"
-        alt="card con imagen de Harmony Heaven"
-      />
-      <img
-        class="card-below_section-03"
-        src="@/assets/card-07.png"
-        alt="card con imagen de Tech Today"
-      />
+      <div class="card_certificates">
+        <img src="@/assets/certificates/card-certicates.png" alt="">
+      </div>
     </div>
   </section>
   <hr class="hr_portfolio">
@@ -204,21 +196,12 @@
   align-items: center;
   flex-wrap: wrap;
 }
-.card-below_section-03 {
-  width: auto; 
-  margin-bottom: 1rem;
-}
-.card-below_section-03:hover {
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-  transition: transform 0.5s ease-in-out;
-}
 .description-below_section-03 {
   background-color: #fff9c4;
   border-radius: 30px;
   padding: 1rem;
-  max-width: 50rem;
-  width: 100%;
+  min-width: 50rem;
+  height: auto;
 }
 
 .column-cards_section-03 {
@@ -231,6 +214,13 @@
 /* Media Queries */
 
 @media only screen and (max-width: 768px) {
+
+  .section-03 {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  height: auto;
+}
   .above_section-03 {
     flex-direction: column;
     align-items: center;

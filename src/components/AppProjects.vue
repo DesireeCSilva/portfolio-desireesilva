@@ -2,10 +2,19 @@
     <section id="section-02" class="section-02">
             <div class="above_section-02">
                 <div class="description-above_section-02">
+                    <div class="description-above">
                     <h1 class="title_sidebar">Proyectos</h1>
                     <p class="text_sidebar">Mis trabajos se han basado en la investigación previa aplicando mis conocimientos UX, y la creación completa de la interfaz de la web/app para que la experiencia de usuario sea óptima.
-                    </p>    
-                </div>
+                    </p> 
+                    </div>
+                    <div class="pair-cards_section-02">
+                        <a href="https://www.figma.com/proto/zclvAX1Wpg9kBGUzK2Z0Zp/YaleSchoolOfArt?page-id=17%3A2&node-id=85-176&viewport=1371%2C365%2C0.09&t=VSIrcHNgvM8AQfpv-1&scaling=scale-down&content-scaling=fixed" alt="enlace a prototipo de Figma del Proyecto Yale School">
+                        <img class="card-below_section-02" src="@/assets/card-06.png" alt="card con imagen de Harmony Heaven" />
+                        <img class="card-below_section-02" src="@/assets/card-07.png" alt="card con imagen de Tech Today" />
+                        </a>
+                    </div>
+                </div>   
+                
                 <div class="card-01_section-02">
                     <a href="https://www.figma.com/proto/yR8KjnndNATFkYYxFBxoUr/Proyecto--Nirname?page-id=1%3A2&node-id=1-2284&viewport=741%2C325%2C0.06&t=lld7nY527ALzDYMo-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2284" target="_blank">
                         <div class="title_section-02">
@@ -33,7 +42,7 @@
                 </div>
             </div>
             <div class="below_section-02">
-                <div class="card-03_section-02">
+                <div class="card-02_section-02">
                     <a href="https://www.figma.com/proto/LKQiFFZSCHntHlIkhviezT/Hackaton-Globant?page-id=0%3A1&node-id=1-2&viewport=313%2C141%2C0.09&t=p53fha0SbWl4NLxz-1&scaling=scale-down&content-scaling=fixed" target="_blank">
                         <div class="title_section-02">
                             <h1 class="title_sidebar">Ecopop: proyecto Hackaton</h1>
@@ -41,7 +50,7 @@
                         </div>
                     <p class="text_descriptions">Diseño de un e-commerce en pocas horas, quedando en 2º puesto.</p>
                     <div class="mockup-cards_section-02">
-                        <img src="@/assets/card-03-section-02.png" alt="foto de Ecopop, una web de muebles de segunda mano">
+                        <img src="@/assets/card-02-section-02.png" alt="foto de Ecopop, una web de muebles de segunda mano">
                     </div>  
                     </a>
                 </div>
@@ -88,13 +97,31 @@ export default {
     gap: 1rem;
 }
 .description-above_section-02 {
+    height: auto;
+}
+.description-above {
+    background-color: #E1BEE7;
     width: 100%;
     max-width: 23rem;
-    max-height: 20rem;
-    background-color: #E1BEE7;
+    height: auto;
     border-radius: 30px;
     padding: 1rem;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
+}
+.pair-cards_section-02 a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+.card-below_section-02 {
+    width: 9.7rem; 
+    height: auto;
+}
+.card-below_section-02:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition: transform 0.5s ease-in-out;
 }
 .title_sidebar {
     font-size: 1.4rem;
@@ -195,7 +222,7 @@ a .title_section-02 {
     padding: 0.5rem; 
     }
     .description-above_section-02 {
-    text-align: center; 
+    text-align: left; 
     }
     .title_sidebar {
     font-size: 1.1rem; 
