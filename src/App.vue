@@ -63,5 +63,10 @@ body {
       padding: 2rem;
     }
   }
+
+  .text_sidebar,
+  .text_descriptions {
+    font-size: 1rem; 
+  }
 }
 </style>

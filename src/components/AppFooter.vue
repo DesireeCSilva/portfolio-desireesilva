@@ -258,7 +258,6 @@ footer {
 
   .logo_footer {
     width: 40%;
-    margin-bottom: 0.6rem;
   }
 
   .main-menu {

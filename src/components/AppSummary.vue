@@ -13,6 +13,7 @@
       <img
         src="@/assets/pic-01.png"
         alt="imágenes del Portfolio en after delay"
+        class="section-01_after-delay"
       />
     </div>
     <div class="section-01_right">
@@ -63,16 +64,16 @@ export default {};
   flex-direction: row;
   align-items: center;  
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 1rem;
+  width: auto;
   height: auto; 
 
   &_left,
   &_right {
     flex: 1; 
-    min-width: 0;
-    box-sizing: border-box; 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     
   }
     &_center {
@@ -80,15 +81,15 @@ export default {};
     display: flex;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
   }
 
   &_left {
     border: solid 2px #e1bee7;
     border-radius: 30px;
     width: auto;
-    height: 26.5rem;
+    height: fit-content;
     padding: 1rem;
+    margin: 1rem 0; 
 
     .gradient {
       font-size: 1.3rem;
@@ -103,11 +104,6 @@ export default {};
     }
   }
 
-  &_center {
-    width: 100%; 
-    max-width: 100%; 
-  }
-
   &_right {
     display: flex;
     flex-direction: column; 
@@ -118,7 +114,7 @@ export default {};
     .above-right_section-01 {
       background-color: #fff9c4;
       border-radius: 30px;
-      padding: 0rem 0rem 1rem 1rem;
+      padding: 1rem;
       width: auto;
       height: auto;
       display: flex;
@@ -132,7 +128,7 @@ export default {};
       border: solid 2px #ffccbc;
       border-radius: 30px;
       padding: 1rem;
-      width: fit-content;
+      width: auto;
       height: fit-content;
       margin-top: 1rem;
     }
@@ -152,16 +148,16 @@ export default {};
       border-radius: 20px;
       padding: 0.5rem 1rem; 
       margin: 0; 
-      font-size: 0.9rem; 
+      font-size: 0.72rem; 
     }
   }
 }
-.section-01_center img {
+.section-01_after-delay {
+  max-width: 25rem; 
   width: 100%; 
-  max-width: 100%; 
   height: auto; 
-  object-fit: cover; 
 }
+
 .hr_portfolio {
     color: #CE93D8;
     width: 100%;
@@ -171,32 +167,25 @@ export default {};
 
 // Media Queries
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .section-01 {
     flex-direction: column;
     gap: 1rem; 
+    padding: 1rem;
+    align-items: center;
+    margin: 1rem 0;
 
     &_left,
     &_center,
     &_right {
-      width: 95%; 
-      box-sizing: border-box;
-    }
+      width: 100%; 
+      align-items: center;
 
+    }
     &_left {
-      height: auto; 
-      padding: 1rem ;
-    }
-
-    &_center {
-      margin: 1rem 0;
-    }
-
-    &_right {
-      width: auto;
-      height: auto;
-    }
-
+      margin: 1rem;
+      box-sizing: border-box;
+      }
     .gradient {
       font-size: 1.2rem; 
     }
@@ -210,6 +199,11 @@ export default {};
       font-size: 0.85rem; 
     }
   }
+
+  .section-01_after-delay { 
+  width: 100%; 
+  height: auto; 
+}
 
   .hr_portfolio {
     display: none;
