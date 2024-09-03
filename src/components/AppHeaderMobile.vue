@@ -11,12 +11,14 @@
         type="mdi"
         :path="mdiMenu"
         @click.stop="showMenu = true"
+        class="icon-hamburger"
       ></svg-icon>
       <svg-icon
         v-else
         type="mdi"
         :path="mdiClose"
         @click.stop="showMenu = false"
+        class="icon-hamburger"
       ></svg-icon>
     </div>
 
@@ -51,7 +53,7 @@ const showMenu = ref(false);
 .header_portfolio__mobile {
   position: relative;
   height: auto;
-  padding: 1.5rem;
+  padding: 2rem;
 
   .menu_toggle {
     display: flex;
@@ -68,6 +70,12 @@ const showMenu = ref(false);
       }
     }
 
+    .icon-hamburger {
+      width: 3rem; 
+      height: 3rem; 
+      cursor: pointer;
+    }
+
     svg {
       cursor: pointer;
     }
@@ -77,19 +85,45 @@ const showMenu = ref(false);
     position: absolute;
     left: 0;
     right: 0;
-    widows: 100%;
+    width: 100%;
     z-index: 100;
-    background-color: #FFF9C4;
+    background-color: #ffccbc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
 
     ul {
       list-style: none;
       display: flex;
       flex-direction: column;
       align-items: center;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      width: 100%;
+      text-align: center;
     }
 
     a {
+      color: #000000;
       text-decoration: none;
+      width: 100%;
+      text-align: center;
+      padding: 0.5rem 0;
+      display: block;
+      transition: background-color 0.3s, color 0.3s;
+
+      &:hover {
+        background-color: #e1bee7; // Color al pasar el ratón
+      }
+
+      &:active {
+        background-color: #ce93d8;
+        color: #ffffff;
+      }
     }
   }
 }

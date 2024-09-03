@@ -2,6 +2,7 @@
 
 * __seccion 01:__ hacer que vayan cargando imagenes en after delay, palabras clave 
 
+*__Preguntar a Nuria si en el header mobile te lleva cada enlace a su sección__
 * __seccion 04:__ al pasar por el icono que salga el nombre de la tecnología
 * __seccion 05:__ formulario
 * __no aparece este repo en mis repos de GitHub, mirar juntas__

@@ -97,6 +97,7 @@
 .section-03 {
   padding: 1rem;
   height: auto;
+  width: 100%;
 }
 .above_section-03 {
   width: auto;
@@ -105,7 +106,8 @@
   flex-direction: row;
   gap: 1.5rem;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  padding-right: 1rem;
   > div {
     flex: 1; 
   }
@@ -233,13 +235,16 @@
   }
 
   .below_section-03 {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
+    justify-content: center;
   }
 
   .description-below_section-03 {
-    max-width: 100%; 
+    width: 100%; 
   }
+
+  
 }
 
 

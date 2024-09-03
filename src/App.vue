@@ -51,7 +51,7 @@ body {
   }
 
   .text_sidebar {
-        font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 }
 
