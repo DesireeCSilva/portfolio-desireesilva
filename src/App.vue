@@ -68,5 +68,10 @@ body {
       display: none;
     }
   }
+
+  .text_sidebar,
+  .text_descriptions {
+    font-size: 1rem; 
+  }
 }
 </style>
