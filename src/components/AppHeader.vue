@@ -4,16 +4,16 @@
       <img class="logo_header" src="../assets/icons/logo_gimp.webp" alt="logotipo de Desirée Silva" />
       <ul id="main-menu" class="main-menu">
         <li class="main-menu_item">
-          <a href="/index.html#section-01" class="main-menu_link">Sobre mí</a>
+          <a href="#sobremi" class="main-menu_link">Sobre mí</a>
         </li>
         <li class="main-menu_item">
-          <a href="/index.html#section-02" class="main-menu_link">Proyectos</a>
+          <a href="#section-02" class="main-menu_link">Proyectos</a>
         </li>
         <li class="main-menu_item">
-          <a href="/index.html#section-03" class="main-menu_link">Formación</a>
+          <a href="#section-03" class="main-menu_link">Formación</a>
         </li>
         <li class="main-menu_item">
-          <a href="/index.html#section-04" class="main-menu_link">Tecnologías</a>
+          <a href="#section-04" class="main-menu_link">Tecnologías</a>
         </li>
       </ul>
         <button class="button_header">

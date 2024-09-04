@@ -25,16 +25,16 @@
     <nav v-if="showMenu" class="main-menu__mobile">
       <ul>
         <li>
-          <a href="/index.html#section-01">Sobre mí</a>
+          <a href="#sobremi">Sobre mí</a>
         </li>
         <li>
-          <a href="/index.html#section-02">Proyectos</a>
+          <a href="#section-02">Proyectos</a>
         </li>
         <li>
-          <a href="/index.html#section-03">Formación</a>
+          <a href="#section-03">Formación</a>
         </li>
         <li>
-          <a href="/index.html#section-05">Contáctame</a>
+          <a href="#section-05">Contáctame</a>
         </li>
       </ul>
     </nav>
