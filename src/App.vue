@@ -49,7 +49,11 @@ body {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
-
+  .title_sidebar {
+    font-size: 1.4rem;
+    font-style: bold;
+    text-decoration: none;
+  }
   .text_sidebar {
     font-size: 1.2rem;
   }
@@ -68,5 +72,11 @@ body {
   .text_descriptions {
     font-size: 1rem; 
   }
+
+  .title_sidebar {
+    font-size: 1.2rem;
+    font-style: bold;
+    text-decoration: none;
+}
 }
 </style>

@@ -89,7 +89,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+
 .above_section-02 {
     display: flex;
     flex-wrap: wrap;
@@ -123,21 +124,28 @@ export default {
     transform: rotate(360deg);
     transition: transform 0.5s ease-in-out;
 }
-.title_sidebar {
-    font-size: 1.4rem;
-    font-style: bold;
-    text-decoration: none;
-}
 
-.card-01_section-02 p, .card-02_section-02 p, .card-03_section-02 p, .card-04_section-02 p, .card-05_section-02 p {
+.card-01_section-02 p, 
+.card-02_section-02 p, 
+.card-03_section-02 p, 
+.card-04_section-02 p, 
+.card-05_section-02 p {
     padding: 0rem 1rem 0rem 1rem;    
 }
 
-.card-01_section-02 a, .card-02_section-02 a, .card-03_section-02 a, .card-04_section-02 a, .card-05_section-02 a {
+.card-01_section-02 a, 
+.card-02_section-02 a, 
+.card-03_section-02 a, 
+.card-04_section-02 a, 
+.card-05_section-02 a {
     text-decoration: none;
     color: #000;
 }
-.card-01_section-02, .card-02_section-02, .card-03_section-02, .card-04_section-02, .card-05_section-02 {
+.card-01_section-02, 
+.card-02_section-02, 
+.card-03_section-02, 
+.card-04_section-02, 
+.card-05_section-02 {
     border-radius: 40px;
     width: 100%; 
     max-width: 25rem; 
@@ -236,13 +244,10 @@ a .title_section-02 {
     width: 100%; 
     }
 
-    .text_sidebar,
-    .text_descriptions {
-    font-size: 0.95rem; 
-    }
-
     .mockup-cards_section-02 {
     margin: 0 auto; 
     }
+
+    
 }
 </style>
