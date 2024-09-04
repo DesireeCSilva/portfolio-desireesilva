@@ -2,7 +2,7 @@
   <main>
     <AppHeader v-if="!isMobileDevice" />
     <AppHeaderMobile v-else />
-    <AppSummary />
+    <AppSummaryAlt />
     <AppProjects/>
     <AppEducation />
     <AppTechnologies/>
@@ -14,7 +14,8 @@
 <script setup>
 import AppHeader from './components/AppHeader.vue'
 import AppHeaderMobile from './components/AppHeaderMobile.vue'
-import AppSummary from './components/AppSummary.vue'
+// import AppSummary from './components/AppSummary.vue'
+import AppSummaryAlt from './components/AppSummaryAlt.vue'
 import AppEducation from './components/AppEducation.vue'
 import AppContact from './components/AppContact.vue'
 import AppProjects from './components/AppProjects.vue'
@@ -65,6 +66,10 @@ body {
 
     main > :not(header) {
       padding: 2rem;
+    }
+
+    .hr_portfolio {
+      display: none;
     }
   }
 
