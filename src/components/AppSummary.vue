@@ -70,14 +70,13 @@ export default {};
 
   &_left,
   &_right {
-    flex: 1; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     
   }
     &_center {
-    flex: 1.2; 
+  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,7 +88,7 @@ export default {};
     width: auto;
     height: fit-content;
     padding: 1rem;
-    margin: 1rem 0; 
+
 
     .gradient {
       font-size: 1.3rem;
@@ -152,9 +151,8 @@ export default {};
     }
   }
 }
-.section-01_after-delay {
-  max-width: 25rem; 
-  width: 100%; 
+.section-01_after-delay { 
+  width: auto; 
   height: auto; 
 }
 
@@ -172,18 +170,19 @@ export default {};
     flex-direction: column;
     gap: 1rem; 
     padding: 1rem;
+    width: auto ;
     align-items: center;
-    margin: 1rem 0;
+    
+    box-sizing: border-box;
 
     &_left,
     &_center,
     &_right {
-      width: 100%; 
+      width: auto; 
       align-items: center;
 
     }
     &_left {
-      margin: 1rem;
       box-sizing: border-box;
       }
     .gradient {
