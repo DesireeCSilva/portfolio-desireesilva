@@ -7,8 +7,8 @@
           <p class="date_sidebar">2024- 2023</p>
           <p class="text_sidebar">
             Recientemente me he graduado del
-            <span class="bold"
-              >Bootcamp de Desarrollo Web Fullstack (850h)</span
+            <spannp class="bold"
+              >Bootcamp de Desarrollo Web Fullstack (850h)</spannp
             >
             en Factoría F5 en colaboración con Google.org.
           </p>
@@ -82,7 +82,7 @@
         </div>
       </div>
       <div class="card_certificates">
-        <img src="@/assets/certificates/card-certicates.png" alt="">
+        <img src="@/assets/certificates/card-certificate.png" alt="">
       </div>
     </div>
   </section>
