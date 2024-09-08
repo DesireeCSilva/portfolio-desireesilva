@@ -187,7 +187,6 @@ footer {
 .main-menu_item {
   font-size: 1rem;
   padding-left: 3em;
-  padding-right: 3em;
   font-weight: 500;
   cursor: pointer;
   border: none;

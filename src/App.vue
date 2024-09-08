@@ -59,6 +59,8 @@ body {
 
 @media (max-width: 768px) {
   body {
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
 
     main > :not(header) {
@@ -73,6 +75,9 @@ body {
   .text_sidebar,
   .text_descriptions {
     font-size: 1rem; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
   .title_sidebar {

@@ -1,6 +1,6 @@
 <template>
-  <section id="sobremi" class="sobremi">
-    <div class="sobremi_left">
+  <section id="about-me" class="about-me">
+    <div class="about-me_left">
       <h1 class="gradient">DISEÑADORA UX/UI<br />MAQUETADORA WEB</h1>
       <p class="text_sidebar">
         ¡Hola! Soy Desirée y vivo en Madrid. Estudié Diseño Gráfico porque
@@ -9,12 +9,12 @@
         UX/UI realizando cursos y aplicando la pedagogía activa.
       </p>
     </div>
-    <div class="sobremi_center">
+    <div class="about-me_center">
       <img class="carousel-image" src="@/assets/pic-01.png" alt="Imagen 1">
       <img class="carousel-image" src="@/assets/pic-02.png" alt="Imagen 2">
       <img class="carousel-image" src="@/assets/pic-03.png" alt="Imagen 3">
     </div>
-    <div class="sobremi_right">
+    <div class="about-me_right">
       <div class="above-right_section-01">
         <p class="text_descriptions">
           Actualmente estoy inmersa en formaciones continuas de UX/UI, para
@@ -70,6 +70,7 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
+
 :root {
   --white: #ffffff;
   --blue: #e1bee7;
@@ -80,7 +81,7 @@ onMounted(() => {
   --green-light: #ffccbc;
 }
 
-.sobremi {
+.about-me {
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
@@ -181,12 +182,12 @@ onMounted(() => {
 // Media Queries
 
 @media screen and (max-width: 768px) {
-  .sobremi {
+  .about-me {
     flex-direction: column;
 
     &_left {
       order: 2;
-      padding: 1rem ;
+      
     }
 
     &_center {
@@ -211,5 +212,24 @@ onMounted(() => {
       font-size: 0.85rem; 
     }
   }
+}
+
+@media only screen and (min-width: 1920px) {
+  .about-me {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+
+  &_left {
+    flex: 1;
+  }
+  &_center {
+    flex: 1;
+  }
+  &right {
+    flex: 1; 
+  } 
+  }
+
 }
 </style>

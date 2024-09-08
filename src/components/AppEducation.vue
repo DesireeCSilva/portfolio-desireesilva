@@ -3,51 +3,41 @@
     <div class="above_section-03">
       <div class="description-above_section-03">
         <h1 class="title_sidebar">Formación</h1>
-        <input type="checkbox" 
-        id="toggle-text" 
-        class="toggle-checkbox" />
-        <label for="toggle-text" class="date_sidebar">2024-2023</label>
-        <p class="text_sidebar section-03_text_sidebar">
+        <p class="date_sidebar">2024-2023</p>
+        <p class="text-sidebar_section-03">
           Recientemente me he graduado del
           <span class="bold">Bootcamp de Desarrollo Web Fullstack (850h)</span>
           en Factoría F5 en colaboración con Google.org.
         </p>
-        <p class="text_sidebar section-03_text_sidebar">
+        <p class="text-sidebar_section-03">
           Destacar el aprendizaje de Metodología Scrum, el trabajo en equipo, el
           estudio de UX/UI, la programación Front-end y la maquetación web.
         </p>
       </div>
 
       <div class="card-01_section-03">
-        <input type="checkbox" 
-        id="toggle-card-2024" 
-        class="toggle-checkbox" />
-        <label for="toggle-card-2024" class="date_sidebar">2024</label>
-        <p class="text_sidebar section-03_text_sidebar">
+        <p class="date_sidebar">2024</p>
+        <p class="text-sidebar_section-03">
           <span class="bold">
             Diseño de Experiencia del Usuario UX de Google (7 cursos)</span
           >
         </p>
-        <p class="text_sidebar section-03_text_sidebar">
+        <p class="text-sidebar_section-03">
           Se proponen soluciones de diseño, se crean esquemas y prototipos.
         </p>
 
-        <input type="checkbox" 
-        id="toggle-card-2023" 
-        class="toggle-checkbox" />
-        <label for="toggle-card-2023" class="date_sidebar">2023</label>
-        <p class="text_sidebar section-03_text_sidebar">
+        <p class="date_sidebar">2023</p>
+        <p class="text-sidebar_section-03">
           <span class="bold"
             >Curso Interfaces y Experiencia de Usuario UI UX </span
-          >en Centro de Referencia Nacional Getafe (CFTIC)
+          >en Centro de Referencia Nacional Getafe <span class="bold">(CFTIC)</span>
         </p>
-        <p class="text_sidebar section-03_text_sidebar">
+        <p class="text-sidebar_section-03">
           Señalar el prototipado de proyectos en Figma, la creación de
           interfaces que maximizan la usabilidad, la creación de User Persona y
           diagramas de flujo.
         </p>
       </div>
-      <div>
         <div class="column-cards_section-03">
           <div class="card-02_section-03">
             <a href="https://github.com/DesireeCSilva" target="_blank">
@@ -57,19 +47,16 @@
           </div>
 
           <div class="card-03_section-03">
-            <input type="checkbox" 
-            id="toggle-card-2018" 
-            class="toggle-checkbox">
-            <label for="toggle-card-2018" class="date_sidebar">2018</label>
-            <p class="text_sidebar section-03_text_sidebar">
+            <p class="date_sidebar">2018</p>
+            <p class="text-sidebar_section-03">
               Curso
               <span class="bold">ARGN0210 Asistencia a la Edición (490h)</span>
             </p>
-            <p class="text_sidebar section-03_text_sidebar">Masercisa Fuenlabrada</p>
+            <p class="text-sidebar_section-03">Masercisa Fuenlabrada</p>
               
-            <input type="checkbox" id="toggle-card-2008-2010" class="toggle-checkbox">
-            <label for="toggle-card-2008-2010" class="date_sidebar">2008-2010</label>
-            <p class="text_sidebar section-03_text_sidebar">
+            
+            <p class="date_sidebar">2008-2010</p>
+            <p class="text-sidebar_section-03">
               Ciclo de Grado Superior de
               <span class="bold">Diseño y Producción Editorial</span>
               + Ciclo de Grado Superior de
@@ -77,22 +64,21 @@
                 >Producción en Industrias de Artes Gráficas</span
               >
             </p>
-            <p class="text_sidebar section-03_text_sidebar">IES Europa - IES Islas Filipinas</p>
+            <p class="text-sidebar_section-03">IES Europa - IES Islas Filipinas</p>
           </div>
         </div>
-      </div>
     </div>
     <div class="below_section-03">
       <div class="description-below_section-03">
         <h1 class="title_sidebar">Experiencia</h1>
-        <div class="text_sidebar">
+        <div class="text-sidebar_section-03">
           <p class="date_sidebar">2020 - 2018</p>
-          <p class="text_sidebar">
+          <p class="text-sidebar_section-03">
             <span class="bold">
               Maquetadora - correctora ortotipográfica - diseñadora gráfica
             </span>
           </p>
-          <p class="text_sidebar">Entrelíneas Editores</p>
+          <p class="text-sidebar_section-03">Entrelíneas Editores</p>
         </div>
       </div>
       <div class="card_certificates">
@@ -106,17 +92,10 @@
   <hr class="hr_portfolio" />
 </template>
 
-<script></script>
+<script>
+</script>
 
 <style lang="scss">
-
-.section-03_text_sidebar {
-  font-size: 1.2rem;
-}
-
-.toggle-checkbox {
-  display: none;
-}
 
 .section-03 {
   height: auto;
@@ -124,45 +103,52 @@
   display: flex;
   flex-direction: column;
 }
+
+.text-sidebar_section-03 {
+  font-size: 1.1rem;
+  margin: 0;
+  display: inline;
+}
 .above_section-03 {
   width: auto;
   height: auto;
   display: flex;
-  flex-direction: row;
   gap: 1.5rem;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
+  justify-content: space-between;
   margin-bottom: 1.5rem;
-  > div {
-    flex: 1;
-  }
 }
 
 .description-above_section-03 {
   background-color: #e1bee7;
   border-radius: 30px;
   padding: 1rem;
-  max-width: 20rem;
+  width: auto;
   height: auto;
-  flex: 1;
+  flex: 0.8;
 }
+
 .bold {
   font-weight: 700;
 }
+
 .date_sidebar {
   font-family: "Purple Purse", serif;
   font-weight: 400;
   font-size: 1.2rem;
   font-style: normal;
 }
+
 .card-01_section-03 {
   display: flex;
   flex-direction: column;
   width: auto;
+  height: auto;
   background-color: #ffccbc;
   border-radius: 30px;
   padding: 1rem;
   padding-top: 2.5rem;
+  flex: 1;
 }
 .card-02_section-03 {
   border: solid 2px #ffccbc;
@@ -173,9 +159,10 @@
   background-image: url("@/assets/avatar.png");
   background-position: right;
   background-repeat: no-repeat;
-  width: auto;
+  width: 100%;
   min-height: 130px;
   padding: 0.2rem;
+  flex: 1;
 
   a {
     display: flex;
@@ -210,6 +197,10 @@
   height: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+
 }
 
 .card-03_section-03 {
@@ -225,7 +216,7 @@
   width: auto;
   height: auto;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
 }
 
 .description-below_section-03 {
@@ -249,60 +240,16 @@
 
 @media only screen and (max-width: 768px) {
 
-  .toggle-checkbox:checked + label + .section-03_text_sidebar,
-  .toggle-checkbox:checked
-    + label
-    + .section-03_text_sidebar
-    + .section-03_text_sidebar {
-    display: block;
-    width: auto;
-  }
-
   .date_sidebar {
-    cursor: pointer;
     color: #000000;
     text-decoration: overline dotted 5px #ce93d8;
     width: 100%;
-  }
-
-  .section-03_text_sidebar {
-    font-size: 1rem;
-    display: none;
   }
 
   .description-above_section-03 {
     min-width: 90%;
   }
 
-  #toggle-card-2024:checked + label + .section-03_text_sidebar,
-  #toggle-card-2024:checked
-    + label
-    + .section-03_text_sidebar
-    + .section-03_text_sidebar {
-    display: block;
-    width: 100%;
-  }
-
-  #toggle-card-2023:checked + label + .section-03_text_sidebar,
-  #toggle-card-2023:checked
-    + label
-    + .section-03_text_sidebar
-    + .section-03_text_sidebar {
-    display: block;
-    width: 100%;
-  }
-
-  #toggle-card-2018:checked + label + .section-03_text_sidebar,
-  #toggle-card-2018:checked + label + .section-03_text_sidebar + .section-03_text_sidebar {
-    display: block;
-    width: 100%;
-  }
-
-  #toggle-card-2008-2010:checked + label + .section-03_text_sidebar,
-  #toggle-card-2008-2010:checked + label + .section-03_text_sidebar + .section-03_text_sidebar {
-    display: block;
-    width: 100%;
-  }
 
 .card-01_section-03 {
   display: flex;
@@ -322,13 +269,12 @@
   display: flex;
   flex-direction: column;
   padding: 2.5rem 1rem;
-  gap: 1.5rem;
 }
 
   .section-03 {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+  
     height: auto;
     box-sizing: border-box;
   }
