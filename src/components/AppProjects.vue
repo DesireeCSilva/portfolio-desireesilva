@@ -2,12 +2,9 @@
     <section id="section-02" class="section-02">
             <div class="above_section-02">
                 <div class="description-above_section-02">
-                    <div class="description-above">
                     <h1 class="title_sidebar">Proyectos</h1>
                     <p class="text_sidebar">Mis trabajos se han basado en la investigación previa aplicando mis conocimientos UX, y la creación completa de la interfaz de la web/app para que la experiencia de usuario sea óptima.
                     </p> 
-                    </div>
-
                 </div>   
                 
                 <div class="card-01_section-02">
@@ -92,10 +89,7 @@ export default {
     justify-content: space-between;
     gap: 1rem;
 }
-.description-above_section-02 {
-    height: auto;
-}
-.description-above {
+.description-above_section-02 {    
     background-color: #E1BEE7;
     width: 100%;
     max-width: 23rem;
@@ -103,7 +97,9 @@ export default {
     border-radius: 30px;
     padding: 1rem;
     margin-bottom: 1rem;
+    height: auto;
 }
+
 .pair-cards_section-02 a{
     display: flex;
     flex-direction: row;

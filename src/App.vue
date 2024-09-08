@@ -7,6 +7,7 @@
     <AppEducation />
     <AppTechnologies/>
     <AppContact />
+    <!-- <AppContactAlt /> -->
     <AppFooter />
   </main>
 </template>
@@ -18,6 +19,7 @@ import AppHeaderMobile from './components/AppHeaderMobile.vue'
 import AppSummaryAlt from './components/AppSummaryAlt.vue'
 import AppEducation from './components/AppEducation.vue'
 import AppContact from './components/AppContact.vue'
+// import AppContactAlt from './components/AppContactAlt.vue'
 import AppProjects from './components/AppProjects.vue'
 import AppTechnologies from './components/AppTechnologies.vue'
 import AppFooter from './components/AppFooter.vue'

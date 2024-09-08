@@ -11,6 +11,7 @@
     "@jamescoyle/vue-icon": "^0.1.2",
     "@mdi/js": "^7.4.47",
     "core-js": "^3.8.3",
+    "emailjs": "^4.0.3",
     "vue": "^3.4.38"
   },
   "devDependencies": {

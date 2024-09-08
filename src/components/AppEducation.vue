@@ -71,15 +71,13 @@
     <div class="below_section-03">
       <div class="description-below_section-03">
         <h1 class="title_sidebar">Experiencia</h1>
-        <div class="text-sidebar_section-03">
           <p class="date_sidebar">2020 - 2018</p>
           <p class="text-sidebar_section-03">
             <span class="bold">
               Maquetadora - correctora ortotipográfica - diseñadora gráfica
             </span>
           </p>
-          <p class="text-sidebar_section-03">Entrelíneas Editores</p>
-        </div>
+          <p style="margin-top: 1rem; font-size: 1.1rem;">Entrelíneas Editores</p>
       </div>
       <div class="card_certificates">
         <img
@@ -107,8 +105,10 @@
 .text-sidebar_section-03 {
   font-size: 1.1rem;
   margin: 0;
+  margin-top: 0.2rem;
   display: inline;
 }
+
 .above_section-03 {
   width: auto;
   height: auto;
@@ -125,7 +125,7 @@
   padding: 1rem;
   width: auto;
   height: auto;
-  flex: 0.8;
+  flex: 0.6;
 }
 
 .bold {
@@ -147,7 +147,6 @@
   background-color: #ffccbc;
   border-radius: 30px;
   padding: 1rem;
-  padding-top: 2.5rem;
   flex: 1;
 }
 .card-02_section-03 {
@@ -209,6 +208,7 @@
   background-color: #f8bbd0;
   border-radius: 30px;
   padding: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 .below_section-03 {
@@ -228,7 +228,6 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  margin-top: 1rem;
 }
 
 .card_certificates {

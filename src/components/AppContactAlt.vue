@@ -11,9 +11,7 @@
     </div>
     <form
       class="form_section-05"
-      action="https://formsubmit.co/desiree_cs@hotmail.com"
-      method="POST"
-    >
+      @submit.prevent="sendEmail">
       <div class="top-form">
         <label for="nombre"></label>
         <input
@@ -33,14 +31,15 @@
         />
       </div>
       <div>
-      <label for="Comentarios"></label>
-      <input
-        id="nombre"
-        type="text"
-        name="comentarios"
-        class="input-placeholder"
-        placeholder="Comentarios"
-      /></div>
+        <label for="Comentarios"></label>
+        <input
+          id="nombre"
+          type="text"
+          name="comentarios"
+          class="input-placeholder"
+          placeholder="Comentarios"
+        />
+      </div>
 
       <input type="hidden" name="_next" value="@/" />
 
@@ -81,7 +80,43 @@
   <hr class="hr_portfolio hr_last" />
 </template>
 
-<script></script>
+<script>
+import emailjs from 'emailjs-com'; // Importa Email.js
+
+export default {
+  data() {
+    return {
+      nombre: '',
+      email: '',
+      comentarios: '',
+    };
+  },
+  methods: {
+    sendEmail() {
+      const serviceID = 'your_service_ID';
+      const templateID = 'your_template_ID';
+      const userID = 'your_user_ID';
+
+      const templateParams = {
+        nombre: this.nombre,
+        email: this.email,
+        comentarios: this.comentarios,
+      };
+
+      emailjs.send(serviceID, templateID, templateParams, userID)
+        .then((response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          alert('El correo ha sido enviado correctamente.');
+        })
+        .catch((error) => {
+          console.log('FAILED...', error);
+          alert('Hubo un error al enviar el correo.');
+        });
+    },
+  },
+};
+</script>
+
 
 <style lang="scss">
 .section-05 {
@@ -119,15 +154,15 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: space-between;  
-  gap: .5rem;
+  justify-content: space-between;
+  gap: 0.5rem;
 }
 .input-form {
   width: 100%;
   height: 3rem;
   border: solid 2px #ffccbc;
   border-radius: 20px;
-  margin: 1rem 0; 
+  margin: 1rem 0;
   font-size: 1rem;
   font-family: "Poppins";
   padding-left: 1rem;
@@ -142,7 +177,7 @@
   font-size: 1rem;
   font-family: "Poppins";
   padding-left: 1rem;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 .content-button_section-05 {
@@ -153,7 +188,7 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   align-items: center;
-  gap: 0.5rem; 
+  gap: 0.5rem;
 }
 
 .icon_section-05 {
@@ -274,7 +309,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
   }
 
   .text_section-05 {
@@ -300,7 +334,7 @@
   .input-form,
   .input-placeholder {
     width: 100%;
-    margin: 0.5rem 0; 
+    margin: 0.5rem 0;
     min-width: 20rem;
     box-sizing: border-box;
   }
