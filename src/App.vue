@@ -42,7 +42,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  padding: 2rem;
+  padding: 3rem;
 
   .hr_portfolio {
     color: #CE93D8;

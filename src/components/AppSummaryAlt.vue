@@ -85,14 +85,12 @@ onMounted(() => {
   justify-content: space-between;
   gap: 1.5rem;
 
-  &_left, &_center, &_right {
-    flex: 1;
-  }
 
   &_left {
     border: solid 2px #e1bee7;
     border-radius: 30px;
     padding: 1rem;
+    flex: 0.5;
 
     .gradient {
       font-size: 1.3rem;
@@ -108,7 +106,7 @@ onMounted(() => {
   }
 
   &_center {
-    flex: 0.8;
+    flex: 0.7;
     align-self: flex-start;
     display: flex;
     justify-content: center;
@@ -116,7 +114,7 @@ onMounted(() => {
 
     .carousel-image {
       display: none;
-      width: 100%;
+      width: auto;
       max-width: 100%;
       opacity: 0;
       transition: opacity 1s ease-in-out;
@@ -131,6 +129,8 @@ onMounted(() => {
   &_right {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    flex: 0.5;
 
     .above-right_section-01 {
       background-color: #fff9c4;
@@ -146,7 +146,7 @@ onMounted(() => {
     }
 
     .below-right_descriptions {
-      flex: 1;
+      
       display: flex;
       flex-direction: column;
       justify-content: center;
