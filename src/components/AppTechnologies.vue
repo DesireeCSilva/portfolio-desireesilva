@@ -11,6 +11,7 @@
                     <img src="@/assets/icons/Jira.png" alt="icono de Jira" />
                     <img src="@/assets/icons/Git.png" alt="icono de Git" />
                     <img src="@/assets/icons/React Native.png" alt="icono de React" />
+                    <img src="@/assets/icons/vue.png" alt="icono de React" />
                 </div>
         </div>
     </section>

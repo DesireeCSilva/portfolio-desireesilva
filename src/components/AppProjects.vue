@@ -7,12 +7,7 @@
                     <p class="text_sidebar">Mis trabajos se han basado en la investigación previa aplicando mis conocimientos UX, y la creación completa de la interfaz de la web/app para que la experiencia de usuario sea óptima.
                     </p> 
                     </div>
-                    <div class="pair-cards_section-02">
-                        <a href="https://www.figma.com/proto/zclvAX1Wpg9kBGUzK2Z0Zp/YaleSchoolOfArt?page-id=17%3A2&node-id=85-176&viewport=1371%2C365%2C0.09&t=VSIrcHNgvM8AQfpv-1&scaling=scale-down&content-scaling=fixed" alt="enlace a prototipo de Figma del Proyecto Yale School">
-                        <img class="card-below_section-02" src="@/assets/card-06.png" alt="card con imagen de Harmony Heaven" />
-                        <img class="card-below_section-02" src="@/assets/card-07.png" alt="card con imagen de Tech Today" />
-                        </a>
-                    </div>
+
                 </div>   
                 
                 <div class="card-01_section-02">
@@ -248,6 +243,6 @@ a .title_section-02 {
     margin: 0 auto; 
     }
 
-    
+
 }
 </style>

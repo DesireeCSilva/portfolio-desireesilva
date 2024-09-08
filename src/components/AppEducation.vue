@@ -3,39 +3,45 @@
     <div class="above_section-03">
       <div class="description-above_section-03">
         <h1 class="title_sidebar">Formación</h1>
-        <input type="checkbox" id="toggle-text" class="toggle-checkbox" />
+        <input type="checkbox" 
+        id="toggle-text" 
+        class="toggle-checkbox" />
         <label for="toggle-text" class="date_sidebar">2024-2023</label>
-        <p class="section-03_text_sidebar">
+        <p class="text_sidebar section-03_text_sidebar">
           Recientemente me he graduado del
           <span class="bold">Bootcamp de Desarrollo Web Fullstack (850h)</span>
           en Factoría F5 en colaboración con Google.org.
         </p>
-        <p class="section-03_text_sidebar">
+        <p class="text_sidebar section-03_text_sidebar">
           Destacar el aprendizaje de Metodología Scrum, el trabajo en equipo, el
           estudio de UX/UI, la programación Front-end y la maquetación web.
         </p>
       </div>
 
       <div class="card-01_section-03">
-        <input type="checkbox" id="toggle-card-2024" class="toggle-checkbox" />
+        <input type="checkbox" 
+        id="toggle-card-2024" 
+        class="toggle-checkbox" />
         <label for="toggle-card-2024" class="date_sidebar">2024</label>
-        <p class="section-03_text_sidebar">
+        <p class="text_sidebar section-03_text_sidebar">
           <span class="bold">
             Diseño de Experiencia del Usuario UX de Google (7 cursos)</span
           >
         </p>
-        <p class="section-03_text_sidebar">
+        <p class="text_sidebar section-03_text_sidebar">
           Se proponen soluciones de diseño, se crean esquemas y prototipos.
         </p>
 
-        <input type="checkbox" id="toggle-card-2023" class="toggle-checkbox" />
+        <input type="checkbox" 
+        id="toggle-card-2023" 
+        class="toggle-checkbox" />
         <label for="toggle-card-2023" class="date_sidebar">2023</label>
-        <p class="section-03_text_sidebar">
+        <p class="text_sidebar section-03_text_sidebar">
           <span class="bold"
             >Curso Interfaces y Experiencia de Usuario UI UX </span
           >en Centro de Referencia Nacional Getafe (CFTIC)
         </p>
-        <p class="section-03_text_sidebar">
+        <p class="text_sidebar section-03_text_sidebar">
           Señalar el prototipado de proyectos en Figma, la creación de
           interfaces que maximizan la usabilidad, la creación de User Persona y
           diagramas de flujo.
@@ -51,14 +57,19 @@
           </div>
 
           <div class="card-03_section-03">
-            <p class="date_sidebar">2018</p>
-            <p class="text_sidebar">
+            <input type="checkbox" 
+            id="toggle-card-2018" 
+            class="toggle-checkbox">
+            <label for="toggle-card-2018" class="date_sidebar">2018</label>
+            <p class="text_sidebar section-03_text_sidebar">
               Curso
               <span class="bold">ARGN0210 Asistencia a la Edición (490h)</span>
             </p>
-            <p class="text_sidebar">Masercisa Fuenlabrada</p>
-            <p class="date_sidebar">2008-2010</p>
-            <p class="text_sidebar">
+            <p class="text_sidebar section-03_text_sidebar">Masercisa Fuenlabrada</p>
+              
+            <input type="checkbox" id="toggle-card-2008-2010" class="toggle-checkbox">
+            <label for="toggle-card-2008-2010" class="date_sidebar">2008-2010</label>
+            <p class="text_sidebar section-03_text_sidebar">
               Ciclo de Grado Superior de
               <span class="bold">Diseño y Producción Editorial</span>
               + Ciclo de Grado Superior de
@@ -66,7 +77,7 @@
                 >Producción en Industrias de Artes Gráficas</span
               >
             </p>
-            <p class="text_sidebar">IES Europa - IES Islas Filipinas</p>
+            <p class="text_sidebar section-03_text_sidebar">IES Europa - IES Islas Filipinas</p>
           </div>
         </div>
       </div>
@@ -98,6 +109,7 @@
 <script></script>
 
 <style lang="scss">
+
 .section-03_text_sidebar {
   font-size: 1.2rem;
 }
@@ -118,18 +130,12 @@
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
-  align-content: center;
+  align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
   > div {
     flex: 1;
   }
-}
-
-.card-01_section-03,
-.card-03_section-03 {
-  width: 30%;
-  flex: 1;
 }
 
 .description-above_section-03 {
@@ -142,8 +148,6 @@
 }
 .bold {
   font-weight: 700;
-  line-height: 1;
-  word-wrap: break-word;
 }
 .date_sidebar {
   font-family: "Purple Purse", serif;
@@ -157,7 +161,8 @@
   width: auto;
   background-color: #ffccbc;
   border-radius: 30px;
-  padding: 2.5rem 1rem;
+  padding: 1rem;
+  padding-top: 2.5rem;
 }
 .card-02_section-03 {
   border: solid 2px #ffccbc;
@@ -214,6 +219,7 @@
   border-radius: 30px;
   padding: 1rem;
 }
+
 .below_section-03 {
   display: flex;
   width: auto;
@@ -221,6 +227,7 @@
   justify-content: space-between;
   align-content: center;
 }
+
 .description-below_section-03 {
   background-color: #fff9c4;
   border-radius: 30px;
@@ -285,14 +292,37 @@
     width: 100%;
   }
 
-  .card-01_section-03 {
+  #toggle-card-2018:checked + label + .section-03_text_sidebar,
+  #toggle-card-2018:checked + label + .section-03_text_sidebar + .section-03_text_sidebar {
+    display: block;
+    width: 100%;
+  }
+
+  #toggle-card-2008-2010:checked + label + .section-03_text_sidebar,
+  #toggle-card-2008-2010:checked + label + .section-03_text_sidebar + .section-03_text_sidebar {
+    display: block;
+    width: 100%;
+  }
+
+.card-01_section-03 {
   display: flex;
   flex-direction: column;
   min-width: 90%;
   gap: 1.5rem;
-  background-color: #ffccbc;
-  border-radius: 30px;
   padding: 2.5rem 1rem;
+}
+
+.column-cards_section-03 {
+  width: 100%;
+}
+.card-03_section-03 {
+  display: flex;
+  flex-direction: column;
+  min-width: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 1rem;
+  gap: 1.5rem;
 }
 
   .section-03 {
@@ -305,11 +335,6 @@
   .above_section-03 {
     flex-direction: column;
     align-items: center;
-
-    > div {
-      width: auto;
-      max-width: 100%;
-    }
   }
 
   .below_section-03 {
@@ -324,12 +349,6 @@
     width: 100%;
     padding: 1rem;
     box-sizing: border-box;
-  }
-
-  .description-below_section-03 p span {
-    font-size: 1em;
-    line-height: 1;
-    word-wrap: break-word;
   }
 
   .below_section-03 {

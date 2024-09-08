@@ -55,9 +55,6 @@ body {
     font-style: bold;
     text-decoration: none;
   }
-  .text_sidebar {
-    font-size: 1.2rem;
-  }
 }
 
 @media (max-width: 768px) {
