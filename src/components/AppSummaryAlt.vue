@@ -90,7 +90,7 @@ onMounted(() => {
     border: solid 2px #e1bee7;
     border-radius: 30px;
     padding: 1rem;
-    flex: 0.5;
+    flex: 0.6;
 
     .gradient {
       font-size: 1.3rem;
@@ -106,7 +106,7 @@ onMounted(() => {
   }
 
   &_center {
-    flex: 0.7;
+    flex: 1;
     align-self: flex-start;
     display: flex;
     justify-content: center;
@@ -130,7 +130,7 @@ onMounted(() => {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 0.5;
+    flex: 1;
 
     .above-right_section-01 {
       background-color: #fff9c4;
@@ -146,7 +146,6 @@ onMounted(() => {
     }
 
     .below-right_descriptions {
-      
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -174,6 +173,7 @@ onMounted(() => {
       padding: 0.5rem 1rem; 
       margin: 0; 
       font-size: 0.9rem; 
+      margin-bottom: 1rem;
     }
   }
 }

@@ -8,10 +8,9 @@
                     <img src="@/assets/icons/CSS3.png" alt="icono de CSS" />
                     <img src="@/assets/icons/JavaScript.png" alt="icono de JavaScript" />
                     <img src="@/assets/GitHub-big.png" alt="icono de GitHub" />
-                    <img src="@/assets/icons/Jira.png" alt="icono de Jira" />
                     <img src="@/assets/icons/Git.png" alt="icono de Git" />
                     <img src="@/assets/icons/React Native.png" alt="icono de React" />
-                    <img src="@/assets/icons/vue.png" alt="icono de React" />
+                    <img src="@/assets/icons/vue.png" alt="icono de Vue" />
                 </div>
         </div>
     </section>

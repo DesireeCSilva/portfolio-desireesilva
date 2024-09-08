@@ -51,7 +51,7 @@ import { mdiPhone } from '@mdi/js';
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-decoration: none;
     cursor: pointer;
 
