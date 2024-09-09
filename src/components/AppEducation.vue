@@ -80,17 +80,47 @@
           <p style="margin-top: 1rem; font-size: 1.1rem;">Entrelíneas Editores</p>
       </div>
       <div class="card_certificates">
-        <img
-          src="@/assets/certificates/card-certificate.png"
-          alt="fotos en after delay de los certificados obtenidos por Desirée Silva"
-        />
+        <img class="carousel-certificate" src="@/assets/certificates/card-certificate00.png" alt="Certificados obtenidos por Desirée Silva">
+        <img class="carousel-certificate" src="@/assets/certificates/card-certificate01.png" alt="Certificados obtenidos por Desirée Silva">
+        <img class="carousel-certificate" src="@/assets/certificates/card-certificate02.png" alt="Certificados obtenidos por Desirée Silva">
+        <img class="carousel-certificate" src="@/assets/certificates/card-certificate03.png" alt="Certificados obtenidos por Desirée Silva">
+        <img class="carousel-certificate" src="@/assets/certificates/card-certificate04.png" alt="Certificados obtenidos por Desirée Silva">
+        <img class="carousel-certificate" src="@/assets/certificates/card-certificate05.png" alt="Certificados obtenidos por Desirée Silva">
+        <img class="carousel-certificate" src="@/assets/certificates/card-certificate06.png" alt="Certificados obtenidos por Desirée Silva">
+        <img class="carousel-certificate" src="@/assets/certificates/card-certificate07.png" alt="Certificados obtenidos por Desirée Silva">
+        <img class="carousel-certificate" src="@/assets/certificates/card-certificate08.png" alt="Certificados obtenidos por Desirée Silva">
+        <img class="carousel-certificate" src="@/assets/certificates/card-certificate09.png" alt="Certificados obtenidos por Desirée Silva">
       </div>
     </div>
   </section>
   <hr class="hr_portfolio" />
 </template>
 
-<script>
+<script setup>
+import { onMounted } from "vue"
+
+onMounted(() => {
+  document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('.carousel-certificate')
+    let currentIndex = 0
+    
+    function showImage(index) {
+      images.forEach((img) => img.classList.remove('active'))
+      images[index].classList.add('active')
+    }
+
+    function nextImage() {
+      currentIndex = (currentIndex + 1) % images.length
+      showImage(currentIndex)
+    }
+
+    // Show the first image initially
+    showImage(currentIndex)
+
+    // Change the image every 3 seconds
+    setInterval(nextImage, 4000)
+})
+})
 </script>
 
 <style lang="scss">
@@ -233,6 +263,19 @@
 .card_certificates {
   width: auto;
   height: 100%;
+
+  .carousel-certificate {
+      display: none;
+      width: auto;
+      max-width: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .carousel-certificate.active {
+      display: block;
+      opacity: 1;
+    }
 }
 
 /* Media Queries */
