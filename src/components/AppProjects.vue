@@ -3,7 +3,7 @@
             <div class="above_section-02">
                 <div class="description-above_section-02">
                     <h1 class="title_sidebar">Proyectos</h1>
-                    <p class="text_sidebar">Mis trabajos se han basado en la investigación previa aplicando mis conocimientos UX, y la creación completa de la interfaz de la web/app para que la experiencia de usuario sea óptima.
+                    <p class="text_sidebar">He desarrollado mis diseños partiendo de una sólida investigación previa, aplicando de manera integral mis conocimientos en UX/UI. Me he enfocado en crear interfaces completas tanto para web como para aplicaciones, siempre con el objetivo de garantizar que la experiencia del usuario sea fluida, intuitiva y altamente satisfactoria, asegurando que cada interacción sea significativa y funcional.
                     </p> 
                 </div>   
                 
@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="below_section-02">
-                <div class="card-02_section-02">
+                <div class="card-03_section-02">
                     <a href="https://www.figma.com/proto/LKQiFFZSCHntHlIkhviezT/Hackaton-Globant?page-id=0%3A1&node-id=1-2&viewport=313%2C141%2C0.09&t=p53fha0SbWl4NLxz-1&scaling=scale-down&content-scaling=fixed" target="_blank">
                         <div class="title_section-02">
                             <h1 class="title_sidebar">Ecopop: proyecto Hackaton</h1>
@@ -85,35 +85,19 @@ export default {
 
 .above_section-02 {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 1rem;
 }
 .description-above_section-02 {    
     background-color: #E1BEE7;
-    width: 100%;
+    width: auto;
     max-width: 23rem;
-    height: auto;
+    height: 100%;
     border-radius: 30px;
     padding: 1rem;
-    margin-bottom: 1rem;
-    height: auto;
-}
-
-.pair-cards_section-02 a{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-}
-.card-below_section-02 {
-    width: 9.7rem; 
-    height: auto;
-}
-.card-below_section-02:hover {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-    transition: transform 0.5s ease-in-out;
+    height: 40%;
 }
 
 .card-01_section-02 p, 
@@ -239,6 +223,47 @@ a .title_section-02 {
     margin: 0 auto; 
     }
 
+}
 
+@media only screen and (min-width: 1920px) {
+
+    .above_section-02 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    
+    .description-above_section-02,
+    .card-01_section-02,
+    .card-02_section-02,
+    .card-03_section-02,
+    .card-04_section-02,
+    .card-05_section-02 {
+        width: 100%; 
+        flex: 1;
+        flex-grow: 1;
+        flex-shrink: 1;
+        max-width: 35rem;
+        border-radius: 60px;
+    }
+
+    .card-01_section-02 p, 
+    .card-02_section-02 p, 
+    .card-03_section-02 p, 
+    .card-04_section-02 p, 
+    .card-05_section-02 p {
+        padding: 0rem 3rem 0rem 3rem;    
+    }
+    .description-above_section-02 {    
+        max-width: 33rem;
+        height: 23rem;
+        border-radius: 30px;
+        padding: 1rem;
+    }
+
+    .title_section-02 {
+        padding-top: 1rem;
+    }
 }
 </style>

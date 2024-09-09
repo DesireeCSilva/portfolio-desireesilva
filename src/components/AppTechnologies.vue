@@ -70,4 +70,13 @@ export default {};
         height: auto; 
     }
 }
+
+@media only screen and (min-width: 1920px) {
+    .content_section-04 {
+        padding: 1rem 5rem 0rem 1rem;
+        align-items: center;
+        justify-content: space-between;
+}
+
+}
 </style>

@@ -292,6 +292,11 @@ onMounted(() => {
     min-width: 90%;
   }
 
+.text-sidebar_section-03 {
+  font-size: 1rem;
+  margin: 0;
+  display: inline;
+}
 
 .card-01_section-03 {
   display: flex;
@@ -341,6 +346,13 @@ onMounted(() => {
 
   .below_section-03 {
     padding: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+
+  .above_section-03 {
+    gap: 2.5rem;
   }
 }
 </style>
