@@ -71,6 +71,11 @@
                     </a>
                 </div>
             </div>
+            <button class="button_header">
+                <svg-icon type="mdi" :path="mdiPhone" class="icon_header"></svg-icon><a
+            href="tel:675937952"
+            >¡Contáctame!</a>          >
+          </button>
         </section>
         <hr class="hr_portfolio">
 </template>
@@ -197,6 +202,33 @@ a .title_section-02 {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+    .button_header {
+      background-color: #CE93D8;
+      width: 10em;
+      height: fit-content;
+      font-size: 1.3rem;
+      font-family: 'Poppins';
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-radius: 0.50rem;
+      border-style: none;
+      cursor: pointer; 
+      text-decoration: none;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+      transition: all 0.3s ease; 
+
+      .icon_header {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        width: auto;
+        height: auto;
+      }
+      }
 
 /* Media queries */
 

@@ -130,6 +130,7 @@ onMounted(() => {
   width: auto;
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
 }
 
 .text-sidebar_section-03 {

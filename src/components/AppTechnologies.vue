@@ -2,40 +2,76 @@
     <section id="section-04" class="section-04">
         <div class="content_section-04">
             <h1 class="title_sidebar">Tecnologías</h1>
-            <div class="icons">
+            <!-- <div class="icons">
                 <div class="icon-wrapper">
-                    <img width="100" height="100" src="https://img.icons8.com/ios-glyphs/100/figma.png" alt="figma"/>
+                    <img width="70" height="70" src="https://img.icons8.com/ios-glyphs/100/figma.png" alt="figma"/>
                     <p class="icon-label">Figma</p>
                 </div>
                 <div class="icon-wrapper">
-                    <img width="100" height="100" src="https://img.icons8.com/ios-glyphs/100/html-5.png" alt="html-5"/>    
+                    <img width="70" height="70" src="https://img.icons8.com/ios-glyphs/100/html-5.png" alt="html-5"/>    
                     <p class="icon-label">HTML5</p>
                 </div>
                 <div class="icon-wrapper">
-                    <img width="100" height="100" src="https://img.icons8.com/ios-glyphs/100/css3.png" alt="css3"/>
+                    <img width="70" height="70" src="https://img.icons8.com/ios-glyphs/100/css3.png" alt="css3"/>
                     <p class="icon-label">CSS3</p>
                 </div>
                 <div class="icon-wrapper">
-                    <img width="100" height="100" src="https://img.icons8.com/ios-glyphs/100/javascript.png" alt="javascript"/>
+                    <img width="70" height="70" src="https://img.icons8.com/ios-glyphs/100/javascript.png" alt="javascript"/>
                     <p class="icon-label">JavaScript</p>
                 </div>
                 <div class="icon-wrapper">
-                    <img width="100" height="100" src="https://img.icons8.com/ios-glyphs/100/github.png" alt="github"/>
+                    <img width="70" height="70" src="https://img.icons8.com/ios-glyphs/100/github.png" alt="github"/>
                     <p class="icon-label">GitHub</p>
                 </div>
                 <div class="icon-wrapper">
-                    <img width="100" height="100" src="https://img.icons8.com/ios-filled/100/git.png" alt="git"/>
+                    <img width="70" height="70" src="https://img.icons8.com/ios-filled/100/git.png" alt="git"/>
                     <p class="icon-label">Git</p>
                 </div>
                 <div class="icon-wrapper">
-                    <img width="100" height="100" src="https://img.icons8.com/ios-glyphs/100/react.png" alt="react"/> 
+                    <img width="70" height="70" src="https://img.icons8.com/ios-glyphs/100/react.png" alt="react"/> 
                     <p class="icon-label">React</p>
                 </div>
                 <div class="icon-wrapper">
-                    <img width="100" height="100" src="https://img.icons8.com/ios-glyphs/100/vuejs.png" alt="vuejs"/>
+                    <img width="70" height="70" src="https://img.icons8.com/ios-glyphs/100/vuejs.png" alt="vuejs"/>
+                    <p class="icon-label">Vue.js</p>
+                </div>
+            </div> -->
+
+            <div class="icons">
+                <div class="icon-wrapper">
+                    <img class="icon-img" src="https://img.icons8.com/color/70/figma--v1.png" alt="figma--v1"/>
+                    <p class="icon-label">Figma</p>
+                </div>
+                <div class="icon-wrapper">
+                    <img class="icon-img" src="https://img.icons8.com/color/70/html-5--v1.png" alt="html-5--v1"/>  
+                    <p class="icon-label">HTML5</p>
+                </div>
+                <div class="icon-wrapper">
+                    <img class="icon-img" src="https://img.icons8.com/color/70/css3.png" alt="css3"/>
+                    <p class="icon-label">CSS3</p>
+                </div>
+                <div class="icon-wrapper">
+                    <img class="icon-img" src="https://img.icons8.com/color/70/javascript--v1.png" alt="javascript--v1"/>
+                    <p class="icon-label">JavaScript</p>
+                </div>
+                <div class="icon-wrapper">
+                    <img class="icon-img" src="https://img.icons8.com/color/70/github--v1.png" alt="github--v1"/>
+                    <p class="icon-label">GitHub</p>
+                </div>
+                <div class="icon-wrapper">
+                    <img class="icon-img" src="https://img.icons8.com/color/70/git.png" alt="git"/>
+                    <p class="icon-label">Git</p>
+                </div>
+                <div class="icon-wrapper">
+                    <img class="icon-img" src="https://img.icons8.com/officexs/70/react.png" alt="react"/>
+                    <p class="icon-label">React</p>
+                </div>
+                <div class="icon-wrapper">
+                    <img class="icon-img" src="https://img.icons8.com/color/70/vue-js.png" alt="vue-js"/>
                     <p class="icon-label">Vue.js</p>
                 </div>
             </div>
+
         </div>
     </section>
     <hr class="hr_portfolio" />
@@ -48,15 +84,6 @@ export default {};
 
 <style>
 
-        .iconify {
-            font-size: 50px; /* Tamaño uniforme para los íconos */
-            color: #333;     /* Color de los íconos */
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .iconify:hover {
-            transform: rotate(360deg); /* Animación al pasar el cursor */
-        }
 .content_section-04 {
     display: flex;
     flex-direction: row;
@@ -84,6 +111,11 @@ export default {};
     align-items: center;
 }
 
+.icon-img {
+    width: 70;
+    height: 70;
+}
+
 .icon-label {
     margin-top: 0.5rem;
     opacity: 0;
@@ -93,7 +125,7 @@ export default {};
     font-size: 0.9rem;
     font-weight: bold;
     color: #000000;
-    bottom: -2rem;
+    bottom: -2.2rem;
 }
 
 .icon-wrapper:hover .icon-label {
@@ -108,10 +140,6 @@ export default {};
     transition: transform 0.4s ease-in-out;
 }
 
-.icons i {
-    font-size: 50px; /* Ajusta el tamaño del icono según sea necesario */
-    transition: transform 0.2s ease-in-out;
-}
 
 /*Media Queries */
 @media screen and (max-width: 768px) {
@@ -133,7 +161,7 @@ export default {};
 
 @media only screen and (min-width: 1920px) {
     .content_section-04 {
-        padding: 1rem 5rem 2rem 1rem;
+        padding: 2rem 5rem 2rem 1rem;
         align-items: center;
         justify-content: space-between;
     }
