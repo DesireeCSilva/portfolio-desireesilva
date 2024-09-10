@@ -82,10 +82,5 @@ body {
     box-sizing: border-box;
   }
 
-  .title_sidebar {
-    font-size: 1.2rem;
-    font-style: bold;
-    text-decoration: none;
-}
 }
 </style>

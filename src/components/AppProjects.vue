@@ -21,7 +21,7 @@
                 <div class="card-01_section-02">
                     <a href="https://www.figma.com/proto/yR8KjnndNATFkYYxFBxoUr/Proyecto--Nirname?page-id=1%3A2&node-id=1-2284&viewport=741%2C325%2C0.06&t=lld7nY527ALzDYMo-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2284" target="_blank">
                         <div class="title_section-02">
-                            <h1 class="title_sidebar">Nirname. Centro de Yoga</h1>
+                            <h1 class="title-sidebar_section-02">Nirname. Centro de Yoga</h1>
                             <img class="arrow" src="@/assets/icons/arrow_in.png" alt="icono de flecha">
                         </div>
                         <p class="text_descriptions">Creación de todas las screens de la web y realización de User Personas.</p>
@@ -34,7 +34,7 @@
                 <div class="card-02_section-02">
                     <a href="https://www.figma.com/proto/FviGi5i5nFR2VY8XDGYwlF/Actividades-Desir%C3%A9e?page-id=72%3A2&node-id=87-95&viewport=582%2C85%2C0.08&t=yJM7C3qV5cAIacNL-1&scaling=scale-down&content-scaling=fixed" target="_blank">
                         <div class="title_section-02">
-                            <h1 class="title_sidebar">Constructora Blocka</h1>
+                            <h1 class="title-sidebar_section-02">Constructora Blocka</h1>
                             <img class="arrow" src="@/assets/icons/arrow_in.png" alt="icono de flecha"> 
                         </div>
                     <p class="text_descriptions">Diseño responsive en desktop, tablet y mobile de la landing page.</p>
@@ -48,7 +48,7 @@
                 <div class="card-03_section-02">
                     <a href="https://www.figma.com/proto/LKQiFFZSCHntHlIkhviezT/Hackaton-Globant?page-id=0%3A1&node-id=1-2&viewport=313%2C141%2C0.09&t=p53fha0SbWl4NLxz-1&scaling=scale-down&content-scaling=fixed" target="_blank">
                         <div class="title_section-02">
-                            <h1 class="title_sidebar">Ecopop: proyecto Hackaton</h1>
+                            <h1 class="title-sidebar_section-02">Ecopop: proyecto Hackaton</h1>
                             <img class="arrow" src="@/assets/icons/arrow_in.png" alt="icono de flecha">
                         </div>
                     <p class="text_descriptions">Diseño de un e-commerce en pocas horas, quedando en 2º puesto.</p>
@@ -60,7 +60,7 @@
                 <div class="card-04_section-02">
                     <a href="https://www.figma.com/proto/4J8nTOfWZLkGK9tkFnDxex/TechToday?page-id=0%3A1&node-id=42-1501&viewport=865%2C225%2C0.22&t=CMG6Jheigb8PEICS-1&scaling=scale-down&content-scaling=fixed" target="_blank">
                         <div class="title_section-02">
-                        <h1 class="title_sidebar">TechToday: web sostenible</h1>
+                        <h1 class="title-sidebar_section-02">TechToday: web sostenible</h1>
                         <img class="arrow" src="@/assets/icons/arrow_in.png" alt="icono de flecha">
                     </div>
                     <p class="text_descriptions">Propuesta de desarrollo sostenible de una web de gestión de noticias.</p>
@@ -72,7 +72,7 @@
                 <div class="card-05_section-02">
                     <a href="https://www.figma.com/proto/Q87bkn0d1SZRA2IEiHSqYz/HarmonyHeavenMVP?page-id=0%3A1&node-id=1-867&viewport=1041%2C340%2C0.09&t=pT2HNtwFQ5w3zb2B-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A867&show-proto-sidebar=1" target="_blank">
                         <div class="title_section-02">
-                            <h1 class="title_sidebar">Harmony Heaven</h1>
+                            <h1 class="title-sidebar_section-02">Harmony Heaven</h1>
                             <img class="arrow" src="@/assets/icons/arrow_in.png" alt="icono de flecha"> 
                         </div>
                     <p class="text_descriptions">Diseño responsive para una web de instrumentos interactivos.</p>
@@ -256,27 +256,47 @@ a .title_section-02 {
     }
 
     .button_see-more:hover {
-    background-color: #ce93d8;
-    transform: scale(0.95);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        background-color: #ce93d8;
+        transform: scale(0.95);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
-.button_see-more:active {
-  background-color: #bc38d3;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transform: translateY(2px);
-}
+    .button_see-more:active {
+        background-color: #bc38d3;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transform: translateY(2px);
+    }
 
 /* Media queries */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .section-02 {
-    padding: 0.5rem; 
+        padding: 2rem; 
     }
-    .description-above_section-02 {
-    text-align: left; 
+
+    .description-above_section-02 {    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left; 
+        margin-bottom: 1.5rem;
     }
-    .title_sidebar {
-    font-size: 1.1rem; 
+
+    .description-above {
+        background-color: #E1BEE7;
+        width: auto;
+        height: auto;
+        border-radius: 30px;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .below_section-02 {
+        margin-top: 0;
+        flex-direction: column-reverse;
+    }
+
+    .title-sidebar_section-02 {
+        font-size: 100%; 
     }
 
     .card-01_section-02,
@@ -284,7 +304,9 @@ a .title_section-02 {
     .card-03_section-02,
     .card-04_section-02,
     .card-05_section-02 {
-    width: 100%; 
+        width: 100%; 
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .mockup-cards_section-02 {
