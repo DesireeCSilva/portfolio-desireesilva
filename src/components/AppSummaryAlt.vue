@@ -13,6 +13,12 @@
       <img class="carousel-image" src="@/assets/pic-01.png" alt="Imagen 1">
       <img class="carousel-image" src="@/assets/pic-02.png" alt="Imagen 2">
       <img class="carousel-image" src="@/assets/pic-03.png" alt="Imagen 3">
+      <img class="carousel-image" src="@/assets/pic-04.png" alt="Imagen 4">
+      <img class="carousel-image" src="@/assets/pic-05.png" alt="Imagen 5">
+      <img class="carousel-image" src="@/assets/pic-06.png" alt="Imagen 6">
+      <img class="carousel-image" src="@/assets/pic-07.png" alt="Imagen 7">
+      <img class="carousel-image" src="@/assets/pic-08.png" alt="Imagen 8">
+      <img class="carousel-image" src="@/assets/pic-09.png" alt="Imagen 9">
     </div>
     <div class="about-me_right">
       <div class="above-right_section-01">

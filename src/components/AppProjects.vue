@@ -2,11 +2,22 @@
     <section id="section-02" class="section-02">
             <div class="above_section-02">
                 <div class="description-above_section-02">
-                    <h1 class="title_sidebar">Proyectos</h1>
-                    <p class="text_sidebar">He desarrollado mis diseños partiendo de una sólida investigación previa, aplicando de manera integral mis conocimientos en UX/UI. Me he enfocado en crear interfaces completas tanto para web como para aplicaciones, siempre con el objetivo de garantizar que la experiencia del usuario sea fluida, intuitiva y altamente satisfactoria, asegurando que cada interacción sea significativa y funcional.
-                    </p> 
-                </div>   
-                
+                    <div class="description-above">
+                        <h1 class="title_sidebar">Proyectos</h1>
+                        <p class="text_sidebar">He desarrollado mis diseños partiendo de una sólida investigación previa, aplicando de manera integral mis conocimientos en UX/UI. Me he enfocado en crear interfaces completas tanto para web como para aplicaciones, siempre con el objetivo de garantizar que la experiencia del usuario sea fluida, intuitiva y altamente satisfactoria.
+                        </p> 
+                    </div>  
+
+                <button class="button_see-more">
+                    <img src="https://img.icons8.com/color/48/visible--v2.png" class="icon_see-more" alt="visible--v2"/>
+                    <a href="https://www.behance.net/desirecarrizo" target="_blank">
+                    Ver más proyectos
+                    </a>          
+                </button> 
+                </div>
+
+                <!-- <iframe src="https://www.behance.net/embed/project/207521195?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe> -->
+
                 <div class="card-01_section-02">
                     <a href="https://www.figma.com/proto/yR8KjnndNATFkYYxFBxoUr/Proyecto--Nirname?page-id=1%3A2&node-id=1-2284&viewport=741%2C325%2C0.06&t=lld7nY527ALzDYMo-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2284" target="_blank">
                         <div class="title_section-02">
@@ -71,11 +82,7 @@
                     </a>
                 </div>
             </div>
-            <button class="button_header">
-                <svg-icon type="mdi" :path="mdiPhone" class="icon_header"></svg-icon><a
-            href="tel:675937952"
-            >¡Contáctame!</a>          >
-          </button>
+
         </section>
         <hr class="hr_portfolio">
 </template>
@@ -88,21 +95,31 @@ export default {
 
 <style lang="scss">
 
+.section-02 {
+    display: flex;
+    flex-direction: column;
+}
 .above_section-02 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 1rem;
+
 }
 .description-above_section-02 {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.description-above {
     background-color: #E1BEE7;
     width: auto;
     max-width: 23rem;
-    height: 100%;
+    height: auto;
     border-radius: 30px;
     padding: 1rem;
-    height: 40%;
 }
 
 .card-01_section-02 p, 
@@ -126,19 +143,19 @@ export default {
 .card-03_section-02, 
 .card-04_section-02, 
 .card-05_section-02 {
-    border-radius: 40px;
+    border-radius: 45px;
     width: 100%; 
     max-width: 25rem; 
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 1.5rem;
     cursor: pointer;
     text-decoration: none;
     box-sizing: border-box;
     overflow: hidden;
     padding: 0;
+    gap: 1.5rem;
 }
 .mockup-cards_section-02 {
     width: 100%; 
@@ -179,7 +196,9 @@ a .title_section-02 {
 .below_section-02 {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
+    margin-top: 1.5rem;
 }
 .card-01_section-02 {
     border: solid 2px #FFCCBC;
@@ -203,32 +222,49 @@ a .title_section-02 {
     margin-bottom: 2rem;
 }
 
-    .button_header {
-      background-color: #CE93D8;
-      width: 10em;
-      height: fit-content;
-      font-size: 1.3rem;
-      font-family: 'Poppins';
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-      border-radius: 0.50rem;
-      border-style: none;
-      cursor: pointer; 
-      text-decoration: none;
-      text-align: center;
-      justify-content: center;
-      display: flex;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-      transition: all 0.3s ease; 
+.button_see-more {
+    background-color: #CE93D8;
+    width: 14em;
+    height: fit-content;
+    font-size: 1.3rem;
+    font-family: 'Poppins';
+    border-radius: 0.50rem;
+    border-style: none;
+    cursor: pointer; 
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease; 
 
-      .icon_header {
+    .icon_see-more {
         display: flex;
         flex-direction: row;
         align-self: center;
         width: auto;
         height: auto;
-      }
-      }
+        margin-right: 0.5rem;
+        }
+    }
+
+    .button_see-more a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .button_see-more:hover {
+    background-color: #ce93d8;
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+.button_see-more:active {
+  background-color: #bc38d3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
+}
 
 /* Media queries */
 
