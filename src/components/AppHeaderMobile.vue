@@ -25,7 +25,7 @@
     <nav v-if="showMenu" class="main-menu__mobile">
       <ul>
         <li>
-          <a href="#sobremi">Sobre mí</a>
+          <a href="https://drive.google.com/file/d/1BUolDxQYZECSIflSKSMSiepAN9UMRVkw/view?usp=sharing" target="_blank">Ver CV de Desirée</a>
         </li>
         <li>
           <a href="#proyectos">Proyectos</a>

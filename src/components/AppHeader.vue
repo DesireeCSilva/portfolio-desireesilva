@@ -13,7 +13,7 @@
           <a href="#formacion" class="main-menu_link">Formación</a>
         </li>
         <li class="main-menu_item">
-          <a href="#tecnologias" class="main-menu_link">Tecnologías</a>
+          <a href="https://drive.google.com/file/d/1BUolDxQYZECSIflSKSMSiepAN9UMRVkw/view?usp=sharing" class="main-menu_link" target="_blank">Ver Currículum Vitae</a>
         </li>
       </ul>
         <button class="button_header">

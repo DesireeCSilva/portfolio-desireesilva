@@ -81,11 +81,10 @@
       </div>
       <div class="card-cv_section-03">
         <a href="https://drive.google.com/file/d/1BUolDxQYZECSIflSKSMSiepAN9UMRVkw/view?usp=sharing" target="_blank">
-          <img src="@/assets/icons/GitHub.png" alt="logotipo de GitHub" />
-          <h3 class="title_sidebar-card-02">Currículum Vitae de Desirée</h3>
+          <img width="70" height="70" src="https://img.icons8.com/color/70/parse-from-clipboard.png" alt="parse-from-clipboard"/>
+          <h4 class="title_sidebar-card-02">Ver Currículum Vitae de Desirée</h4>
         </a>
       </div>
-
       
       <div class="card_certificates">
         <img class="carousel-certificate" src="@/assets/certificates/card-certificate00.png" alt="Certificados obtenidos por Desirée Silva">
@@ -223,12 +222,6 @@ onMounted(() => {
 .card-02_section-03 h1 {
   z-index: 1;
 }
-.avatar {
-  min-width: 5rem;
-  height: 5rem;
-  z-index: -1;
-  margin-right: 0.5rem;
-}
 
 .column-cards_section-03 {
   width: auto;
@@ -238,16 +231,15 @@ onMounted(() => {
   align-items: center;
   justify-content: space-between;
   flex: 1;
-
-}
-
-.card-03_section-03 {
-  width: auto;
-  height: auto;
-  background-color: #f8bbd0;
-  border-radius: 30px;
-  padding: 1rem;
-  padding-bottom: 1.5rem;
+  
+  .card-03_section-03 {
+    width: auto;
+    height: auto;
+    background-color: #f8bbd0;
+    border-radius: 30px;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    }
 }
 
 .below_section-03 {
@@ -256,17 +248,18 @@ onMounted(() => {
   height: auto;
   justify-content: space-between;
   align-items: center;
-}
+  gap: 1.5rem;
 
-.description-below_section-03 {
-  background-color: #fff9c4;
-  border-radius: 30px;
-  padding: 1rem;
-  min-width: 50%;
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-direction: column;
+    .description-below_section-03 {
+      background-color: #fff9c4;
+      border-radius: 30px;
+      padding: 1rem;
+      min-width: 40%;
+      width: auto;
+      height: auto;
+      display: flex;
+    flex-direction: column;
+    }
 }
 
 .card_certificates {
@@ -292,16 +285,35 @@ onMounted(() => {
   border-radius: 30px;
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
-  background-image: url("@/assets/avatar.png");
+  background-image: url("@/assets/avatar-00.png");
   background-position: right;
   background-repeat: no-repeat;
+  background-size: contain;
   width: 100%;
   min-height: 130px;
+  
   padding: 0.2rem;
   flex: 1;
+  
+  a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #000000;
 
+    img {
+      width: 4rem;
+    }
+
+    h4 {
+      padding-left: 8px;
+    }
+  }
 }
+.card-cv_section-03 h4 {
+  z-index: 1;
+}
+
 
 /* Media Queries */
 
@@ -327,7 +339,6 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   min-width: 90%;
-  gap: 1.5rem;
   padding: 2.5rem 1rem;
 }
 

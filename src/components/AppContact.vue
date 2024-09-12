@@ -125,11 +125,10 @@ const sendEmail = (e) => {
   gap: 1rem;
   width: auto;
   box-sizing: border-box;
-  padding: 1.5rem;
 }
 
 .text_section-05 {
-  width: 100%;
+  width: 50%;
   height: auto;
   background-color: #e1bee7;
   border-radius: 30px;
@@ -191,7 +190,7 @@ const sendEmail = (e) => {
   margin-bottom: 1rem;
   align-items: center;
   margin: 1rem 0; 
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
@@ -312,6 +311,10 @@ const sendEmail = (e) => {
   }
 }
 
+.sweet-alert {
+  background-color: #fa8662;
+}
+
 .hr_portfolio {
   color: #ce93d8;
   width: 100%;
@@ -332,8 +335,10 @@ const sendEmail = (e) => {
     align-items: center;
   
   }
-
-
+  
+  .text_section-05 {
+    width: 100%;
+  }
 
   .input-form,
   .input-placeholder {
