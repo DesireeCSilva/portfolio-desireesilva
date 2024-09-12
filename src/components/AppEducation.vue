@@ -1,5 +1,5 @@
 <template>
-  <section id="section-03" class="section-03">
+  <section id="formacion" class="section-03">
     <div class="above_section-03">
       <div class="description-above_section-03">
         <h1 class="title_sidebar">Formación</h1>

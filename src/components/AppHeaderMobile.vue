@@ -28,13 +28,13 @@
           <a href="#sobremi">Sobre mí</a>
         </li>
         <li>
-          <a href="#section-02">Proyectos</a>
+          <a href="#proyectos">Proyectos</a>
         </li>
         <li>
-          <a href="#section-03">Formación</a>
+          <a href="#formacion">Formación</a>
         </li>
         <li>
-          <a href="#section-05">Contáctame</a>
+          <a href="#contacto">Contáctame</a>
         </li>
       </ul>
     </nav>
