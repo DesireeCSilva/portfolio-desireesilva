@@ -1,9 +1,7 @@
 ## CHECKLIST
 
-* __Preguntar a Nuria si en el header mobile te lleva cada enlace a su sección__
 * __responsive:__ márgenes en mobile help
 * __seccion proyectos:__ añadir algo para que se pueda hacer link a mi cv o descargarlo
-* __seccion 05:__ formulario
 * __no aparece este repo en mis repos de GitHub, mirar juntas__
 
 

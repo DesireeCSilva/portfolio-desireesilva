@@ -79,6 +79,14 @@
           </p>
           <p style="margin-top: 1rem; font-size: 1.1rem;">Entrelíneas Editores</p>
       </div>
+      <div class="card-cv_section-03">
+        <a href="https://drive.google.com/file/d/1BUolDxQYZECSIflSKSMSiepAN9UMRVkw/view?usp=sharing" target="_blank">
+          <img src="@/assets/icons/GitHub.png" alt="logotipo de GitHub" />
+          <h3 class="title_sidebar-card-02">Currículum Vitae de Desirée</h3>
+        </a>
+      </div>
+
+      
       <div class="card_certificates">
         <img class="carousel-certificate" src="@/assets/certificates/card-certificate00.png" alt="Certificados obtenidos por Desirée Silva">
         <img class="carousel-certificate" src="@/assets/certificates/card-certificate01.png" alt="Certificados obtenidos por Desirée Silva">
@@ -279,6 +287,22 @@ onMounted(() => {
     }
 }
 
+.card-cv_section-03 {
+  border: solid 2px #ffccbc;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  background-image: url("@/assets/avatar.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 130px;
+  padding: 0.2rem;
+  flex: 1;
+
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 768px) {
@@ -337,16 +361,13 @@ onMounted(() => {
     flex-direction: column-reverse;
     align-content: center;
     justify-content: center;
+    padding: 0.5rem;
   }
 
   .description-below_section-03 {
     width: 100%;
     padding: 1rem;
     box-sizing: border-box;
-  }
-
-  .below_section-03 {
-    padding: 0.5rem;
   }
 }
 

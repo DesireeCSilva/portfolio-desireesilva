@@ -9,11 +9,7 @@
         entusiasmo! 😊
       </p>
     </div>
-    <form
-      class="form_section-05"
-      action="https://formsubmit.co/desiree_cs@hotmail.com"
-      method="POST"
-    >
+    <form v-if="!mostrarMensaje" class="form_section-05">
       <div class="top-form">
         <label for="nombre"></label>
         <input
@@ -21,6 +17,7 @@
           name="nombre"
           type="text"
           class="input-form"
+          v-model="nombre"
           placeholder="Nombre"
         />
         <label for="email"></label>
@@ -29,27 +26,26 @@
           name="email"
           type="text"
           class="input-form"
+          v-model="email"
           placeholder="Email"
         />
       </div>
       <div>
       <label for="Comentarios"></label>
       <input
-        id="nombre"
+        id="comentarios"
         type="text"
         name="comentarios"
         class="input-placeholder"
+        v-model="comentarios"
         placeholder="Comentarios"
       /></div>
-
-      <input type="hidden" name="_next" value="@/" />
-
       <div class="content-button_section-05">
         <button
           type="submit"
           class="button-send_section-05"
           value="Enviar"
-          onclick=""
+          @click="sendEmail"
         >
           <img
             class="icon_section-05"
@@ -77,11 +73,43 @@
         </button>
       </div>
     </form>
+    <div v-else>
+      Tu formulario ha sido enviado con éxito. Gracias por tu mensaje
+    </div>
   </section>
   <hr class="hr_portfolio hr_last" />
 </template>
 
-<script></script>
+<script setup>
+import { ref } from 'vue'
+import emailjs from '@emailjs/browser';
+
+const nombre = ref(undefined)
+const email = ref(undefined)
+const comentarios = ref(undefined)
+const mostrarMensaje = ref(false)
+
+const sendEmail = (e) => {
+  const params = {
+    nombre: nombre.value,
+    email: email.value,
+    comentarios: comentarios.value
+  }
+  e.preventDefault()
+  emailjs
+  .send('service_weteccf', 'template_5zps12h', params, {
+    publicKey: 'L7sGgET0IWB0NrLB9',
+  })
+  .then(
+    () => {
+      mostrarMensaje.value = true
+      setTimeout(() => mostrarMensaje.value = false, 4000)
+    },
+    (err) => console.log('FAILED...', err)
+  )
+}
+
+</script>
 
 <style lang="scss">
 .section-05 {

@@ -7,7 +7,6 @@
     <AppEducation />
     <AppTechnologies/>
     <AppContact />
-    <!-- <AppContactAlt /> -->
     <AppFooter />
   </main>
 </template>
@@ -15,7 +14,6 @@
 <script setup>
 import AppHeader from './components/AppHeader.vue'
 import AppHeaderMobile from './components/AppHeaderMobile.vue'
-// import AppSummary from './components/AppSummary.vue'
 import AppSummaryAlt from './components/AppSummaryAlt.vue'
 import AppEducation from './components/AppEducation.vue'
 import AppContact from './components/AppContact.vue'

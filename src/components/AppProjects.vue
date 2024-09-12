@@ -16,7 +16,7 @@
                 </button> 
                 </div>
 
-                <!-- <iframe src="https://www.behance.net/embed/project/207521195?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe> -->
+                <!-- <iframe id="behance_iframe" src="https://www.behance.net/embed/project/207521195?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe> -->
 
                 <div class="card-01_section-02">
                     <a href="https://www.figma.com/proto/yR8KjnndNATFkYYxFBxoUr/Proyecto--Nirname?page-id=1%3A2&node-id=1-2284&viewport=741%2C325%2C0.06&t=lld7nY527ALzDYMo-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2284" target="_blank">
@@ -88,13 +88,10 @@
 </template>
 
 
-<script>
-export default {
-}
+<script setup>
 </script>
 
 <style lang="scss">
-
 .section-02 {
     display: flex;
     flex-direction: column;
@@ -317,11 +314,21 @@ a .title_section-02 {
 
 @media only screen and (min-width: 1920px) {
 
+    .description-above {
+        min-width: 100%;
+        margin-bottom: 3.5rem;
+    }
+
+    .description-above_section-02 {
+        display: flex;
+        justify-items: space-between;
+    }
+    
     .above_section-02 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     
     .description-above_section-02,
