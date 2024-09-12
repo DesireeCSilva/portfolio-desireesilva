@@ -11,26 +11,30 @@
     </div>
     <form v-if="!mostrarMensaje" class="form_section-05">
       <div class="top-form">
-        <label for="nombre"></label>
-        <input
-          id="nombre"
-          name="nombre"
-          type="text"
-          class="input-form"
-          v-model="nombre"
-          placeholder="Nombre"
-        />
-        <label for="email"></label>
-        <input
-          id="email"
-          name="email"
-          type="text"
-          class="input-form"
-          v-model="email"
-          placeholder="Email"
-        />
+        <div class="input-container">
+          <label for="nombre"></label>
+          <input
+            id="nombre"
+            name="nombre"
+            type="text"
+            class="input-form"
+            v-model="nombre"
+            placeholder="Nombre"
+          />
+        </div>
+        <div class="input-container">
+          <label for="email"></label>
+          <input
+            id="email"
+            name="email"
+            type="text"
+            class="input-form"
+            v-model="email"
+            placeholder="Email"
+          />
+        </div>
       </div>
-      <div>
+      <div class="bottom-form">
       <label for="Comentarios"></label>
       <input
         id="comentarios"
@@ -73,7 +77,7 @@
         </button>
       </div>
     </form>
-    <div v-else>
+    <div class="sweet-alert" v-else>
       Tu formulario ha sido enviado con éxito. Gracias por tu mensaje
     </div>
   </section>
@@ -112,18 +116,20 @@ const sendEmail = (e) => {
 </script>
 
 <style lang="scss">
+
 .section-05 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
   gap: 1rem;
-  width: 100%;
+  width: auto;
   box-sizing: border-box;
+  padding: 1.5rem;
 }
 
 .text_section-05 {
-  width: 30rem;
+  width: 100%;
   height: auto;
   background-color: #e1bee7;
   border-radius: 30px;
@@ -134,21 +140,35 @@ const sendEmail = (e) => {
 .form_section-05 {
   border: solid 2px #ffccbc;
   border-radius: 30px;
-  max-width: 48rem;
+  width: 100%;
   height: auto;
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  flex-direction: column;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 .top-form {
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: space-between;  
-  gap: .5rem;
+  justify-content: space-between; 
+  box-sizing: border-box;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.bottom-form {
+  display: flex;
+  width: 100%;
+}
+
+.input-container {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
 }
 .input-form {
   width: 100%;
@@ -162,17 +182,6 @@ const sendEmail = (e) => {
   box-sizing: border-box;
 }
 
-.input-placeholder {
-  width: 43.6rem;
-  height: 6rem;
-  border: solid 2px #ffccbc;
-  border-radius: 20px;
-  font-size: 1rem;
-  font-family: "Poppins";
-  padding-left: 1rem;
-  box-sizing: border-box; 
-}
-
 .content-button_section-05 {
   display: flex;
   flex-direction: row;
@@ -181,7 +190,20 @@ const sendEmail = (e) => {
   margin-top: 1rem;
   margin-bottom: 1rem;
   align-items: center;
-  gap: 0.5rem; 
+  margin: 1rem 0; 
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+
+.input-placeholder {
+  width: 100%;
+  height: 6rem;
+  border: solid 2px #ffccbc;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-family: "Poppins";
+  padding-left: 1rem;
+  box-sizing: border-box; 
 }
 
 .icon_section-05 {
@@ -196,10 +218,9 @@ const sendEmail = (e) => {
   height: fit-content;
   font-size: 1.3rem;
   font-family: "Poppins";
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 0;
   border-radius: 0.5rem;
-  border-style: none;
+  border: none;
   cursor: pointer;
   text-decoration: none;
   display: flex;
@@ -207,16 +228,18 @@ const sendEmail = (e) => {
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
-}
-.button-send_section-05:hover {
-  background-color: #ce93d8;
-  transform: scale(0.95);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-.button-send_section-05:active {
-  background-color: #bc38d3;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transform: translateY(2px);
+
+  &:hover {
+    background-color: #ce93d8;
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    background-color: #bc38d3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+  }
 }
 
 .button-whatsapp_section-05 {
@@ -225,10 +248,9 @@ const sendEmail = (e) => {
   height: fit-content;
   font-size: 1.3rem;
   font-family: "Poppins";
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 0;
   border-radius: 0.5rem;
-  border-style: none;
+  border: none;
   cursor: pointer;
   text-decoration: none;
   display: flex;
@@ -236,16 +258,18 @@ const sendEmail = (e) => {
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
-}
-.button-whatsapp_section-05:hover {
-  background-color: #f8bbd0;
-  transform: scale(0.95);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-.button-whatsapp_section-05:active {
-  background-color: #ee427e;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transform: translateY(2px);
+
+  &:hover {
+    background-color: #f8bbd0;
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    background-color: #ee427e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+  }
 }
 
 .button-call_section-05 {
@@ -254,10 +278,9 @@ const sendEmail = (e) => {
   height: fit-content;
   font-size: 1.3rem;
   font-family: "Poppins";
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 0;
   border-radius: 0.5rem;
-  border-style: none;
+  border: none;
   cursor: pointer;
   text-decoration: none;
   display: flex;
@@ -265,25 +288,30 @@ const sendEmail = (e) => {
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
-}
-.button-call_section-05:hover {
-  background-color: #ffccbc;
-  transform: scale(0.95);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-.button-call_section-05:active {
-  background-color: #fa8662;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transform: translateY(2px);
+
+  &:hover {
+    background-color: #ffccbc;
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    background-color: #fa8662;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+  }
 }
 
-.button-call_section-05 a,
-.button-send_section-05 a,
-.button-whatsapp_section-05 a {
-  display: flex;
-  text-decoration: none;
-  color: #000000;
+.button-call_section-05,
+.button-send_section-05,
+.button-whatsapp_section-05 {
+  a {
+    display: flex;
+    text-decoration: none;
+    color: #000000;
+  }
 }
+
 .hr_portfolio {
   color: #ce93d8;
   width: 100%;
@@ -305,31 +333,12 @@ const sendEmail = (e) => {
   
   }
 
-  .text_section-05 {
-    width: 100%;
-    height: auto;
-    background-color: #e1bee7;
-    border-radius: 30px;
-    padding: 1rem;
-  }
 
-  .form_section-05 {
-    border: solid 2px #ffccbc;
-    border-radius: 30px;
-    width: 100%;
-    height: auto;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
 
   .input-form,
   .input-placeholder {
     width: 100%;
     margin: 0.5rem 0; 
-    min-width: 20rem;
     box-sizing: border-box;
   }
 
