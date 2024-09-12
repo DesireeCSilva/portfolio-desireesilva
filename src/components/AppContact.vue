@@ -1,5 +1,5 @@
 <template>
-  <section id="section-05" class="section-05">
+  <section id="contacto" class="section-05">
     <div class="text_section-05">
       <h1 class="title_sidebar">¡Hablemos!</h1>
       <p class="text_sidebar">

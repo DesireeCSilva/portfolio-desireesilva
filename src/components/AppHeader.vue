@@ -7,13 +7,13 @@
           <a href="#sobremi" class="main-menu_link">Sobre mí</a>
         </li>
         <li class="main-menu_item">
-          <a href="#section-02" class="main-menu_link">Proyectos</a>
+          <a href="#proyectos" class="main-menu_link">Proyectos</a>
         </li>
         <li class="main-menu_item">
-          <a href="#section-03" class="main-menu_link">Formación</a>
+          <a href="#formacion" class="main-menu_link">Formación</a>
         </li>
         <li class="main-menu_item">
-          <a href="#section-04" class="main-menu_link">Tecnologías</a>
+          <a href="#tecnologias" class="main-menu_link">Tecnologías</a>
         </li>
       </ul>
         <button class="button_header">

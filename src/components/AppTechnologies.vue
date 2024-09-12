@@ -1,5 +1,5 @@
 <template>
-    <section id="section-04" class="section-04">
+    <section id="tecnologias" class="section-04">
         <div class="content_section-04">
             <h1 class="title_sidebar">Tecnologías</h1>
             <!-- <div class="icons">
