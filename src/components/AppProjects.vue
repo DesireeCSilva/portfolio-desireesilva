@@ -16,8 +16,6 @@
                 </button> 
                 </div>
 
-                <!-- <iframe id="behance_iframe" src="https://www.behance.net/embed/project/207521195?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe> -->
-
                 <div class="card-01_section-02">
                     <a href="https://www.figma.com/proto/yR8KjnndNATFkYYxFBxoUr/Proyecto--Nirname?page-id=1%3A2&node-id=1-2284&viewport=741%2C325%2C0.06&t=lld7nY527ALzDYMo-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2284" target="_blank">
                         <div class="title_section-02">
@@ -53,7 +51,7 @@
                         </div>
                     <p class="text_descriptions">Diseño de un e-commerce en pocas horas, quedando en 2º puesto.</p>
                     <div class="mockup-cards_section-02">
-                        <img src="@/assets/card-02-section-02.png" alt="foto de Ecopop, una web de muebles de segunda mano">
+                        <img src="@/assets/card-03-section-02.png" alt="foto de Ecopop, una web de muebles de segunda mano">
                     </div>  
                     </a>
                 </div>
@@ -266,9 +264,6 @@ a .title_section-02 {
 /* Media queries */
 
 @media screen and (max-width: 768px) {
-    .section-02 {
-        padding: 2rem; 
-    }
 
     .description-above_section-02 {    
         display: flex;
@@ -310,6 +305,15 @@ a .title_section-02 {
     margin: 0 auto; 
     }
 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .section-02 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
 }
 
 @media only screen and (min-width: 1920px) {

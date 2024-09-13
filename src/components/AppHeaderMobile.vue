@@ -64,7 +64,7 @@ const showMenu = ref(false);
       width: 35%;
     }
 
-    @media (min-width: 430px) {
+  @media only screen and (min-width: 320px) and (max-width: 768px){
       img.logo_header__mobile {
         width: 40%;
       }
@@ -117,7 +117,7 @@ const showMenu = ref(false);
       transition: background-color 0.3s, color 0.3s;
 
       &:hover {
-        background-color: #e1bee7; // Color al pasar el ratón
+        background-color: #e1bee7; 
       }
 
       &:active {
@@ -127,4 +127,5 @@ const showMenu = ref(false);
     }
   }
 }
+
 </style>

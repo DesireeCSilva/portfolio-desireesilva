@@ -270,6 +270,7 @@ onMounted(() => {
       display: none;
       width: auto;
       max-width: 100%;
+      height: 100%;
       opacity: 0;
       transition: opacity 1s ease-in-out;
     }
@@ -277,6 +278,7 @@ onMounted(() => {
     .carousel-certificate.active {
       display: block;
       opacity: 1;
+      height: 100%;
     }
 }
 
@@ -288,9 +290,10 @@ onMounted(() => {
   background-image: url("@/assets/avatar-00.png");
   background-position: right;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 65%;
   width: 100%;
-  min-height: 130px;
+  height: 100%;
+  min-height: 170px;
   
   padding: 0.2rem;
   flex: 1;
@@ -387,5 +390,10 @@ onMounted(() => {
   .above_section-03 {
     gap: 2.5rem;
   }
+
+  .card-cv_section-03 {
+    max-width: 25rem;
+  }
+
 }
 </style>

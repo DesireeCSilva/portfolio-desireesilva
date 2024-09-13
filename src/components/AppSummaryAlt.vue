@@ -2,7 +2,7 @@
   <section id="about-me" class="about-me">
     <div class="about-me_left">
       <h1 class="gradient">DISEÑADORA UX/UI<br />MAQUETADORA WEB</h1>
-      <p class="text_sidebar">
+      <p class="text_sidebar-section-01">
         ¡Hola! Soy Desirée y vivo en Madrid. Estudié Diseño Gráfico porque
         siempre he sido una apasionada del arte y la tecnología. Acabo de
         graduarme en un Bootcamp de Desarrollo Web, y me he formado en Diseño
@@ -108,7 +108,7 @@ onMounted(() => {
       -webkit-text-fill-color: transparent;
     }
 
-    .text_sidebar {
+    .text_sidebar-section-01 {
       font-size: 1.1rem;
     }
   }
@@ -210,7 +210,7 @@ onMounted(() => {
       font-size: 1.2rem; 
     }
 
-    .text_sidebar,
+    .text_sidebar-section-01,
     .text_descriptions {
       font-size: 1rem; 
     }
@@ -227,16 +227,28 @@ onMounted(() => {
   justify-content: space-between;
   gap: 1.5rem;
 
-  &_left {
-    flex: 1;
-  }
   &_center {
     flex: 1;
   }
-  &right {
+  &_right {
     flex: 1; 
   } 
   }
 
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+
+
+  &_left {
+    flex: 1.1;
+
+    .text_sidebar-section-01 {
+      font-size: 1.5rem;
+    }
+  }
+}                 
 }
 </style>

@@ -42,7 +42,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  padding: 3rem;
+  padding: 2.5rem;
 
   .hr_portfolio {
     color: #CE93D8;
@@ -64,7 +64,7 @@ body {
     padding: 0;
 
     main > :not(header) {
-      padding: 2rem;
+      padding: 1rem;
     }
 
     .hr_portfolio {

@@ -78,7 +78,7 @@
       </div>
     </form>
     <div class="sweet-alert" v-else>
-      Tu formulario ha sido enviado con éxito. Gracias por tu mensaje
+      <p>Tu formulario ha sido enviado con éxito. <br>¡Gracias por tu mensaje!</p>
     </div>
   </section>
   <hr class="hr_portfolio hr_last" />
@@ -122,7 +122,7 @@ const sendEmail = (e) => {
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
-  gap: 1rem;
+  gap: 2rem;
   width: auto;
   box-sizing: border-box;
 }
@@ -313,7 +313,19 @@ const sendEmail = (e) => {
 
 .sweet-alert {
   background-color: #fa8662;
+  border-radius: 30px;
+  padding: 1rem;
+  width: auto;
+
+  p {
+    font-family: 'Poppins';
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+  }
 }
+
+
 
 .hr_portfolio {
   color: #ce93d8;
@@ -371,6 +383,13 @@ const sendEmail = (e) => {
   .button-call_section-05 {
     width: 100%;
     margin: 0.5rem 0;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+
+  .section-05 {
+    gap: 5.5rem;
   }
 }
 </style>

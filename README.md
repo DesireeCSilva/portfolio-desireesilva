@@ -1,7 +1,5 @@
 ## CHECKLIST
-
-* __responsive:__ márgenes en mobile help
-* __seccion proyectos:__ añadir algo para que se pueda hacer link a mi cv o descargarlo
+* preguntar a Nuria que el toggle salga en medida tablet 768 x 1024
 * __no aparece este repo en mis repos de GitHub, mirar juntas__
 
 
@@ -17,17 +15,17 @@
 
 # Descripción
 
-Este proyecto es mi portafolio personal donde muestro mis habilidades en diseño UX/UI y desarrollo web. El objetivo es presentar mis trabajos anteriores, mi currículum, y ofrecer una forma de contacto directa. El diseño está enfocado en la accesibilidad y una experiencia de usuario óptima en todos los dispositivos.
+__Este proyecto es mi portafolio personal donde muestro mis habilidades en diseño UX/UI y desarrollo web. El objetivo es presentar mis trabajos anteriores, mi currículum, y ofrecer una forma de contacto directa. El diseño está enfocado en la accesibilidad y una experiencia de usuario óptima en todos los dispositivos.__
 
 # Project Structure
-├── public/ │ ├── index.html # Archivo principal HTML 
-├── src/ │ 
-├── assets/ # Imágenes, iconos y otros recursos multimedia 
-├── components/ # Componentes Vue │  
-├── App.vue # Componente raíz de la aplicación 
-├── main.js # Archivo principal para iniciar Vue 
-├── styles/ # Estilos CSS globales 
-├── package.json # Dependencias y scripts del proyecto
+* ── public/ │ ├── index.html # Archivo principal HTML 
+* ├── src/ │ 
+* ├── assets/ # Imágenes, iconos y otros recursos multimedia 
+* ├── components/ # Componentes Vue │  
+* ├── App.vue # Componente raíz de la aplicación 
+* ├── main.js # Archivo principal para iniciar Vue 
+* ├── styles/ # Estilos CSS globales 
+* ├── package.json # Dependencias y scripts del proyecto
 
 
 # Tecnologías
