@@ -4,7 +4,7 @@
                 <div class="description-above_section-02">
                     <div class="description-above">
                         <h1 class="title_sidebar">Proyectos</h1>
-                        <p class="text_sidebar">He desarrollado mis diseños partiendo de una sólida investigación previa, aplicando de manera integral mis conocimientos en UX/UI. Me he enfocado en crear interfaces completas tanto para web como para aplicaciones, siempre con el objetivo de garantizar que la experiencia del usuario sea fluida, intuitiva y altamente satisfactoria.
+                        <p class="text_descriptions">He desarrollado mis diseños partiendo de una sólida investigación previa, aplicando de manera integral mis conocimientos en UX/UI. Me he enfocado en crear interfaces completas tanto para web como para aplicaciones, siempre con el objetivo de garantizar que la experiencia del usuario sea fluida, intuitiva y altamente satisfactoria.
                         </p> 
                     </div>
                         <button class="button_see-more">
@@ -84,11 +84,14 @@
         <hr class="hr_portfolio">
 </template>
 
-
 <script setup>
 </script>
 
 <style lang="scss">
+
+.text_descriptions {    
+    font-size: 1.1rem;
+}
 .section-02 {
     display: flex;
     flex-direction: column;
@@ -98,8 +101,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center; 
-    gap: 1.5rem;
+    align-items: stretch; 
     height: auto;
 }
 .description-above_section-02 {    
@@ -107,11 +109,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 29%;
-    height: 100%;    
+    max-width: 25rem;
+    min-height: 100%;    
     background-color: #E1BEE7;
     border-radius: 30px;
     padding: 1rem;
+    box-sizing: border-box;
 }
 
 .card-01_section-02 p, 
@@ -171,12 +174,14 @@
 .arrow {
     width: fit-content;
     height: fit-content;
+    
+    .arrow:hover {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(180deg);
+        transition: transform 0.2s ease-in-out;
 }
-.arrow:hover {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(180deg);
-    transition: transform 0.2s ease-in-out;
 }
+
 a .title_section-02 {
     display: flex;
     flex-direction: row ;
@@ -224,7 +229,7 @@ a .title_section-02 {
     padding: 0.5rem 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
-    margin: 1rem 0;
+    margin: 2rem 0;
 
     &:hover {
     background-color: #ce93d8;
@@ -253,6 +258,13 @@ a .title_section-02 {
     }
 }
 
+.text-sidebar {
+    display: flex;
+  font-size: 1.1rem;
+  margin: 0;
+  margin-top: 0.2rem;
+  display: inline;
+}
 
 
 /* Media queries */

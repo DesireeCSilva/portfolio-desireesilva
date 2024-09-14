@@ -64,7 +64,7 @@ const showMenu = ref(false);
       width: 35%;
     }
 
-  @media only screen and (min-width: 320px) and (max-width: 1240px){
+  @media only screen and (min-width: 320px) {
       img.logo_header__mobile {
         width: 40%;
       }

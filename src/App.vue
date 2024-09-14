@@ -70,13 +70,5 @@ body {
       display: none;
     }
   }
-
-  .text_sidebar,
-  .text_descriptions {
-    font-size: 1rem; 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
 }
 </style>

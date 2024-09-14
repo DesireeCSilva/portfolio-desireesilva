@@ -102,7 +102,7 @@ import SvgIcon from "@jamescoyle/vue-icon";
 import { mdiPhone } from "@mdi/js";
 </script>
 
-<style>
+<style lang="scss">
 footer {
   padding-top: 1rem;
   position: relative;

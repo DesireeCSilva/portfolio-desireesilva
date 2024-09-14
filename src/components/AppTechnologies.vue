@@ -158,7 +158,7 @@ export default {};
         height: auto; 
     }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
         .content_section-04 {
         display: flex;
         flex-direction: column;

@@ -2,7 +2,7 @@
   <section id="contacto" class="section-05">
     <div class="text_section-05">
       <h1 class="title_sidebar">¡Hablemos!</h1>
-      <p class="text_sidebar">
+      <p class="text_descriptions">
         ¿Qué te parece si empezamos a construir algo increíble juntos? Estoy
         convencida de que una colaboración puede llevarnos a crear proyectos
         excepcionales y de gran impacto. ¡Espero tu respuesta con mucho
@@ -339,6 +339,10 @@ const sendEmail = (e) => {
 // Medias Queries
 
 @media only screen and (max-width: 768px) {
+
+  .text_descriptions {    
+    font-size: 1.1rem;
+  }
   .section-05 {
     flex-direction: column;
     justify-content: center;
