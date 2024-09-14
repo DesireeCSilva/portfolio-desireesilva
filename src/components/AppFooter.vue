@@ -273,11 +273,6 @@ footer {
     width: 100%;
   }
 
-  .button_header {
-    width: 100%;
-    text-align: center;
-    margin-top: 1rem;
-  }
 
   .footer_icons {
     display: flex;
@@ -291,6 +286,29 @@ footer {
     margin-top: 1rem;
     margin-bottom: 2rem;
     box-sizing: border-box;
+  }
+
+
+}  
+
+@media only screen and (max-width: 1024px) {
+  .footer_portfolio {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    justify-content: center;
+  }
+
+    .main-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }  
+
+    .main-menu_item {
+    padding: 1em;
+    width: 100%;
   }
 }
 </style>

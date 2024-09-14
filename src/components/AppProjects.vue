@@ -264,7 +264,9 @@ a .title_section-02 {
 /* Media queries */
 
 @media screen and (max-width: 768px) {
-
+    .above_section-02 {
+        justify-content: center;
+    }
     .description-above_section-02 {    
         display: flex;
         flex-direction: column;
@@ -273,7 +275,6 @@ a .title_section-02 {
         text-align: left; 
         margin-bottom: 1.5rem;
     }
-
     .description-above {
         background-color: #E1BEE7;
         width: auto;
@@ -282,6 +283,7 @@ a .title_section-02 {
         padding: 1rem;
         margin-bottom: 1.5rem;
     }
+    
     .below_section-02 {
         margin-top: 0;
         flex-direction: column-reverse;

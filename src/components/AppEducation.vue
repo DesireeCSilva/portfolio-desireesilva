@@ -219,7 +219,7 @@ onMounted(() => {
 .title_sidebar-card-02 {
   margin: 0;
 }
-.card-02_section-03 h1 {
+.card-02_section-03 h2 {
   z-index: 1;
 }
 
@@ -246,20 +246,19 @@ onMounted(() => {
   display: flex;
   width: auto;
   height: auto;
-  justify-content: space-between;
+  justify-content: stretch;
   align-items: center;
   gap: 1.5rem;
+}    
 
-    .description-below_section-03 {
-      background-color: #fff9c4;
-      border-radius: 30px;
-      padding: 1rem;
-      min-width: 40%;
-      width: auto;
-      height: auto;
-      display: flex;
+.description-below_section-03 {
+    background-color: #fff9c4;
+    border-radius: 30px;
+    padding: 1rem;
+    width: auto;
+    height: auto;
+    display: flex;
     flex-direction: column;
-    }
 }
 
 .card_certificates {
@@ -290,11 +289,10 @@ onMounted(() => {
   background-image: url("@/assets/avatar-00.png");
   background-position: right;
   background-repeat: no-repeat;
-  background-size: 65%;
+  background-size: 10rem;
   width: 100%;
   height: 100%;
   min-height: 170px;
-  
   padding: 0.2rem;
   flex: 1;
   
@@ -309,7 +307,7 @@ onMounted(() => {
     }
 
     h4 {
-      padding-left: 8px;
+      padding-left: 0.5rem;
     }
   }
 }
@@ -336,7 +334,7 @@ onMounted(() => {
   font-size: 1rem;
   margin: 0;
   display: inline;
-}
+  }
 
 .card-01_section-03 {
   display: flex;
@@ -360,17 +358,20 @@ onMounted(() => {
   .section-03 {
     display: flex;
     flex-direction: column;
-  
+    align-content: center;
+    justify-content: center;
     height: auto;
     box-sizing: border-box;
   }
+
   .above_section-03 {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .below_section-03 {
-    width: auto;
+    width: 100%;
     height: auto;
     flex-direction: column-reverse;
     align-content: center;
@@ -383,6 +384,44 @@ onMounted(() => {
     padding: 1rem;
     box-sizing: border-box;
   }
+
+  .card-02_section-03 h2{
+    font-size: 100%;
+  }
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+  .section-03 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  .above_section-03 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .below_section-03 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .description-below_section-03 {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  .card-02_section-03 , .card-cv_section-03 {
+    max-width: 70%;
+  }
 }
 
 @media only screen and (min-width: 1920px) {
@@ -394,6 +433,5 @@ onMounted(() => {
   .card-cv_section-03 {
     max-width: 25rem;
   }
-
 }
 </style>

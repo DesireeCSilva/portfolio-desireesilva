@@ -325,8 +325,6 @@ const sendEmail = (e) => {
   }
 }
 
-
-
 .hr_portfolio {
   color: #ce93d8;
   width: 100%;
@@ -392,4 +390,6 @@ const sendEmail = (e) => {
     gap: 5.5rem;
   }
 }
+
+
 </style>

@@ -158,6 +158,13 @@ export default {};
         height: auto; 
     }
 }
+@media only screen and (min-width: 1024px) {
+        .content_section-04 {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+}
 
 @media only screen and (min-width: 1920px) {
     .content_section-04 {

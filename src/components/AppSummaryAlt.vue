@@ -189,6 +189,7 @@ onMounted(() => {
 // Media Queries
 
 @media screen and (max-width: 768px) {
+
   .about-me {
     flex-direction: column;
 
@@ -219,6 +220,21 @@ onMounted(() => {
       font-size: 0.85rem; 
     }
   }
+}
+
+@media only screen and (max-width: 1024px) {
+    .about-me {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about-me_left,
+    .about-me_center,
+    .about-me_right {
+      flex-basis: 100%; /* Asegura que los elementos ocupen todo el ancho disponible */
+}
 }
 
 @media only screen and (min-width: 1920px) {
