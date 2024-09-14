@@ -384,12 +384,26 @@ const sendEmail = (e) => {
   }
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1240px){
+
+  .content-button_section-05 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: .5rem
+  }
+  .button-send_section-05,
+  .button-whatsapp_section-05,
+  .button-call_section-05 {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+}
+
 @media only screen and (min-width: 1920px) {
 
   .section-05 {
     gap: 5.5rem;
   }
 }
-
 
 </style>

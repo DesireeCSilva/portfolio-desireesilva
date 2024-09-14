@@ -6,14 +6,13 @@
                         <h1 class="title_sidebar">Proyectos</h1>
                         <p class="text_sidebar">He desarrollado mis diseños partiendo de una sólida investigación previa, aplicando de manera integral mis conocimientos en UX/UI. Me he enfocado en crear interfaces completas tanto para web como para aplicaciones, siempre con el objetivo de garantizar que la experiencia del usuario sea fluida, intuitiva y altamente satisfactoria.
                         </p> 
-                    </div>  
-
-                <button class="button_see-more">
-                    <img src="https://img.icons8.com/color/48/visible--v2.png" class="icon_see-more" alt="visible--v2"/>
-                    <a href="https://www.behance.net/desirecarrizo" target="_blank">
-                    Ver más proyectos
-                    </a>          
-                </button> 
+                    </div>
+                        <button class="button_see-more">
+                            <img src="https://img.icons8.com/color/48/visible--v2.png" class="icon_see-more" alt="visible--v2"/>
+                            <a href="https://www.behance.net/desirecarrizo" target="_blank">
+                            Ver más proyectos
+                            </a>          
+                        </button> 
                 </div>
 
                 <div class="card-01_section-02">
@@ -99,20 +98,18 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    align-items: center; 
+    gap: 1.5rem;
+    height: auto;
 }
 .description-above_section-02 {    
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-}
-
-.description-above {
+    justify-content: center;
+    width: 29%;
+    height: 100%;    
     background-color: #E1BEE7;
-    width: auto;
-    max-width: 23rem;
-    height: auto;
     border-radius: 30px;
     padding: 1rem;
 }
@@ -210,12 +207,6 @@ a .title_section-02 {
 .card-05_section-02 {
     border: solid 2px #F8BBD0;
 }
-.hr_portfolio {
-    color: #CE93D8;
-    width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
 
 .button_see-more {
     background-color: #CE93D8;
@@ -223,43 +214,46 @@ a .title_section-02 {
     height: fit-content;
     font-size: 1.3rem;
     font-family: 'Poppins';
-    border-radius: 0.50rem;
+    border-radius: 0.5rem;
     border-style: none;
-    cursor: pointer; 
+    cursor: pointer;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    transition: all 0.3s ease; 
+    padding: 0.5rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin: 1rem 0;
+
+    &:hover {
+    background-color: #ce93d8;
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+    background-color: #bc38d3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+    }
 
     .icon_see-more {
-        display: flex;
-        flex-direction: row;
-        align-self: center;
-        width: auto;
-        height: auto;
-        margin-right: 0.5rem;
-        }
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: auto;
+    height: auto;
+    margin-right: 0.5rem;
     }
 
-    .button_see-more a {
-        text-decoration: none;
-        color: #000;
+    a {
+    text-decoration: none;
+    color: #000;
     }
+}
 
-    .button_see-more:hover {
-        background-color: #ce93d8;
-        transform: scale(0.95);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-    .button_see-more:active {
-        background-color: #bc38d3;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        transform: translateY(2px);
-    }
+
 
 /* Media queries */
 
@@ -274,16 +268,9 @@ a .title_section-02 {
         justify-content: space-between;
         text-align: left; 
         margin-bottom: 1.5rem;
+        width: 100%;
     }
-    .description-above {
-        background-color: #E1BEE7;
-        width: auto;
-        height: auto;
-        border-radius: 30px;
-        padding: 1rem;
-        margin-bottom: 1.5rem;
-    }
-    
+
     .below_section-02 {
         margin-top: 0;
         flex-direction: column-reverse;
@@ -309,13 +296,39 @@ a .title_section-02 {
 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1240px){
     .section-02 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-}
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .description-above_section-02 {
+        width: auto;
+    }
+
+    .card-01_section-02,
+    .card-02_section-02,
+    .card-03_section-02,
+    .card-04_section-02,
+    .card-05_section-02 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .above_section-02 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+    .below_section-02 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 @media only screen and (min-width: 1920px) {

@@ -17,7 +17,6 @@ import AppHeaderMobile from './components/AppHeaderMobile.vue'
 import AppSummaryAlt from './components/AppSummaryAlt.vue'
 import AppEducation from './components/AppEducation.vue'
 import AppContact from './components/AppContact.vue'
-// import AppContactAlt from './components/AppContactAlt.vue'
 import AppProjects from './components/AppProjects.vue'
 import AppTechnologies from './components/AppTechnologies.vue'
 import AppFooter from './components/AppFooter.vue'
@@ -25,7 +24,7 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 const isMobileDevice = ref(false)
 
-const setScreenSize = () => isMobileDevice.value = window.innerWidth < 768
+const setScreenSize = () => isMobileDevice.value = window.innerWidth < 1280
 
 onMounted(() => {
   setScreenSize()
@@ -79,6 +78,5 @@ body {
     padding: 0;
     box-sizing: border-box;
   }
-
 }
 </style>
