@@ -2,7 +2,7 @@
 ## PORTFOLIO DE DESIRÉE CARRIZOSA SILVA 👱‍♀️💜
 
 <a href="https://www.canva.com/design/DAGQ2QPMAXk/cEMOxf2Ff1jZxUueM5p3iw/watch" target="_blank">
-<img width="2600" src="https://drive.google.com/uc?export=view&id=1Zt2ce8TvYvhfWTAmoRIPDSN-u6lbaVYy" alt="Imagen de Desirée" target="_blank">
+<img width="2100" src="https://drive.google.com/uc?export=view&id=1Zt2ce8TvYvhfWTAmoRIPDSN-u6lbaVYy" alt="Imagen de Desirée" target="_blank">
 </a>
 
 # Index
@@ -15,7 +15,7 @@
 
 # Descripción
 
-__Este proyecto es mi portafolio personal donde muestro mis habilidades en diseño UX/UI y desarrollo web. El objetivo es presentar mis trabajos anteriores, mi currículum, y ofrecer una forma de contacto directa. El diseño está enfocado en la accesibilidad y una experiencia de usuario óptima en todos los dispositivos.__
+__Este proyecto es mi portafolio personal donde muestro mis habilidades en diseño UX/UI y desarrollo web. El objetivo es presentar mis trabajos de Diseño y Desarrollo Web, mi Currículum Vitae, y ofrecer una forma de contacto directa. El diseño está enfocado en la accesibilidad y una experiencia de usuario óptima en todos los dispositivos.__
 
 # Project Structure
 * __public__/ index.html # Archivo principal HTML 
