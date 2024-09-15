@@ -133,11 +133,17 @@ export default {};
 }
 
 .icons img:hover {
-    -webkit-transform: rotateY(180deg);
-    -webkit-transform-style: preserve-3d;
-    transform: rotateY(180deg);
-    transform-style: preserve-3d;
-    transition: transform 0.4s ease-in-out;
+    animation: beat 0.6s infinite; 
+    transition: transform 0.4s ease-in-out; 
+}
+
+@keyframes beat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2); /* Aumenta el tamaño al 120% en el medio de la animación */
+    }
 }
 
 

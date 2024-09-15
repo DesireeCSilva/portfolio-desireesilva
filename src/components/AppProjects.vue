@@ -174,12 +174,11 @@
 .arrow {
     width: fit-content;
     height: fit-content;
-    
-    .arrow:hover {
+    &:hover {
         -webkit-transform: rotate(90deg);
         transform: rotate(180deg);
         transition: transform 0.2s ease-in-out;
-}
+    }
 }
 
 a .title_section-02 {
@@ -197,6 +196,8 @@ a .title_section-02 {
     justify-content: space-between;
     margin-top: 1.5rem;
 }
+
+//Borders de las cards
 .card-01_section-02 {
     border: solid 2px #FFCCBC;
 }
@@ -260,10 +261,8 @@ a .title_section-02 {
 
 .text-sidebar {
     display: flex;
-  font-size: 1.1rem;
-  margin: 0;
-  margin-top: 0.2rem;
-  display: inline;
+    font-size: 1.1rem;
+    margin: 0;
 }
 
 
@@ -289,7 +288,7 @@ a .title_section-02 {
     }
 
     .title-sidebar_section-02 {
-        font-size: 100%; 
+        font-size: 1.2em; 
     }
 
     .card-01_section-02,
@@ -306,7 +305,27 @@ a .title_section-02 {
     margin: 0 auto; 
     }
 
+    /* Efecto de "tap" en dispositivos móviles */
+    .card-01_section-02:active,
+    .card-02_section-02:active,
+    .card-03_section-02:active,
+    .card-04_section-02:active,
+    .card-05_section-02:active {
+        transform: scale(1.1); 
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Efecto de tap para el mockup dentro de la tarjeta */
+    .card-01_section-02:active .mockup-cards_section-02 img,
+    .card-02_section-02:active .mockup-cards_section-02 img,
+    .card-03_section-02:active .mockup-cards_section-02 img,
+    .card-04_section-02:active .mockup-cards_section-02 img,
+    .card-05_section-02:active .mockup-cards_section-02 img {
+        transform: scale(1.3);  
+        transition: transform 0.3s ease;
 }
+
 
 @media only screen and (min-width: 1024px) and (max-width: 1240px){
     .section-02 {
@@ -393,5 +412,6 @@ a .title_section-02 {
     .title_section-02 {
         padding-top: 1rem;
     }
+}
 }
 </style>

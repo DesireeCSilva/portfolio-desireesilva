@@ -25,27 +25,19 @@
         </div>
         <div class="footer_icons">
           <li class="main-menu_item">
-            <a
-              href="https://www.linkedin.com/in/desiree-carrizosa/"
-              target="blank"
-            >
-              <img
-                src="../assets/icons/fa_linkedin-square.png"
-                alt="logotipo de Linkedin"
-              />
+            <a href="https://www.linkedin.com/in/desiree-carrizosa/"
+              target="blank">
+              <img src="https://img.icons8.com/color/70/linkedin.png" alt="linkedin"/>
             </a>
           </li>
           <li class="main-menu_item">
             <a href="https://www.behance.net/desirecarrizo" target="blank">
-              <img
-                src="../assets/icons/mage_behance.png"
-                alt="logotipo de Behance"
-              />
+            <img src="https://img.icons8.com/color/70/behance.png" alt="behance"/>
             </a>
           </li>
         </div>
       </ul>
-      <button class="button_header">
+      <button class="button_footer">
         <svg-icon type="mdi" :path="mdiPhone" class="icon_header"></svg-icon
         ><a href="tel:675937952">¡Contáctame!</a>
       </button>
@@ -53,7 +45,7 @@
 
     <p style="display: flex; justify-content: center; margin-bottom: 2rem">
       © 2024 Desirée Carrizosa Silva y Nuria Martínez. Todos los derechos
-      reservados
+      reservados 🌼
     </p>
     <div class="bg_heart">
       <!-- Aquí es donde los bubbles animados serán añadidos dinámicamente -->
@@ -152,7 +144,7 @@ footer {
   }
 }
 .footer_portfolio,
-.button_header,
+.button_footer,
 .main-menu,
 .main-menu_item,
 .main-menu_link, 
@@ -172,7 +164,6 @@ footer {
   max-width: 15rem;
   height: fit-content;
 }
-
 .main-menu {
   width: 100%;
   padding: 3em;
@@ -191,27 +182,32 @@ footer {
   cursor: pointer;
   border: none;
 }
+
 .main-menu_link {
   text-decoration: none;
   color: #000000;
+  position: relative; 
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #ce93d8, #e878a2, #eb85ab);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  &:hover::before {
+    transform: scaleX(1);
+  }
 }
-.main-menu_link::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(to right, #ce93d8, #e878a2, #eb85ab);
-  z-index: 1;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s ease-in-out;
-}
-.main-menu_link:hover::before {
-  transform: scaleX(1);
-}
-.button_header {
+
+.button_footer {
   background-color: #ce93d8;
   width: 18em;
   height: fit-content;
@@ -225,15 +221,21 @@ footer {
   display: flex;
   text-align: center;
   justify-content: center;
-  
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #ce93d8;
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  a {
+  text-decoration: none;
+  color: #000000;
 }
-.button_header:hover {
-  background-color: #ce93d8;
-  transform: scale(0.95);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
 .icon_header {
   display: flex;
   flex-direction: row;
@@ -241,10 +243,25 @@ footer {
   width: auto;
   height: auto;
 }
-.button_header a {
-  text-decoration: none;
-  color: #000000;
-}
+
+.footer_icons img {
+    width: 3.5rem;
+    height: auto;
+    transform: scale(1.1);
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;    
+    background: none;
+    border: none;
+    box-sizing: border-box;
+  }
+
+  .footer_icons img:active {
+    transform: scale(1.3);
+    background: none;
+    border: none;
+  }
+
+
 
 /* Media query */
 
@@ -288,10 +305,14 @@ footer {
     box-sizing: border-box;
   }
 
+  .button_footer {
+    width: 10em;
+  }
 
-}  
+  
 
-@media only screen and (max-width: 1024px) {
+
+@media only screen and (max-width: 1240px) {
   .footer_portfolio {
     flex-direction: column;
     align-items: center;
@@ -304,11 +325,13 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0;
   }  
 
     .main-menu_item {
     padding: 1em;
     width: 100%;
   }
+}
 }
 </style>

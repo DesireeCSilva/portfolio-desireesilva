@@ -87,6 +87,7 @@
       </div>
       
       <div class="card_certificates">
+        <a href="https://www.canva.com/design/DAGQ2QPMAXk/cEMOxf2Ff1jZxUueM5p3iw/watch" target="_blank">
         <img class="carousel-certificate" src="@/assets/certificates/card-certificate00.png" alt="Certificados obtenidos por Desirée Silva">
         <img class="carousel-certificate" src="@/assets/certificates/card-certificate01.png" alt="Certificados obtenidos por Desirée Silva">
         <img class="carousel-certificate" src="@/assets/certificates/card-certificate02.png" alt="Certificados obtenidos por Desirée Silva">
@@ -96,7 +97,7 @@
         <img class="carousel-certificate" src="@/assets/certificates/card-certificate06.png" alt="Certificados obtenidos por Desirée Silva">
         <img class="carousel-certificate" src="@/assets/certificates/card-certificate07.png" alt="Certificados obtenidos por Desirée Silva">
         <img class="carousel-certificate" src="@/assets/certificates/card-certificate08.png" alt="Certificados obtenidos por Desirée Silva">
-        <img class="carousel-certificate" src="@/assets/certificates/card-certificate09.png" alt="Certificados obtenidos por Desirée Silva">
+        <img class="carousel-certificate" src="@/assets/certificates/card-certificate09.png" alt="Certificados obtenidos por Desirée Silva"></a>
       </div>
     </div>
   </section>
@@ -313,6 +314,12 @@ onMounted(() => {
 }
 .card-cv_section-03 h4 {
   z-index: 1;
+}
+
+.card-02_section-03:active, .card-cv_section-03:active {
+  transform: scale(1.1); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
