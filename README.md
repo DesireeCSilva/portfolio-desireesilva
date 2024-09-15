@@ -2,7 +2,7 @@
 ## PORTFOLIO DE DESIRÉE CARRIZOSA SILVA 👱‍♀️💜
 
 <a href="https://www.canva.com/design/DAGQ2QPMAXk/cEMOxf2Ff1jZxUueM5p3iw/watch" target="_blank">
-<img width="200" src="https://drive.google.com/file/d/1Zt2ce8TvYvhfWTAmoRIPDSN-u6lbaVYy/view?usp=drive_link" alt="Imagen de Desirée" target="_blank">
+<img width="200" src="[https://drive.google.com/uc?export=view&id=1Zt2ce8TvYvhfWTAmoRIPDSN-u6lbaVYy](https://avatars.githubusercontent.com/u/152178472?v=4)" alt="Imagen de Desirée" target="_blank">
 </a>
 
 # Index
