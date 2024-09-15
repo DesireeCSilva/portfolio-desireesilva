@@ -2,7 +2,7 @@
 ## PORTFOLIO DE DESIRÉE CARRIZOSA SILVA 👱‍♀️💜
 
 <a href="https://www.canva.com/design/DAGQ2QPMAXk/cEMOxf2Ff1jZxUueM5p3iw/watch" target="_blank">
-<img width="200" src="@/assets/pic-02.png" alt="Imagen 2">
+<img width="200" src="https://drive.google.com/file/d/1Zt2ce8TvYvhfWTAmoRIPDSN-u6lbaVYy/view?usp=sharing" alt="Imagen 2">
 </a>
 
 # Index
