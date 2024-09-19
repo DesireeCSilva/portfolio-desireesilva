@@ -67,7 +67,7 @@
                     </a>
                 </div>
                 <div class="card-05_section-02">
-                    <a href="https://www.figma.com/proto/Q87bkn0d1SZRA2IEiHSqYz/HarmonyHeavenMVP?page-id=0%3A1&node-id=1-867&viewport=1041%2C340%2C0.09&t=pT2HNtwFQ5w3zb2B-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A867&show-proto-sidebar=1" target="_blank">
+                    <a href="https://harmony-heaven.netlify.app" target="_blank">
                         <div class="title_section-02">
                             <h1 class="title-sidebar_section-02">Harmony Heaven</h1>
                             <img class="arrow" src="@/assets/icons/arrow_in.png" alt="icono de flecha"> 
