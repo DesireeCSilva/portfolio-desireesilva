@@ -191,7 +191,7 @@ onMounted(() => {
   height: auto;
   background-color: #ffccbc;
   border-radius: 30px;
-  padding: 1rem;
+  padding: 2rem 1rem;
   flex: 1;
 }
 .card-02_section-03 {
