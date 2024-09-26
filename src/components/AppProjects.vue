@@ -18,10 +18,10 @@
                 <div class="card-01_section-02">
                     <a href="https://www.figma.com/proto/yR8KjnndNATFkYYxFBxoUr/Proyecto--Nirname?page-id=1%3A2&node-id=1-2284&viewport=741%2C325%2C0.06&t=lld7nY527ALzDYMo-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2284" target="_blank">
                         <div class="title_section-02">
-                            <h1 class="title-sidebar_section-02">Nirname. Centro de Yoga</h1>
+                            <h1 class="title-sidebar_section-02">Nirname</h1>
                             <img class="arrow" src="@/assets/icons/arrow_in.png" alt="icono de flecha">
                         </div>
-                        <p class="text_descriptions">Creación de todas las screens de la web y realización de User Personas.</p>
+                        <p class="text_descriptions">Creación de todas las screens, estudio UX y realización de User Personas.</p>
                     <div class="mockup-cards_section-02">
                         <img src="@/assets/card-01-section-02.png" alt="foto del Proyecto Nirname, centro de yoga">
                     </div>
@@ -45,7 +45,7 @@
                 <div class="card-03_section-02">
                     <a href="https://www.figma.com/proto/LKQiFFZSCHntHlIkhviezT/Hackaton-Globant?page-id=0%3A1&node-id=1-2&viewport=313%2C141%2C0.09&t=p53fha0SbWl4NLxz-1&scaling=scale-down&content-scaling=fixed" target="_blank">
                         <div class="title_section-02">
-                            <h1 class="title-sidebar_section-02">Ecopop: proyecto Hackaton</h1>
+                            <h1 class="title-sidebar_section-02">Ecopop: web Hackaton</h1>
                             <img class="arrow" src="@/assets/icons/arrow_in.png" alt="icono de flecha">
                         </div>
                     <p class="text_descriptions">Diseño de un e-commerce en pocas horas, quedando en 2º puesto.</p>
@@ -57,7 +57,7 @@
                 <div class="card-04_section-02">
                     <a href="https://www.figma.com/proto/4J8nTOfWZLkGK9tkFnDxex/TechToday?page-id=0%3A1&node-id=42-1501&viewport=865%2C225%2C0.22&t=CMG6Jheigb8PEICS-1&scaling=scale-down&content-scaling=fixed" target="_blank">
                         <div class="title_section-02">
-                        <h1 class="title-sidebar_section-02">TechToday: web sostenible</h1>
+                        <h1 class="title-sidebar_section-02">TechToday</h1>
                         <img class="arrow" src="@/assets/icons/arrow_in.png" alt="icono de flecha">
                     </div>
                     <p class="text_descriptions">Propuesta de desarrollo sostenible de una web de gestión de noticias.</p>
@@ -185,9 +185,10 @@ a .title_section-02 {
     display: flex;
     flex-direction: row ;
     align-items: center;  
-    justify-content: space-around;
+    justify-content: space-between;
     text-decoration: none;
     color: #000;
+    padding: 0 1rem;
 }
 .below_section-02 {
     display: flex;

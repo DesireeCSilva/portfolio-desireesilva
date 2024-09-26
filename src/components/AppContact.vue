@@ -14,42 +14,54 @@
         <div class="input-container">
           <label for="nombre"></label>
           <input
+            required
+            minlength="3"
             id="nombre"
             name="nombre"
             type="text"
             class="input-form"
             v-model="nombre"
             placeholder="Nombre"
+            :class="{ error: errorNombre }"
           />
+          <span class="error-message" v-if="errorNombre">Este campo no puede estar vacío</span>
         </div>
         <div class="input-container">
           <label for="email"></label>
           <input
+            required
             id="email"
             name="email"
-            type="text"
+            type="email"
             class="input-form"
             v-model="email"
             placeholder="Email"
+            :class="{ error: errorEmail }"
           />
+          <span class="error-message" v-if="errorEmail">Introduce un email correcto</span>
         </div>
       </div>
       <div class="bottom-form">
-      <label for="Comentarios"></label>
-      <input
-        id="comentarios"
-        type="text"
-        name="comentarios"
-        class="input-placeholder"
-        v-model="comentarios"
-        placeholder="Comentarios"
-      /></div>
+        <label for="Comentarios"></label>
+        <input
+          required
+          minlength="10"
+          id="comentarios"
+          type="text"
+          name="comentarios"
+          class="input-placeholder"
+          v-model="comentarios"
+          placeholder="Comentarios"
+          :class="{ error: errorComentarios }"
+        />
+        <span class="error-message" v-if="errorComentarios">Este campo no puede estar vacío</span>
+      </div>
       <div class="content-button_section-05">
         <button
           type="submit"
           class="button-send_section-05"
           value="Enviar"
-          @click="sendEmail"
+          @click="submitForm"
         >
           <img
             class="icon_section-05"
@@ -88,18 +100,45 @@
 import { ref } from 'vue'
 import emailjs from '@emailjs/browser';
 
-const nombre = ref(undefined)
-const email = ref(undefined)
-const comentarios = ref(undefined)
+const nombre = ref('')
+const errorNombre = ref(false)
+const email = ref('')
+const errorEmail = ref(false)
+const comentarios = ref('')
+const errorComentarios = ref(false)
 const mostrarMensaje = ref(false)
 
-const sendEmail = (e) => {
+// Submit form
+const submitForm = (e) => {
+  e.preventDefault()
+
+  const isValid = validate()
+  if (isValid) sendEmail()
+}
+
+// Form basic validation 
+const validate = () => {
+  errorNombre.value = nombre.value === ""
+  errorEmail.value = email.value === "" || !emailIsValid(email.value)
+  errorComentarios.value = comentarios.value === ""
+  if (nombre.value === "") return false
+  if (email.value === "" || !emailIsValid(email.value)) return false
+  if (comentarios.value === "") return false
+  return true
+}
+
+// Basic pattern validation for email
+const emailIsValid = email => {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+// Send email
+const sendEmail = () => {
   const params = {
     nombre: nombre.value,
     email: email.value,
     comentarios: comentarios.value
   }
-  e.preventDefault()
   emailjs
   .send('service_weteccf', 'template_5zps12h', params, {
     publicKey: 'L7sGgET0IWB0NrLB9',
@@ -161,6 +200,8 @@ const sendEmail = (e) => {
 
 .bottom-form {
   display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
   width: 100%;
 }
 
@@ -169,6 +210,7 @@ const sendEmail = (e) => {
   display: flex;
   flex-direction: column;
 }
+
 .input-form {
   width: 100%;
   height: 3rem;
@@ -203,6 +245,18 @@ const sendEmail = (e) => {
   font-family: "Poppins";
   padding-left: 1rem;
   box-sizing: border-box; 
+  margin-bottom: 1rem;
+}
+
+.error {
+  border: 1px solid #ff0000 !important;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 0.9rem;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
 }
 
 .icon_section-05 {
@@ -359,6 +413,11 @@ const sendEmail = (e) => {
     width: 100%;
     margin: 0.5rem 0; 
     box-sizing: border-box;
+  }
+
+  .error-message {
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .top-form {

@@ -3,7 +3,7 @@
     <div class="above_section-03">
       <div class="description-above_section-03">
         <h1 class="title_sidebar">Formación</h1>
-        <p class="date_sidebar">2024-2023</p>
+        <p class="date_sidebar">2023-2024</p>
         <p class="text-sidebar_section-03">
           Recientemente me he graduado del
           <span class="bold">Bootcamp de Desarrollo Web Fullstack (850h)</span>
@@ -71,13 +71,20 @@
     <div class="below_section-03">
       <div class="description-below_section-03">
         <h1 class="title_sidebar">Experiencia</h1>
-          <p class="date_sidebar">2020 - 2018</p>
+          <p class="date_sidebar">2018 - 2020</p>
           <p class="text-sidebar_section-03">
-            <span class="bold">
+            <b class="bold">
               Maquetadora - correctora ortotipográfica - diseñadora gráfica
-            </span>
+            </b>
           </p>
-          <p style="margin-top: 1rem; font-size: 1.1rem;">Entrelíneas Editores</p>
+          <p class="text-sidebar_section-03">Entrelíneas Editores</p>
+          <p class="date_sidebar">2010 - 2023</p>
+          <p class="text-sidebar_section-03">
+            <b class="bold">
+              Comercial de ventas / Asesora / Promotora
+            </b>
+          </p>
+          <p class="text-sidebar_section-03">Media Markt · El Corte Inglés · Worten · Alcampo</p>
       </div>
       <div class="card-cv_section-03">
         <a href="https://drive.google.com/file/d/1BUolDxQYZECSIflSKSMSiepAN9UMRVkw/view?usp=sharing" target="_blank">
@@ -143,9 +150,15 @@ onMounted(() => {
 
 .text-sidebar_section-03 {
   font-size: 1.1rem;
-  margin: 0;
-  margin-top: 0.2rem;
-  display: inline;
+  margin: 0.3rem 0;
+}
+
+.date_sidebar {
+  font-family: "Purple Purse", serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-style: normal;
+  margin: 0.5rem 0;
 }
 
 .above_section-03 {
@@ -169,13 +182,6 @@ onMounted(() => {
 
 .bold {
   font-weight: 700;
-}
-
-.date_sidebar {
-  font-family: "Purple Purse", serif;
-  font-weight: 400;
-  font-size: 1.2rem;
-  font-style: normal;
 }
 
 .card-01_section-03 {

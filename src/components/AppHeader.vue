@@ -42,7 +42,7 @@ import { mdiPhone } from "@mdi/js";
 <style lang="scss">
 .logo_header {
   width: 15rem;
-  height: fit-content;
+  height: auto;
 }
 .header_portfolio {
   display: flex;
