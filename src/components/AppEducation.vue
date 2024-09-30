@@ -7,11 +7,10 @@
         <p class="text-sidebar_section-03">
           Recientemente me he graduado del
           <span class="bold">Bootcamp de Desarrollo Web Fullstack (850h)</span>
-          en Factoría F5 en colaboración con Google.org.
+          en Factoría F5 en colaboración con <span class="bold">Google.org</span> y Manpower Group.
         </p>
         <p class="text-sidebar_section-03">
-          Destacar el aprendizaje de Metodología Scrum, el trabajo en equipo, el
-          estudio de UX/UI, la programación Front-end y la maquetación web.
+          Destacar el trabajo en equipo, la Metodología Scrum, el estudio de Maquetación Web, Diseño UX/UI y programación Front-end, lo que me permite abordar proyectos de manera integral.
         </p>
       </div>
 
@@ -23,7 +22,7 @@
           >
         </p>
         <p class="text-sidebar_section-03">
-          Se proponen soluciones de diseño, se crean esquemas y prototipos.
+          Adquisición de habilidades esenciales en Investigaciones UX, confección de User Persona y User Flow. Se proponen soluciones de diseño, se crean esquemas, prototipos e interfaces.
         </p>
 
         <p class="date_sidebar">2023</p>
@@ -172,8 +171,8 @@ onMounted(() => {
 
 .description-above_section-03 {
   background-color: #e1bee7;
-  border-radius: 30px;
-  padding: 1rem;
+  border-radius: 45px;
+  padding: 0 1.5rem;
   width: auto;
   height: auto;
   flex: 0.6;
@@ -189,13 +188,13 @@ onMounted(() => {
   width: auto;
   height: auto;
   background-color: #ffccbc;
-  border-radius: 30px;
-  padding: 2rem 1rem;
+  border-radius: 45px;
+  padding: 1rem 1.5rem;
   flex: 1;
 }
 .card-02_section-03 {
   border: solid 2px #ffccbc;
-  border-radius: 30px;
+  border-radius: 45px;
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
@@ -204,7 +203,7 @@ onMounted(() => {
   background-repeat: no-repeat;
   width: 100%;
   min-height: 130px;
-  padding: 0.2rem;
+  
   flex: 1;
 
   a {
@@ -212,6 +211,7 @@ onMounted(() => {
     flex-direction: column;
     text-decoration: none;
     color: #000000;
+    padding: 0.4rem;
 
     img {
       width: 4rem;
@@ -242,8 +242,8 @@ onMounted(() => {
     width: auto;
     height: auto;
     background-color: #f8bbd0;
-    border-radius: 30px;
-    padding: 1rem;
+    border-radius: 45px;
+    padding: 1rem 1.5rem;
     padding-bottom: 1.5rem;
     }
 }
@@ -259,8 +259,8 @@ onMounted(() => {
 
 .description-below_section-03 {
     background-color: #fff9c4;
-    border-radius: 30px;
-    padding: 1rem;
+    border-radius: 45px;
+    padding: 0 1.5rem 1rem 1.5rem;
     width: auto;
     height: auto;
     display: flex;

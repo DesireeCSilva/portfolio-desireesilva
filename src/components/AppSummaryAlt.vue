@@ -5,7 +5,7 @@
       <p class="text_sidebar-section-01">
         ¡Hola! Soy Desirée y vivo en Madrid. Estudié Diseño Gráfico porque
         siempre he sido una apasionada del arte y la tecnología. Acabo de
-        graduarme en un Bootcamp de Desarrollo Web, y me he formado en Diseño
+        graduarme en un Bootcamp de Desarrollo Web, y me he formado en Diseño 
         UX/UI realizando cursos y aplicando la pedagogía activa.
       </p>
     </div>
@@ -97,11 +97,11 @@ onMounted(() => {
   &_left {
     border: solid 2px #e1bee7;
     border-radius: 30px;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     flex: 0.6;
 
     .gradient {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       font-weight: 800;
       background-image: linear-gradient(260deg, var(--purple), var(--green));
       background-clip: text;
@@ -142,8 +142,8 @@ onMounted(() => {
 
     .above-right_section-01 {
       background-color: #fff9c4;
-      border-radius: 30px;
-      padding: 1rem 1.2rem;
+      border-radius: 45px;
+      padding: 1rem 1.5rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -158,7 +158,7 @@ onMounted(() => {
       flex-direction: column;
       justify-content: center;
       border: solid 2px #ffccbc;
-      border-radius: 30px;
+      border-radius: 45px;
       padding: 1rem;
       margin-top: 1rem;
     }

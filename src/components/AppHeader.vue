@@ -66,7 +66,6 @@
   width: 100%;
   height: 8rem;
   align-items: center;
-
   justify-content: space-between;
 
   .main-menu {

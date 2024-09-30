@@ -88,7 +88,7 @@ export default {};
     display: flex;
     flex-direction: row;
     background-color: #f8bbd0;
-    border-radius: 30px;
+    border-radius: 45px;
     padding: 1rem;
     align-items: center;
     justify-content: space-between;

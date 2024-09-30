@@ -159,14 +159,14 @@ const sendEmail = () => {
   width: 50%;
   height: auto;
   background-color: #e1bee7;
-  border-radius: 30px;
-  padding: 1rem;
+  border-radius: 45px;
+  padding: 1rem 1.5rem;
   box-sizing: border-box;
 }
 
 .form_section-05 {
   border: solid 2px #ffccbc;
-  border-radius: 30px;
+  border-radius: 45px;
   width: 100%;
   height: auto;
   padding: 1.5rem;
@@ -177,6 +177,7 @@ const sendEmail = () => {
   box-sizing: border-box;
   flex-wrap: wrap;
 }
+
 .top-form {
   display: flex;
   flex-direction: row;
@@ -386,6 +387,10 @@ const sendEmail = () => {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+.text_descriptions {    
+    font-size: 1.1rem;
+  }
 
 .hr_portfolio.hr_last {
   margin-bottom: 0;

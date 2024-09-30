@@ -87,7 +87,7 @@ export default {};
     border-radius: 30px;
     width: auto;
     height: fit-content;
-    padding: 1rem;
+    padding: 0 1.5rem;
 
 
     .gradient {

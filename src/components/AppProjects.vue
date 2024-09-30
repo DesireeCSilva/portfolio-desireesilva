@@ -4,11 +4,11 @@
                 <div class="description-above_section-02">
                     <div class="description-above">
                         <h1 class="title_sidebar">Proyectos</h1>
-                        <p class="text-cards_section-02">He desarrollado mis diseños partiendo de una sólida investigación previa, aplicando de manera integral mis conocimientos en UX/UI. Me he enfocado en crear interfaces completas tanto para web como para aplicaciones, siempre con el objetivo de garantizar que la experiencia del usuario sea fluida, intuitiva y altamente satisfactoria.
+                        <p class="text-cards_section-02">He creado mis diseños partiendo de una sólida investigación previa, aplicando de manera integral mis conocimientos en UX/UI. <br>Me he enfocado en crear interfaces completas tanto para web como para móvil, siempre con el objetivo de garantizar que la experiencia del usuario sea fluida, intuitiva y altamente satisfactoria.
                         </p> 
                     </div>
                         <button class="button_see-more">
-                            <img src="https://img.icons8.com/color/48/visible--v2.png" class="icon_see-more" alt="visible--v2"/>
+                            <img width="40" height="40" src="https://img.icons8.com/color/48/visible--v2.png" class="icon_see-more" alt="visible--v2"/>
                             <a href="https://www.behance.net/desirecarrizo" target="_blank">
                             Ver más proyectos
                             </a>          
@@ -79,7 +79,6 @@
                     </a>
                 </div>
             </div>
-
         </section>
         <hr class="hr_portfolio">
 </template>
@@ -118,7 +117,7 @@
     height: auto;   
     background-color: #E1BEE7;
     border-radius: 45px;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     box-sizing: border-box;
 }
 
@@ -232,7 +231,7 @@ a .title_section-02 {
     padding: 0.5rem 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     &:hover {
     background-color: #ce93d8;
@@ -250,8 +249,6 @@ a .title_section-02 {
     display: flex;
     flex-direction: row;
     align-self: center;
-    width: auto;
-    height: auto;
     margin-right: 0.5rem;
     }
 
