@@ -63,28 +63,17 @@
           value="Enviar"
           @click="submitForm"
         >
-          <img
-            class="icon_section-05"
-            src="@/assets/icons/fa_send.png"
-            alt=""
-          />Enviar
+        <img width="40" height="40" src="https://img.icons8.com/color/48/circled-chevron-right--v1.png" alt="circled-chevron-right--v1"/>
+        Enviar
         </button>
         <button class="button-whatsapp_section-05" value="WhatsApp">
           <a href="tel:675937952" target="_blank">
-            <img
-              class="icon_section-05"
-              src="@/assets/icons/ic_twotone-whatsapp.png"
-              alt=""
-            />¡WhatsApp!</a
-          >
+            <img width="40" height="40" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/>¡WhatsApp!
+            </a>
         </button>
         <button class="button-call_section-05">
           <a href="mailto:desiree_cs@hotmail.com" target="_blank">
-            <img
-              class="icon_section-05"
-              src="@/assets/icons/mdi_email-outline.png"
-              alt=""
-            />Contáctame
+            <img width="40" height="40" src="https://img.icons8.com/color/96/circled-envelope.png" alt="circled-envelope"/>Contáctame
           </a>
         </button>
       </div>
@@ -259,12 +248,6 @@ const sendEmail = () => {
   margin-bottom: 1rem;
 }
 
-.icon_section-05 {
-  width: fit-content;
-  height: fit-content;
-  margin-right: 0.3rem;
-}
-
 .button-send_section-05 {
   background-color: #ce93d8;
   color: #000000;
@@ -280,6 +263,7 @@ const sendEmail = () => {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.3rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 
@@ -325,6 +309,13 @@ const sendEmail = () => {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transform: translateY(2px);
   }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+  }
 }
 
 .button-call_section-05 {
@@ -355,6 +346,13 @@ const sendEmail = () => {
     background-color: #fa8662;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transform: translateY(2px);
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
   }
 }
 

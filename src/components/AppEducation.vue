@@ -154,9 +154,8 @@ onMounted(() => {
 }
 
 .date_sidebar {
-  font-family: "Purple Purse", serif;
-  font-weight: 400;
-  font-size: 1.2rem;
+  font-weight: 800;
+  font-size: 1.3rem;
   font-style: normal;
   margin: 0.5rem 0;
 }
@@ -335,7 +334,6 @@ onMounted(() => {
 
   .date_sidebar {
     color: #000000;
-    text-decoration: overline dotted 5px #ce93d8;
     width: 100%;
   }
 
@@ -400,6 +398,10 @@ onMounted(() => {
 
   .card-02_section-03 h2{
     font-size: 100%;
+  }
+
+  .card-cv_section-03 {
+    width: 100%;
   }
 }
 

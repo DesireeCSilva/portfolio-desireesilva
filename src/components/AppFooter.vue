@@ -47,7 +47,7 @@
       </ul>
     </nav>
 
-    <p style="display: flex; justify-content: center; margin-bottom: 2rem">
+    <p style="font-size: 0.9rem; display: flex; justify-content: center; margin-bottom: 2rem">
       ©2024 Desirée Carrizosa Silva y Nuria Martínez. Todos los derechos
       reservados 🌼
     </p>
@@ -242,7 +242,7 @@ footer {
 
 .footer_icons {
   img {
-    width: 3rem;
+    width: 3.5rem;
     height: auto;
     transform: scale(1.1);
     text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);

@@ -7,13 +7,13 @@
         alt="logotipo de Desirée Silva"
       />
       <ul id="main-menu" class="main-menu">
-        <li class="main-menu_item">
+        <li class="item-header">
           <a href="#proyectos" class="main-menu_link">Proyectos</a>
         </li>
-        <li class="main-menu_item">
+        <li class="item-header">
           <a href="#formacion" class="main-menu_link">Formación</a>
         </li>
-        <li class="main-menu_item">
+        <li class="item-header">
           <a
             href="https://drive.google.com/file/d/1eqcxrCOnaMXNDoOg0VTY0N0z2tiPsSRW/view?usp=drive_link"
             class="main-menu_link"
@@ -22,13 +22,13 @@
           >
         </li>
         <div class="header_icons">
-          <li class="main-menu_item">
+          <li class="item-header">
             <a href="https://www.linkedin.com/in/desiree-carrizosa/"
               target="blank">
               <img src="https://img.icons8.com/color/70/linkedin.png" alt="linkedin"/>
             </a>
           </li>
-          <li class="main-menu_item">
+          <li class="item-header">
             <a href="https://www.behance.net/desirecarrizo" target="blank">
             <img src="https://img.icons8.com/color/70/behance.png" alt="behance"/>
             </a>
@@ -50,25 +50,35 @@
 .logo_header {
   width: 15rem;
   height: auto;
+  flex-grow: 1;
+}
+
+.header_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 1.5rem;
 }
 .header_portfolio {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 10rem;
+  height: 8rem;
   align-items: center;
+
   justify-content: space-between;
 
   .main-menu {
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-decoration: none;
     cursor: pointer;
+    margin: 0;
 
-    &_item {
-      padding: 2em;
+    .item-header {
       font-size: 1rem;
       font-weight: 500;
       cursor: pointer;
@@ -101,20 +111,20 @@
     }
   }
 
-  .button_header {
+.button_header {
   background-color: #ce93d8;
-  width: 14em;
+  width: 22rem;
   height: fit-content;
   font-size: 1.3rem;
   font-family: "Poppins";
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem;
   border-radius: 0.5rem;
   border-style: none;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
   justify-content: center;
+  align-items: center;
   display: flex;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
@@ -131,10 +141,27 @@
   }
 }
 
-.header_icons {
-  display: flex;
-  width: 5rem;
+.item-header {
+    img {
+    width: 3rem;
+    height: auto;
+    transform: scale(1.1);
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: none;
+    border: none;
+    box-sizing: border-box;
 
+    &:active {
+      transform: scale(1.3);
+      background: none;
+      border: none;
+    }
+    &:hover {
+    animation: beat 0.6s infinite;
+    transition: transform 0.4s ease-in-out; 
+    }
+  }
 }
 }
 </style>
