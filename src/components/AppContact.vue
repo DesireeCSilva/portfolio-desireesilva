@@ -267,6 +267,7 @@ const sendEmail = () => {
 
 .button-send_section-05 {
   background-color: #ce93d8;
+  color: #000000;
   width: 10em;
   height: fit-content;
   font-size: 1.3rem;
@@ -297,6 +298,7 @@ const sendEmail = () => {
 
 .button-whatsapp_section-05 {
   background-color: #f8bbd0;
+  color: #000000;
   width: 10em;
   height: fit-content;
   font-size: 1.3rem;
@@ -327,6 +329,7 @@ const sendEmail = () => {
 
 .button-call_section-05 {
   background-color: #ffccbc;
+  color: #000000;
   width: 10em;
   height: fit-content;
   font-size: 1.3rem;

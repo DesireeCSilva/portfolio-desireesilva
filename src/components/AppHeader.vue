@@ -8,9 +8,6 @@
       />
       <ul id="main-menu" class="main-menu">
         <li class="main-menu_item">
-          <a href="#sobremi" class="main-menu_link">Sobre mí</a>
-        </li>
-        <li class="main-menu_item">
           <a href="#proyectos" class="main-menu_link">Proyectos</a>
         </li>
         <li class="main-menu_item">
@@ -18,12 +15,25 @@
         </li>
         <li class="main-menu_item">
           <a
-            href="https://drive.google.com/file/d/1BUolDxQYZECSIflSKSMSiepAN9UMRVkw/view?usp=sharing"
+            href="https://drive.google.com/file/d/1eqcxrCOnaMXNDoOg0VTY0N0z2tiPsSRW/view?usp=drive_link"
             class="main-menu_link"
             target="_blank"
             >Ver Currículum Vitae</a
           >
         </li>
+        <div class="header_icons">
+          <li class="main-menu_item">
+            <a href="https://www.linkedin.com/in/desiree-carrizosa/"
+              target="blank">
+              <img src="https://img.icons8.com/color/70/linkedin.png" alt="linkedin"/>
+            </a>
+          </li>
+          <li class="main-menu_item">
+            <a href="https://www.behance.net/desirecarrizo" target="blank">
+            <img src="https://img.icons8.com/color/70/behance.png" alt="behance"/>
+            </a>
+          </li>
+        </div>
       </ul>
       <button class="button_header">
         <svg-icon type="mdi" :path="mdiPhone" class="icon_header"></svg-icon
@@ -95,41 +105,40 @@ import { mdiPhone } from "@mdi/js";
   }
 
   .button_header {
-    background-color: #ce93d8;
-    width: 18em;
-    height: fit-content;
-    font-size: 1.3rem;
-    font-family: "Poppins";
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    border-radius: 0.5rem;
-    border-style: none;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-  }
+  background-color: #ce93d8;
+  width: 18em;
+  height: fit-content;
+  font-size: 1.3rem;
+  font-family: "Poppins";
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  border-style: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 
-  .button_header a {
+  a {
     text-decoration: none;
     color: #000000;
   }
 
-  .icon_header {
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    width: auto;
-    height: auto;
-  }
-
-  .button_header:hover {
+  &:hover {
     background-color: #ce93d8;
     transform: scale(0.95);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
+}
+
+
+.header_icons {
+  display: flex;
+  width: 5rem;
+
+}
 }
 </style>

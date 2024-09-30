@@ -87,7 +87,7 @@
           <p class="text-sidebar_section-03">Media Markt · El Corte Inglés · Worten · Alcampo</p>
       </div>
       <div class="card-cv_section-03">
-        <a href="https://drive.google.com/file/d/1BUolDxQYZECSIflSKSMSiepAN9UMRVkw/view?usp=sharing" target="_blank">
+        <a href="https://drive.google.com/file/d/1eqcxrCOnaMXNDoOg0VTY0N0z2tiPsSRW/view?usp=drive_link" target="_blank">
           <img width="70" height="70" src="https://img.icons8.com/color/70/parse-from-clipboard.png" alt="parse-from-clipboard"/>
           <h4 class="title_sidebar-card-02">Ver Currículum Vitae de Desirée</h4>
         </a>
