@@ -36,8 +36,7 @@
         </div>
       </ul>
       <button class="button_header">
-        <svg-icon type="mdi" :path="mdiPhone" class="icon_header"></svg-icon
-        ><a href="tel:675937952">¡Contáctame!</a>
+        <img width="40" height="40" src="https://img.icons8.com/color/48/smartphone.png" alt="smartphone"/><a href="tel:675937952">¡Contáctame!</a>
       </button>
     </nav>
   </header>
@@ -45,8 +44,6 @@
 </template>
 
 <script setup>
-import SvgIcon from "@jamescoyle/vue-icon";
-import { mdiPhone } from "@mdi/js";
 </script>
 
 <style lang="scss">
@@ -106,7 +103,7 @@ import { mdiPhone } from "@mdi/js";
 
   .button_header {
   background-color: #ce93d8;
-  width: 18em;
+  width: 14em;
   height: fit-content;
   font-size: 1.3rem;
   font-family: "Poppins";
@@ -133,7 +130,6 @@ import { mdiPhone } from "@mdi/js";
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 }
-
 
 .header_icons {
   display: flex;

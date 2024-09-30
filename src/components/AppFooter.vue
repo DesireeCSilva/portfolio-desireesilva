@@ -35,16 +35,20 @@
             <img src="https://img.icons8.com/color/70/behance.png" alt="behance"/>
             </a>
           </li>
-        </div>
+          <li class="main-menu_item">
+            <a href="https://instagram.com/colourfullybydesita?igshid=MzMyNGUyNmU2YQ==" target="blank">
+              <img width="48" height="48" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/>
+            </a>
+          </li>       
+        </div>          
+        <button class="button_footer">
+          <img width="40" height="40" src="https://img.icons8.com/color/48/smartphone.png" alt="smartphone"/><a href="tel:675937952">¡Contáctame!</a>
+          </button>
       </ul>
-      <button class="button_footer">
-        <svg-icon type="mdi" :path="mdiPhone" class="icon_header"></svg-icon
-        ><a href="tel:675937952">¡Contáctame!</a>
-      </button>
     </nav>
 
     <p style="display: flex; justify-content: center; margin-bottom: 2rem">
-      © 2024 Desirée Carrizosa Silva y Nuria Martínez. Todos los derechos
+      ©2024 Desirée Carrizosa Silva y Nuria Martínez. Todos los derechos
       reservados 🌼
     </p>
     <div class="bg_heart">
@@ -89,10 +93,6 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(createBubble, 500);
 });
 </script>
-<script setup>
-import SvgIcon from "@jamescoyle/vue-icon";
-import { mdiPhone } from "@mdi/js";
-</script>
 
 <style lang="scss">
 footer {
@@ -103,13 +103,22 @@ footer {
   overflow: hidden;
   z-index: 1;
   box-sizing: border-box;
+  width: 100%;
+  justify-content: space-between;
 }
 
+.footer_portfolio {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  flex-direction: row; 
+  justify-content: space-between; 
+}
 .footer_icons {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-sizing: border-box;
 }
 
 .bg_heart {
@@ -153,34 +162,28 @@ footer {
   z-index: 2;
 }
 
-.footer_portfolio {
-  display: flex;
-  height: auto;
-  align-items: center;
-  justify-content: center;
-}
-
 .logo_footer {
   max-width: 15rem;
-  height: fit-content;
+  height: auto;
+  flex-grow: 1;
 }
+
 .main-menu {
   width: 100%;
-  padding: 3em;
   list-style: none;
   display: flex;
   align-content: center;
   justify-content: space-between;
   text-decoration: none;
   cursor: pointer;
-}
 
-.main-menu_item {
-  font-size: 1rem;
-  padding-left: 3em;
-  font-weight: 500;
-  cursor: pointer;
-  border: none;
+  &_item {
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    padding: 0 1.5rem;
+  }
 }
 
 .main-menu_link {
@@ -209,7 +212,7 @@ footer {
 
 .button_footer {
   background-color: #ce93d8;
-  width: 18em;
+  width: 14rem;
   height: fit-content;
   font-size: 1.3rem;
   font-family: "Poppins";
@@ -221,6 +224,7 @@ footer {
   display: flex;
   text-align: center;
   justify-content: center;
+  align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 
@@ -236,32 +240,37 @@ footer {
 }
 }
 
-.icon_header {
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  width: auto;
-  height: auto;
-}
-
-.footer_icons img {
-    width: 3.5rem;
+.footer_icons {
+  img {
+    width: 3rem;
     height: auto;
     transform: scale(1.1);
-    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;    
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: none;
     border: none;
     box-sizing: border-box;
+
+    &:active {
+      transform: scale(1.3);
+      background: none;
+      border: none;
+    }
+    &:hover {
+    animation: beat 0.6s infinite;
+    transition: transform 0.4s ease-in-out; 
   }
 
-  .footer_icons img:active {
-    transform: scale(1.3);
-    background: none;
-    border: none;
+  @keyframes beat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2); /* Aumenta el tamaño al 120% en el medio de la animación */
+    }
   }
-
-
+}
+}
 
 /* Media query */
 
@@ -269,6 +278,7 @@ footer {
   .footer_portfolio {
     flex-direction: column;
     align-items: center;
+    width: 100% ;
     height: auto;
   }
 
