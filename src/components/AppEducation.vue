@@ -172,7 +172,7 @@ onMounted(() => {
 .description-above_section-03 {
   background-color: #e1bee7;
   border-radius: 45px;
-  padding: 0 1.5rem;
+  padding: 0 1.5rem 1rem 1.5rem;
   width: auto;
   height: auto;
   flex: 0.6;

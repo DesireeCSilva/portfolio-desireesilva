@@ -75,7 +75,7 @@
     justify-content: space-between;
     text-decoration: none;
     cursor: pointer;
-    margin: 0;
+    margin: 0 1rem;
 
     .item-header {
       font-size: 1rem;

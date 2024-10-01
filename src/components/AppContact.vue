@@ -218,10 +218,8 @@ const sendEmail = () => {
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   align-items: center;
-  margin: 1rem 0; 
+  margin: 1rem 0 1rem 0; 
   flex-wrap: wrap;
   gap: 2rem;
 }
@@ -235,7 +233,6 @@ const sendEmail = () => {
   font-family: "Poppins";
   padding-left: 1rem;
   box-sizing: border-box; 
-  margin-bottom: 1rem;
 }
 
 .error {
@@ -407,7 +404,6 @@ const sendEmail = () => {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
   }
   
   .text_section-05 {
@@ -443,6 +439,7 @@ const sendEmail = () => {
     width: 100%;
     align-items: center;
     gap: 0.5rem;
+    margin: 0; 
   }
 
   .button-send_section-05,

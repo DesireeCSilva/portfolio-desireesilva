@@ -2,73 +2,46 @@
     <section id="tecnologias" class="section-04">
         <div class="content_section-04">
             <h1 class="title_sidebar">Tecnologías</h1>
-            <!-- <div class="icons">
-                <div class="icon-wrapper">
-                    <img width="70" height="70" src="https://img.icons8.com/ios-glyphs/100/figma.png" alt="figma"/>
-                    <p class="icon-label">Figma</p>
-                </div>
-                <div class="icon-wrapper">
-                    <img width="70" height="70" src="https://img.icons8.com/ios-glyphs/100/html-5.png" alt="html-5"/>    
-                    <p class="icon-label">HTML5</p>
-                </div>
-                <div class="icon-wrapper">
-                    <img width="70" height="70" src="https://img.icons8.com/ios-glyphs/100/css3.png" alt="css3"/>
-                    <p class="icon-label">CSS3</p>
-                </div>
-                <div class="icon-wrapper">
-                    <img width="70" height="70" src="https://img.icons8.com/ios-glyphs/100/javascript.png" alt="javascript"/>
-                    <p class="icon-label">JavaScript</p>
-                </div>
-                <div class="icon-wrapper">
-                    <img width="70" height="70" src="https://img.icons8.com/ios-glyphs/100/github.png" alt="github"/>
-                    <p class="icon-label">GitHub</p>
-                </div>
-                <div class="icon-wrapper">
-                    <img width="70" height="70" src="https://img.icons8.com/ios-filled/100/git.png" alt="git"/>
-                    <p class="icon-label">Git</p>
-                </div>
-                <div class="icon-wrapper">
-                    <img width="70" height="70" src="https://img.icons8.com/ios-glyphs/100/react.png" alt="react"/> 
-                    <p class="icon-label">React</p>
-                </div>
-                <div class="icon-wrapper">
-                    <img width="70" height="70" src="https://img.icons8.com/ios-glyphs/100/vuejs.png" alt="vuejs"/>
-                    <p class="icon-label">Vue.js</p>
-                </div>
-            </div> -->
-
             <div class="icons">
                 <div class="icon-wrapper">
-                    <img class="icon-img" src="https://img.icons8.com/color/70/figma--v1.png" alt="figma--v1"/>
+                    <img class="icon-img" src="https://img.icons8.com/color/figma--v1.png" alt="figma--v1"/>
                     <p class="icon-label">Figma</p>
                 </div>
                 <div class="icon-wrapper">
-                    <img class="icon-img" src="https://img.icons8.com/color/70/html-5--v1.png" alt="html-5--v1"/>  
+                    <img class="icon-img" src="https://img.icons8.com/color/html-5--v1.png" alt="html-5--v1"/>  
                     <p class="icon-label">HTML5</p>
                 </div>
                 <div class="icon-wrapper">
-                    <img class="icon-img" src="https://img.icons8.com/color/70/css3.png" alt="css3"/>
+                    <img class="icon-img" src="https://img.icons8.com/color/css3.png" alt="css3"/>
                     <p class="icon-label">CSS3</p>
                 </div>
                 <div class="icon-wrapper">
-                    <img class="icon-img" src="https://img.icons8.com/color/70/javascript--v1.png" alt="javascript--v1"/>
+                    <img class="icon-img" src="https://img.icons8.com/color/javascript--v1.png" alt="javascript--v1"/>
                     <p class="icon-label">JavaScript</p>
                 </div>
                 <div class="icon-wrapper">
-                    <img class="icon-img" src="https://img.icons8.com/color/70/github--v1.png" alt="github--v1"/>
+                    <img class="icon-img" src="https://img.icons8.com/color/github--v1.png" alt="github--v1"/>
                     <p class="icon-label">GitHub</p>
                 </div>
                 <div class="icon-wrapper">
-                    <img class="icon-img" src="https://img.icons8.com/color/70/git.png" alt="git"/>
-                    <p class="icon-label">Git</p>
-                </div>
-                <div class="icon-wrapper">
-                    <img class="icon-img" src="https://img.icons8.com/officexs/70/react.png" alt="react"/>
+                    <img class="icon-img" src="https://img.icons8.com/officexs/react.png" alt="react"/>
                     <p class="icon-label">React</p>
                 </div>
                 <div class="icon-wrapper">
-                    <img class="icon-img" src="https://img.icons8.com/color/70/vue-js.png" alt="vue-js"/>
+                    <img class="icon-img" src="https://img.icons8.com/color/vue-js.png" alt="vue-js"/>
                     <p class="icon-label">Vue.js</p>
+                </div>
+                <div class="icon-wrapper">
+                    <img class="icon-img" src="https://img.icons8.com/color/bootstrap--v2.png" alt="bootstrap--v2"/>
+                    <p class="icon-label">Bootstrap</p>
+                </div>
+                <div class="icon-wrapper">
+                    <img class="icon-img" src="https://img.icons8.com/color/sass.png" alt="sass"/>
+                    <p class="icon-label">Sass</p>
+                </div>
+                <div class="icon-wrapper">
+                    <img class="icon-img" src="https://img.icons8.com/color/70/nodejs.png" alt="nodejs"/>
+                    <p class="icon-label">Node.js</p>
                 </div>
             </div>
 
@@ -89,7 +62,7 @@ export default {};
     flex-direction: row;
     background-color: #f8bbd0;
     border-radius: 45px;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     align-items: center;
     justify-content: space-between;
 }
@@ -99,7 +72,7 @@ export default {};
     padding: 1rem;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 2.5rem;
     cursor: pointer;
     flex-wrap: wrap; 
 }
@@ -112,8 +85,8 @@ export default {};
 }
 
 .icon-img {
-    width: 70;
-    height: 70;
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 .icon-label {
