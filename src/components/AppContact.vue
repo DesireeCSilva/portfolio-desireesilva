@@ -140,11 +140,9 @@ const sendEmail = () => {
     (err) => console.log('FAILED...', err)
   )
 }
-
 </script>
 
 <style lang="scss">
-
 .section-05 {
   display: flex;
   flex-direction: row;
@@ -153,323 +151,232 @@ const sendEmail = () => {
   gap: 2rem;
   width: auto;
   box-sizing: border-box;
-}
 
-.text_section-05 {
-  width: 50%;
-  height: auto;
-  background-color: #e1bee7;
-  border-radius: 45px;
-  padding: 1rem 1.5rem;
-  box-sizing: border-box;
-}
-
-.form_section-05 {
-  border: solid 2px #ffccbc;
-  border-radius: 45px;
-  width: 100%;
-  height: auto;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-}
-
-.top-form {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-between; 
-  box-sizing: border-box;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.bottom-form {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
-  width: 100%;
-}
-
-.input-container {
-  flex: 1; 
-  display: flex;
-  flex-direction: column;
-}
-
-.input-form {
-  width: 100%;
-  height: 3rem;
-  border: solid 2px #ffccbc;
-  border-radius: 20px;
-  margin: 1rem 0; 
-  font-size: 1rem;
-  font-family: "Poppins";
-  padding-left: 1rem;
-  box-sizing: border-box;
-}
-
-.content-button_section-05 {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1rem 0 1rem 0; 
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.input-placeholder {
-  width: 100%;
-  height: 6rem;
-  border: solid 2px #ffccbc;
-  border-radius: 20px;
-  font-size: 1rem;
-  font-family: "Poppins";
-  padding-left: 1rem;
-  box-sizing: border-box; 
-}
-
-.error {
-  border: 1px solid #ff0000 !important;
-}
-
-.error-message {
-  color: #ff0000;
-  font-size: 0.9rem;
-  margin-top: -1rem;
-  margin-bottom: 1rem;
-}
-
-.button-send_section-05 {
-  background-color: #ce93d8;
-  color: #000000;
-  width: 10em;
-  height: fit-content;
-  font-size: 1.3rem;
-  font-family: "Poppins";
-  padding: 0.5rem 0;
-  border-radius: 0.5rem;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.3rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-
-  &:hover {
-    background-color: #ce93d8;
-    transform: scale(0.95);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  .text_section-05 {
+    width: 50%;
+    height: auto;
+    background-color: #e1bee7;
+    border-radius: 45px;
+    padding: 1rem 1.5rem;
+    box-sizing: border-box;
   }
 
-  &:active {
-    background-color: #bc38d3;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transform: translateY(2px);
-  }
-}
-
-.button-whatsapp_section-05 {
-  background-color: #f8bbd0;
-  color: #000000;
-  width: 10em;
-  height: fit-content;
-  font-size: 1.3rem;
-  font-family: "Poppins";
-  padding: 0.5rem 0;
-  border-radius: 0.5rem;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-
-  &:hover {
-    background-color: #f8bbd0;
-    transform: scale(0.95);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-
-  &:active {
-    background-color: #ee427e;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transform: translateY(2px);
-  }
-
-  a {
+  .form_section-05 {
+    border: solid 2px #ffccbc;
+    border-radius: 45px;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    gap: 0.2rem;
+    flex-wrap: wrap;
+
+    .top-form {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .bottom-form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .input-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .input-form {
+      width: 100%;
+      height: 3rem;
+      border: solid 2px #ffccbc;
+      border-radius: 20px;
+      margin: 0;
+      font-size: 1rem;
+      font-family: "Poppins";
+      padding-left: 1rem;
+      box-sizing: border-box;
+    }
+
+    .input-placeholder {
+      width: 100%;
+      min-height: 6rem;
+      border: solid 2px #ffccbc;
+      border-radius: 20px;
+      font-size: 1rem;
+      font-family: "Poppins";
+      padding-left: 1rem;
+      box-sizing: border-box;
+    }
+
+    .error {
+      border: 1px solid #ff0000 !important;
+    }
+
+    .error-message {
+      color: #ff0000;
+      font-size: 0.9rem;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .content-button_section-05 {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      flex-wrap: wrap;
+      gap: 2rem;
+
+      .button-send_section-05,
+      .button-whatsapp_section-05,
+      .button-call_section-05 {
+        background-color: #ce93d8;
+        color: #000000;
+        width: 10em;
+        height: fit-content;
+        font-size: 1.3rem;
+        font-family: "Poppins";
+        padding: 0.5rem 0;
+        border-radius: 0.5rem;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.3rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: scale(0.95);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        &:active {
+          background-color: #bc38d3;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          transform: translateY(2px);
+        }
+
+        a {
+          display: flex;
+          text-decoration: none;
+          color: #000000;
+          justify-content: center;
+          align-items: center;
+          gap: 0.2rem;
+        }
+      }
+    }
   }
-}
 
-.button-call_section-05 {
-  background-color: #ffccbc;
-  color: #000000;
-  width: 10em;
-  height: fit-content;
-  font-size: 1.3rem;
-  font-family: "Poppins";
-  padding: 0.5rem 0;
-  border-radius: 0.5rem;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-
-  &:hover {
-    background-color: #ffccbc;
-    transform: scale(0.95);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-
-  &:active {
+  .sweet-alert {
     background-color: #fa8662;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transform: translateY(2px);
+    border-radius: 30px;
+    padding: 1rem;
+    width: auto;
+
+    p {
+      font-family: 'Poppins';
+      font-size: 2.5rem;
+      color: #ffffff;
+      text-align: center;
+    }
   }
 
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.2rem;
+  .hr_portfolio {
+    color: #ce93d8;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    &.hr_last {
+      margin-bottom: 0;
+    }
   }
-}
 
-.button-call_section-05,
-.button-send_section-05,
-.button-whatsapp_section-05 {
-  a {
-    display: flex;
-    text-decoration: none;
-    color: #000000;
-  }
-}
-
-.sweet-alert {
-  background-color: #fa8662;
-  border-radius: 30px;
-  padding: 1rem;
-  width: auto;
-
-  p {
-    font-family: 'Poppins';
-    font-size: 2.5rem;
-    color: #ffffff;
-    text-align: center;
-  }
-}
-
-.hr_portfolio {
-  color: #ce93d8;
-  width: 100%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.text_descriptions {    
+  .text_descriptions {
     font-size: 1.1rem;
   }
-
-.hr_portfolio.hr_last {
-  margin-bottom: 0;
 }
 
 // Medias Queries
-
 @media only screen and (max-width: 768px) {
-
-  .text_descriptions {    
-    font-size: 1.1rem;
-  }
   .section-05 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  
+
   .text_section-05 {
     width: 100%;
   }
 
-  .input-form,
-  .input-placeholder {
-    width: 100%;
-    margin: 0.5rem 0; 
-    box-sizing: border-box;
-  }
+  .form_section-05 {
+    .input-form,
+    .input-placeholder {
+      width: 100%;
+      margin: 0.5rem 0;
+      box-sizing: border-box;
+    }
 
-  .error-message {
-    margin-top: -0.5rem;
-    margin-bottom: 0.5rem;
-  }
+    .error-message {
+      margin-top: -0.5rem;
+      margin-bottom: 0.5rem;
+    }
 
-  .top-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0;
-  }
+    .top-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0;
+    }
 
-  .input-placeholder {
-    width: 100%;
-  }
+    .content-button_section-05 {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
 
-  .content-button_section-05 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 0; 
-  }
-
-  .button-send_section-05,
-  .button-whatsapp_section-05,
-  .button-call_section-05 {
-    width: 100%;
-    margin: 0.5rem 0;
+    .button-send_section-05,
+    .button-whatsapp_section-05,
+    .button-call_section-05 {
+      width: 100%;
+      margin: 0.5rem 0;
+    }
   }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1240px){
-
+@media only screen and (min-width: 1024px) and (max-width: 1240px) {
   .content-button_section-05 {
-    display: flex;
     justify-content: space-evenly;
-    gap: .5rem
-  }
-  .button-send_section-05,
-  .button-whatsapp_section-05,
-  .button-call_section-05 {
-    width: 80%;
-    margin: 0.5rem 0;
+    gap: 0.5rem;
+
+    .button-send_section-05,
+    .button-whatsapp_section-05,
+    .button-call_section-05 {
+      width: 80%;
+    }
   }
 }
 
 @media only screen and (min-width: 1920px) {
-
   .section-05 {
     gap: 5.5rem;
   }
 }
+
 
 </style>
