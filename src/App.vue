@@ -49,6 +49,11 @@ body {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
+
+  .hr_last {
+      margin-bottom: 0;
+  }
+
   .title_sidebar {
     font-size: 1.4rem;
     font-style: bold;
@@ -68,6 +73,10 @@ body {
 
     .hr_portfolio {
       display: none;
+    }
+
+    .hr_last {
+      margin-bottom: 0;
     }
   }
 }
