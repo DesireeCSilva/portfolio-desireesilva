@@ -92,6 +92,7 @@ onMounted(() => {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1.5rem;
+  width: auto;
 
 
   &_left {
@@ -188,19 +189,30 @@ onMounted(() => {
 
 // Media Queries
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
 
   .about-me {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &_left,
+    &_right {
+      width: 90%;
+    }
 
     &_left {
       order: 2;
-      
+      margin: 0 auto;
+      text-align: center;
     }
 
     &_center {
       order: 1;
       width: 100%;
+      display: flex;
+      justify-content: center;
     }
 
     &_right {

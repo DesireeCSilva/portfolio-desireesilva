@@ -312,7 +312,7 @@ const sendEmail = () => {
 }
 
 // Medias Queries
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 920px) {
   .section-05 {
     flex-direction: column;
     justify-content: center;
